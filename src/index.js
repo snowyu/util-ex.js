@@ -12,6 +12,11 @@ var util = module.exports = {
     isNumber: require('./is/type/number'),
 
     isUndefined: require('./is/type/undefined'),
+    isNull: require('./is/type/null'),
+    isError: require('./is/type/error'),
+    format: require('./format'),
+    inspect: require('./inspect'),
+    log: require('./log'),
 
     isObject: require('./is/type/object'),
 
