@@ -18,7 +18,7 @@ var util = module.exports = {
     isFunction: require('./is/type/function'),
 
     isDate: require('./is/type/date'),
-    isRegExp: require('./is/type/regExp'),
+    isRegExp: require('./is/type/regexp'),
     isArguments: require('./is/type/arguments'),
     isEmpty: require('./is/empty'),
     //just replace the ctor.super to superCtor,
