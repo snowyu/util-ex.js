@@ -243,4 +243,12 @@ describe "util functions", ->
       extend(org, add, (k,v)->k in ['a','c']).should.be.equal org
       org.should.be.deep.equal {a:3,c:2}
 
+  describe "is/string/int", ->
+    isInt = require('../src/is/string/int')
+    it "should test string whether integer", ->
+      assert.equal isInt("12883"), true
+      assert.equal isInt("012883"), true
+      assert.equal isInt("0x12883"), true
+      assert.equal isInt("128.83"), false
+      assert.equal isInt("128e83"), false
 
