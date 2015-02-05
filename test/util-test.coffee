@@ -222,4 +222,25 @@ describe "util functions", ->
       extend(org, add, third, {d:5, b:0}).should.be.equal org
       org.should.be.deep.equal {a:3, b:0, c:4, d:5}
 
+  describe "extend", ->
+    extend = require('../src/extend')
+    it "should extend an object", ->
+      org = {a: 1, b:2}
+      add = {a: 3}
+      extend(org, add).should.be.equal org
+      org.should.be.deep.equal {a:3, b:2}
+      extend org, b:4, c:2
+      org.should.be.deep.equal {a:3, b:4, c:2}
+    it "should extend many object", ->
+      org = {a: 1, b:2}
+      add = {a: 3}
+      third = {c:4}
+      extend(org, [add, third, {d:5, b:0}]).should.be.equal org
+      org.should.be.deep.equal {a:3, b:0, c:4, d:5}
+    it "should extend an object and filter properties", ->
+      org = {}
+      add = {a:3,b:3,c:2,d:123}
+      extend(org, add, (k,v)->k in ['a','c']).should.be.equal org
+      org.should.be.deep.equal {a:3,c:2}
+
 
