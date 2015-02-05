@@ -1,4 +1,4 @@
-var util = module.exports = {
+module.exports = {
     objectToString: require('./object-to-string'),
 
     isArray: Array.isArray,
@@ -63,3 +63,4 @@ var util = module.exports = {
     getConstructor: require('inherits-ex/lib/getConstructor'),
     inject: require('./inject')
 }
+
