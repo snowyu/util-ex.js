@@ -14,6 +14,8 @@ module.exports = {
     isUndefined: require('./is/type/undefined'),
     isNull: require('./is/type/null'),
     isError: require('./is/type/error'),
+    isPrimitive: require('./is/type/primitive'),
+
     format: require('./format'),
     inspect: require('./inspect'),
     log: require('./log'),
