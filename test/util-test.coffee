@@ -273,3 +273,26 @@ describe "util functions", ->
       assert.equal isJson('["a, 12883]'), false
       assert.equal isJson('["a, 12883]', true), true
 
+  describe "defineProperty", ->
+    defineProperty = require('../src/defineProperty')
+    it "should define a property", ->
+      obj = {}
+      defineProperty obj, 'prop', 128
+      obj.should.have.property 'prop', 128
+      keys = Object.keys obj
+      keys.should.have.length 0
+    it "should define an enumerable property", ->
+      obj = {}
+      defineProperty obj, 'prop', 128, enumerable:true
+      obj.should.have.property 'prop', 128
+      keys = Object.keys obj
+      keys.should.be.deep.equal ['prop']
+    it "should define a property with getter", ->
+      obj = {}
+      defineProperty obj, 'prop', null, 
+        get:->128
+        writable:false
+      obj.should.have.property 'prop', 128
+      keys = Object.keys obj
+      keys.should.have.length 0
+
