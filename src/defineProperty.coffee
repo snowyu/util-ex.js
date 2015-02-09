@@ -4,9 +4,11 @@ defineProperty  = Object.defineProperty
 module.exports  = (object, key, value, aOptions)->
   writable = true
   descriptor =
+    configurable: true
     enumerable: false
   if aOptions
     descriptor.enumerable = aOptions.enumerable is true
+    descriptor.configurable = aOptions.configurable isnt false
     if aOptions.get
       isAccessor = true
       descriptor.get = aOptions.get

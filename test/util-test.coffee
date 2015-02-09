@@ -295,4 +295,16 @@ describe "util functions", ->
       obj.should.have.property 'prop', 128
       keys = Object.keys obj
       keys.should.have.length 0
+    it "should define a configurable property", ->
+      obj = {}
+      defineProperty obj, 'prop', 128
+      obj.should.have.property 'prop', 128
+      delete obj.prop
+      obj.should.not.have.ownProperty 'prop'
+    it "should define a non-configurable property", ->
+      obj = {}
+      defineProperty obj, 'prop', 128, configurable:false
+      obj.should.have.property 'prop', 128
+      delete obj.prop
+      obj.should.have.ownProperty 'prop'
 
