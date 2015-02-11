@@ -55,6 +55,7 @@
     "test": "grunt test"
   },
   "dependencies": {
-    "inherits-ex": "~1.0.5"
+    "inherits-ex": "~1.0.5",
+    "xtend": "^4.0.0"
   }
 }
