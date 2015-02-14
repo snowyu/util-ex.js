@@ -34,6 +34,26 @@ describe "injectMethods", ->
     orgRun.should.have.been.calledWith 'my',2
     newRun.should.have.been.calledOnce
     newRun.should.have.been.calledWith 4,5
+  it "should inject new methods to an object", ->
+    class Test
+    newExec = sinon.spy (a,b)->
+        should.not.exist @super
+        @should.be.equal t
+    newRun = sinon.spy (a,b)->
+        should.not.exist @super
+        @should.be.equal t
+    injectMethods Test::,
+      'exec': newExec
+      'run':  newRun
+    Test::exec.should.be.equal newExec
+    Test::run.should.be.equal newRun
+    t = new Test
+    t.exec 1,2
+    newExec.should.have.been.calledOnce
+    newExec.should.have.been.calledWith 1,2
+    t.run 4,5
+    newRun.should.have.been.calledOnce
+    newRun.should.have.been.calledWith 4,5
   it "should inject (class) methods to an object", ->
     orgExec = sinon.spy()
     orgRun  = sinon.spy()

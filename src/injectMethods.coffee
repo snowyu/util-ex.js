@@ -1,7 +1,7 @@
 ### injectMethods(object, methods)
 
-inject methods to an object, you can use `this.super()` to call the original method.
-and use `this.self` to get the original `this` object.
+inject methods to an object. You can use `this.super()` to call the original method.
+and use `this.self` to get the original `this` object if the original method is exists.
 
 * methods*(object)*:
   * key: the method name to inject
@@ -14,13 +14,16 @@ module.exports = (aObject, aMethods) ->
     for k,v of aMethods
       continue if not isFunction v
       inherited = aObject[k]
-      aObject[k] = ((inherited, method)->
-        return ->
-          that = 
-            super: inherited
-            self: @
-          method.apply(that, arguments)
-      )(inherited, v)
+      if isFunction inherited
+        aObject[k] = ((inherited, method)->
+          return ->
+            that = 
+              super: inherited
+              self: @
+            method.apply(that, arguments)
+        )(inherited, v)
+      else
+        aObject[k] = v
 ###
 * scope*(object)*: the new function scope
 module.exports = (aObject, aMethods) ->
