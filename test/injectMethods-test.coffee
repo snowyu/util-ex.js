@@ -77,4 +77,29 @@ describe "injectMethods", ->
     orgRun.should.have.been.calledWith 'my',2
     newRun.should.have.been.calledOnce
     newRun.should.have.been.calledWith 4,5
+  it "should replace class methods to an object", ->
+    orgExec = sinon.spy()
+    orgRun  = sinon.spy()
+    class Test
+      @exec: orgExec
+      @run: orgRun
+    newExec = sinon.spy (a,b)->
+        @should.not.ownProperty 'super'
+    newRun = sinon.spy (a,b)->
+        @super("my",2)
+    injectMethods Test,
+      'exec': newExec
+      'run':  newRun
+    ,
+      replacedMethods:
+        'exec': true
+    Test.exec(1,2)
+    orgExec.should.have.not.been.called
+    newExec.should.have.been.calledOnce
+    newExec.should.have.been.calledWith 1,2
+    Test.run(4,5)
+    orgRun.should.have.been.calledOnce
+    orgRun.should.have.been.calledWith 'my',2
+    newRun.should.have.been.calledOnce
+    newRun.should.have.been.calledWith 4,5
 

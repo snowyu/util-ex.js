@@ -9,12 +9,13 @@ and use `this.self` to get the original `this` object if the original method is 
 ###
 isFunction  = require('./is/type/function')
 isArray     = require('./is/type/array')
-module.exports = (aObject, aMethods) ->
+module.exports = (aObject, aMethods, aOptions) ->
+  replacedMethods = aOptions.replacedMethods if aOptions and aOptions.replacedMethods
   if aMethods instanceof Object
     for k,v of aMethods
       continue if not isFunction v
       inherited = aObject[k]
-      if isFunction inherited
+      if isFunction(inherited) and not (replacedMethods and replacedMethods[k])
         aObject[k] = ((inherited, method)->
           return ->
             that = 
