@@ -8,30 +8,4 @@
  *    return log(arg1+arg2);
  *  }"
  */
-var isArray   = require('./is/type/array');
-var isString  = require('./is/type/string');
-var isObject  = require('./is/type/object');
-
-module.exports = function(name, args, body, scope, values) {
-  if (arguments.length === 1) return Function("function "+name+"(){}\nreturn "+name+";")();
-  if (isString(args)) {
-      values = scope;
-      scope = body;
-      body = args;
-      args = [];
-  } else if (args == null) {
-    args = [];
-  }
-  if (!isArray(scope) || !isArray(values)) {
-      if (isObject(scope)) {
-          var keys = Object.keys(scope);
-          values = keys.map(function(k) { return scope[k]; });
-          scope = keys;
-      } else {
-          values = [];
-          scope = [];
-      }
-  }
-  return Function(scope, "function "+name+"("+args.join(", ")+") {\n"+body+"\n}\nreturn "+name+";").apply(null, values);
-}
-
+module.exports = require('./new-function')
