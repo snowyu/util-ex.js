@@ -18,13 +18,13 @@ isArray     = require('./is/type/array')
 isString    = require('./is/type/string')
 isObject    = require('./is/type/object')
 isFunction  = require('./is/string/function')
+createFunc  = require('./_create-function')
 
 module.exports = (name, args, body, scope, values) ->
   if arguments.length == 1
-    if isFunction(name)
-      return Function('return ' + name + ';')()
-    else
-      return Function('return function ' + name + '(){};')()
+    name = 'function ' + name + '(){}' if not isFunction(name)
+    return createFunc name
+      
   if isFunction(name)
     scope = args
     values = body
@@ -37,14 +37,6 @@ module.exports = (name, args, body, scope, values) ->
     else if not args?
       args = []
     name = 'function ' + name + '(' + args.join(', ') + ') {\n' + body + '\n}'
-  if !isArray(scope) or !isArray(values)
-    if isObject(scope)
-      keys = Object.keys(scope)
-      values = keys.map((k) ->
-        scope[k]
-      )
-      scope = keys
-    else
-      values = []
-      scope = []
-  Function(scope, 'return ' + name + ';').apply null, values
+
+  createFunc name, scope, values
+  #Function(scope, 'return ' + name + ';').apply null, values
