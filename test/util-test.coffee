@@ -242,36 +242,6 @@ describe "extend", ->
     extend(org, add, (k,v)->k in ['a','c']).should.be.equal org
     org.should.be.deep.equal {a:3,c:2}
 
-describe "is/string/int", ->
-  isInt = require('../src/is/string/int')
-  it "should test string whether integer", ->
-    assert.equal isInt("12883"), true
-    assert.equal isInt("012883"), true
-    assert.equal isInt("0x12883"), true
-    assert.equal isInt("128.83"), false
-    assert.equal isInt("128e83"), false
-describe "is/string/json", ->
-  isJson = require('../src/is/string/json')
-  it "should test string integer whether json", ->
-    assert.equal isJson("12883"), true
-    assert.equal isJson("012883"), true
-    assert.equal isJson("0x12883"), false
-    assert.equal isJson("128.83"), true
-    assert.equal isJson("128e83"), true
-  it "should test string whether json", ->
-    assert.equal isJson("'12883'"), false
-    assert.equal isJson('"012883"'), true
-    assert.equal isJson("'0x12883\""), false
-  it "should test string object whether json", ->
-    assert.equal isJson('{"a":12883}'), true
-    assert.equal isJson("{a:12883}"), false
-    assert.equal isJson("{a:12883,b}", true), true #almost json = true
-  it "should test string array whether json", ->
-    assert.equal isJson('["a", 12883]'), true
-    assert.equal isJson('["a", 12883'), false
-    assert.equal isJson('["a, 12883]'), false
-    assert.equal isJson('["a, 12883]', true), true
-
 describe "defineProperty", ->
   defineProperty = require('../src/defineProperty')
   it "should define a property", ->
