@@ -9,6 +9,15 @@ log             = require "../src/log"
 
 chai.use(sinonChai)
 
+describe "isEmptyObject", ->
+  isEmpty = util.isEmptyObject
+
+  it "should be empty", ->
+    assert.ok isEmpty(null)
+    assert.ok isEmpty({})
+    assert.notOk isEmpty(length: 0)
+    assert.notOk isEmpty(k: undefined)
+
 describe "isEmpty", ->
   isEmpty = util.isEmpty
   isEmptyFunction = util.isEmptyFunction

@@ -28,6 +28,7 @@ module.exports = {
     isRegExp: require('./is/type/regexp'),
     isArguments: require('./is/type/arguments'),
     isEmpty: require('./is/empty'),
+    isEmptyObject: require('./is/empty-object'),
     //just replace the ctor.super to superCtor,
     inheritsDirectly: require('inherits-ex/lib/inheritsDirectly'),
     /**
