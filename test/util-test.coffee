@@ -285,4 +285,8 @@ describe "defineProperty", ->
     obj.should.have.property 'prop', 128
     delete obj.prop
     obj.should.have.ownProperty 'prop'
+  it "should define a property via options.value", ->
+    obj = {}
+    defineProperty obj, 'prop', undefined, configurable:false, value:128
+    obj.should.have.property 'prop', 128
 

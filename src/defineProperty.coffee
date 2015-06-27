@@ -16,6 +16,7 @@ module.exports  = (object, key, value, aOptions)->
       isAccessor = true
       descriptor.set = aOptions.set
     writable = aOptions.writable isnt false
+    value = aOptions.value if value is undefined
   if not isAccessor
     descriptor.writable = writable
     descriptor.value = value
