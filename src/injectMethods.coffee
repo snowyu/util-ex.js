@@ -7,7 +7,8 @@ and use `this.self` to get the original `this` object if the original method is 
   * key: the method name to inject
   * value: the new method function
 ###
-isFunction  = require('./is/type/function')
+isFunction   = require('./is/type/function')
+injectMethod = require('./injectMethod')
 module.exports = (aObject, aMethods, aOptions) ->
   replacedMethods = aOptions.replacedMethods if aOptions and aOptions.replacedMethods
   if aMethods instanceof Object
@@ -15,13 +16,7 @@ module.exports = (aObject, aMethods, aOptions) ->
       continue if not isFunction v
       inherited = aObject[k]
       if isFunction(inherited) and not (replacedMethods and replacedMethods[k])
-        aObject[k] = ((inherited, method)->
-          return ->
-            that = 
-              super: inherited
-              self: @
-            method.apply(that, arguments)
-        )(inherited, v)
+        injectMethod(aObject, k, v)
       else
         aObject[k] = v
 ###
