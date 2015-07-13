@@ -20,7 +20,7 @@ module.exports = (aObject, aMethodName, aNewMethod) ->
     aObject[aMethodName] = ((inherited, method)->
       return ->
         that = 
-          super: inherited
+          super: => inherited.apply(@,arguments)
           self: @
         method.apply(that, arguments)
     )(inherited, aNewMethod)

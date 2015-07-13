@@ -8,18 +8,18 @@ chai.use(sinonChai)
 injectMethod  = require '../src/injectMethod'
 
 describe "injectMethod", ->
-  it "should inject method to an object", ->
-    orgExec = sinon.spy()
-    orgRun  = sinon.spy()
+  it.only "should inject method to an object", ->
+    orgExec = sinon.spy -> @should.be.equal t
+    orgRun  = sinon.spy -> @should.be.equal t
     class Test
       exec: orgExec
       run: orgRun
     newExec = sinon.spy (a,b)->
         @super("hi",1)
-        @.self.should.be.equal t
+        @self.should.be.equal t
     newRun = sinon.spy (a,b)->
         @super("my",2)
-        @.self.should.be.equal t
+        @self.should.be.equal t
     injectMethod(Test::,'exec', newExec).should.be.true
     t = new Test
     t.exec(1,2)
