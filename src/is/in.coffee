@@ -2,8 +2,10 @@ isRegExp        = require('./type/regexp')
 
 module.exports = (str, list, caseSensitive)->
   str = str.toLowerCase() unless caseSensitive
-  for item in list
+  for item,i in list
     if isRegExp item
+      unless caseSensitive or item.ignoreCase
+        list[i] = item  = RegExp item.source, 'i'
       result = item.test str
       break if result
     else
