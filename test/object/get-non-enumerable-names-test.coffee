@@ -5,10 +5,10 @@ assert          = chai.assert
 should          = chai.should()
 chai.use(sinonChai)
 
-defineProperty = require '../src/defineProperty'
+defineProperty = require '../../src/defineProperty'
 describe "get-non-enumerable-names", ->
-  getNames = require('../src/get-non-enumerable-names')
-  
+  getNames = require('../../src/get-non-enumerable-names')
+
   it "should get non-enumerable names", ->
     test = hi:12, thay: "asf"
     defineProperty test, 'non1', 1
@@ -18,7 +18,7 @@ describe "get-non-enumerable-names", ->
       'non1'
       'non2'
     ]
-      
+
   it "should get non-enumerable names with empty object", ->
     test = {}
     result = getNames test
