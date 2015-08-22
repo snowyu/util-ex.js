@@ -1,5 +1,11 @@
 isObject        = require './is/type/object'
 defineProperty  = Object.defineProperty
+if !defineProperty
+  defineProperty = (obj, key, descriptor)->
+    value = descriptor.value if descriptor
+    obj[key] = value
+    return
+
 
 module.exports  = (object, key, value, aOptions)->
   writable = true
