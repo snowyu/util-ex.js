@@ -9,9 +9,9 @@ This package modifies and enhances the standard `util` from node.js
 
 # API
 
-## definePropery
+## defineProperty
 
-    definePropery(object, key, value[, aOptions])
+    defineProperty(object, key, value[, aOptions])
 
 Define a porperty on the object.
 
@@ -19,11 +19,11 @@ Define a porperty on the object.
 ### usage
 
 ```coffee
-definePropery = require 'util-ex/lib/definePropery'
+defineProperty = require 'util-ex/lib/defineProperty'
 
 propValue = ''
-definePropery this, 'prop', 'simpleValue'
-definePropery this, 'prop', undefined,
+defineProperty this, 'prop', 'simpleValue'
+defineProperty this, 'prop', undefined,
   get: -> propValue
   set: (value) -> propValue = value
 
