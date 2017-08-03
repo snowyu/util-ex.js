@@ -39,14 +39,14 @@ describe "isEmpty", ->
 
   it "should be empty function", ->
     emptyFunc = ->
-    isEmpty(emptyFunc).should.be.true "emptyFunc"
+    isEmpty(emptyFunc).should.be.true
     emptyFunc = (abc, ase)->
-    isEmpty(emptyFunc).should.be.true "emptyFunc2"
+    isEmpty(emptyFunc).should.be.true
     isEmptyFunction("function(arg1, arg2, arg3){\n}").should.be.true
     isEmptyFunction("function(arg1, arg2, arg3){\n;}").should.be.true
     isEmptyFunction("function   asFn  (arg1, arg2, arg3){\n\n;}").should.be.true
     isEmptyFunction("function(arg1, arg2, arg3){abs;}").should.not.be.true
-    
+
 describe "inject", ->
   inject = util.inject
   it "should inject a function before execution", ->
@@ -79,7 +79,7 @@ describe "inject", ->
     runOrg = sinon.spy (a,b,c)->[a,b,c]
     onAfter = sinon.spy (a,b,c, result, isDenied)->
       a.should.be.equal 1
-      b.should.be.equal "b" 
+      b.should.be.equal "b"
       c.should.be.equal 3
       result.should.be.deep.equal [1,"b",3]
       isDenied.should.be.false
@@ -94,7 +94,7 @@ describe "inject", ->
     runOrg = sinon.spy (a,b,c)->[a,b,c]
     onAfter = sinon.spy (a,b,c, result, isDenied)->
       a.should.be.equal 1
-      b.should.be.equal "b" 
+      b.should.be.equal "b"
       c.should.be.equal 3
       result.should.be.deep.equal [1,"b",3]
       isDenied.should.be.false
@@ -110,7 +110,7 @@ describe "inject", ->
     onBefore = sinon.spy()
     onAfter = sinon.spy (a,b,c, result, isDenied)->
       a.should.be.equal 1
-      b.should.be.equal "b" 
+      b.should.be.equal "b"
       c.should.be.equal 3
       result.should.be.deep.equal [1,"b",3]
       isDenied.should.be.false
@@ -267,7 +267,7 @@ describe "defineProperty", ->
     keys.should.be.deep.equal ['prop']
   it "should define a property with getter", ->
     obj = {}
-    defineProperty obj, 'prop', null, 
+    defineProperty obj, 'prop', null,
       get:->128
       writable:false
     obj.should.have.property 'prop', 128
