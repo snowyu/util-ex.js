@@ -33,7 +33,13 @@ var support = {};
   support.argsClass = toString.call(arguments) == argsClass;
 }(1));
 
-module.exports = function(value) {
+/**
+ * Checks if a given value is empty.
+ *
+ * @param {*} value - The value to check.
+ * @returns {boolean} - Returns `true` if the value is empty, else `false`.
+ */
+module.exports = function isEmpty(value) {
   var result = true;
   if (!value) {
     return result;

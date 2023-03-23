@@ -1,4 +1,4 @@
-var inspect = require('./inspect');
+// var inspect = require('./inspect');
 var format  = require('./format');
 
 function pad(n) {
@@ -18,7 +18,12 @@ function timestamp() {
   return [d.getDate(), months[d.getMonth()], time].join(' ');
 }
 
-module.exports = function() {
+/**
+ * Logs a message to the console with a timestamp prefix.
+ *
+ * @param {...any} args - The arguments to log to the console.
+ */
+module.exports = function log() {
   console.log('%s - %s', timestamp(), format.apply(exports, arguments));
 };
 

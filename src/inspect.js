@@ -14,15 +14,22 @@ var isString    = require('./is/type/string');
 var hasOwnProperty = Object.prototype.hasOwnProperty;
 
 
+/* legacy: obj, showHidden, depth, colors*/
 /**
- * Echos the value of a value. Trys to print the value out
+ * Return a string representation of an object, including its properties and nested objects, with customizable options.
+ *
+ * Echos the value of a value. Try to print the value out
  * in the best way possible given the different types.
  *
- * @param {Object} obj The object to print out.
- * @param {Object} opts Optional options object that alters the output.
+ * @param {*} obj - The object to inspect.
+ * @param {object|boolean=} opts - Customizable options to control the behavior of the inspection. If it's a boolean, it sets the "showHidden" option.
+ * @param {boolean=false} opts.showHidden - Whether to show non-enumerable properties of objects.
+ * @param {number=2} opts.depth - How many levels deep nested objects are inspected.
+ * @param {boolean=false} opts.colors - Whether to color the output.
+ * @param {boolean=true} opts.customInspect - Whether to inspect custom inspect functions on objects.
+ * @returns {string} The formatted string representing the object.
  */
-/* legacy: obj, showHidden, depth, colors*/
-module.exports = inspect = function (obj, opts) {
+function inspect(obj, opts) {
   // default options
   var ctx = {
     seen: [],
@@ -46,7 +53,7 @@ module.exports = inspect = function (obj, opts) {
   if (ctx.colors) ctx.stylize = stylizeWithColor;
   return formatValue(ctx, obj, ctx.depth);
 }
-
+module.exports = inspect
 
 // http://en.wikipedia.org/wiki/ANSI_escape_code#graphics
 inspect.colors = {
