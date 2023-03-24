@@ -70,14 +70,17 @@ var arraySlice = Array.prototype.slice;
  * - If `isDenied` parameter is true, it means `aOrgFunc` was not called during execution of the wrapped function.
  *
  * @example
+ * ```js
  * // Wrapping a function with injectFunc
  * const originalFunc = (a, b) => a + b;
  * const beforeFunc = (a, b) => console.log(`Before execution: a = ${a}, b = ${b}`);
  * const afterFunc = (result) => console.log(`After execution: result = ${result}`);
  * const wrappedFunc = injectFunc(originalFunc, beforeFunc, afterFunc);
  * const result = wrappedFunc(1, 2); // Logs "Before execution: a = 1, b = 2" and "After execution: result = 3"
+ * ```
  *
  * @example
+ * ```js
  * // Wrapping a function with injectFunc and modifying arguments and return value
  * const Arguments = injectFunc.Arguments
  * const originalFunc = (a, b) => a + b;
@@ -92,8 +95,10 @@ var arraySlice = Array.prototype.slice;
  * const wrappedFunc = injectFunc(originalFunc, beforeFunc, afterFunc);
  * const result = wrappedFunc(1, 2); // Logs "Before execution: a = 1, b = 2", "After execution: result = 6, isDenied = false"
  * console.log(result); // Output: 12
+ * ```
  *
  * @example
+ * ```js
  * // Wrapping a function with injectFunc and not executing the original function
  * const originalFunc = (a, b) => a + b;
  * const beforeFunc = (a, b) => {
@@ -107,7 +112,9 @@ var arraySlice = Array.prototype.slice;
  * const wrappedFunc = injectFunc(originalFunc, beforeFunc, afterFunc);
  * const result = wrappedFunc(1, 2); // Logs "Before execution: a = 1, b = 2", "After execution: result = Modified return value, isDenied = true"
  * console.log(result); // Output: "Modified return value"
+ * ```
  * @example
+ * ```js
  * // Wrapping a function with injectFunc and getting the original function's error
  * const originalFunc = () => {
  *   throw new Error("Original function error");
@@ -120,7 +127,7 @@ var arraySlice = Array.prototype.slice;
  * };
  * const wrappedFunc = injectFunc(originalFunc, beforeFunc, afterFunc);
  * wrappedFunc(); // Logs "Before execution", "After execution: result = [Error: Original function error], isDenied = false"
- *
+ * ```
  *
  */
 function injectFunc( aOrgFunc, aBeforeExec, aAfterExec ) {

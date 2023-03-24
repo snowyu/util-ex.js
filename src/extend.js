@@ -4,8 +4,8 @@ var isFunction = require('./is/type/function');
 /**
  * A filter function used to determine which properties to copy.
  * @callback FilterFn
- * @param {*} key
- * @param {*} value
+ * @param {any} key
+ * @param {any} value
  * @returns {boolean} returns `true` for properties to be copied.
  */
 
