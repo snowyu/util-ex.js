@@ -9,6 +9,8 @@ This package modifies and enhances the standard `util` from node.js
 
 # API
 
+Full API Documents is here: [Docs](./docs/modules.md)
+
 ## defineProperty
 
     defineProperty(object, key, value[, aOptions])
@@ -18,15 +20,17 @@ Define a porperty on the object.
 
 ### usage
 
-```coffee
-defineProperty = require 'util-ex/lib/defineProperty'
+```js
+const defineProperty = require('util-ex/lib/defineProperty')
 
-propValue = ''
-defineProperty this, 'prop', 'simpleValue'
-defineProperty this, 'prop', undefined,
-  get: -> propValue
-  set: (value) -> propValue = value
+let propValue = ''
+const obj = {}
 
+defineProperty(obj, 'prop', 'simpleValue')
+defineProperty(obj, 'prop', undefined, {
+  get() {return propValue}
+  set(value) {propValue = value}
+})
 ```
 
 ## newFunction
@@ -34,7 +38,7 @@ defineProperty this, 'prop', undefined,
     newFunction(name, arguments, body[, scope[, values]])
     newFunction(functionString[, scope[, values]])
 
-create a function via sring.
+create a function via string.
 
 ```js
 newFunction = require('util-ex/lib/new-function')
@@ -45,8 +49,9 @@ newFunction('function yourFuncName(arg1, arg2){return log(arg1+arg2);}', {log:co
 newFunction('function yourFuncName(arg1, arg2){return log(arg1+arg2);}', ['log'], [console.log])
 
 //fn.toString() is :
+/*
  "function yourFuncName(arg1, arg2) {
     return log(arg1+arg2);
  }"
-
+*/
 ```
