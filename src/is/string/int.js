@@ -1,4 +1,4 @@
-var int = /^(?:[-+]?(?:0|(?:0[xX])?[0-9]*))$/;
+const int = /^(?:[-+]?(?:0|(?:0[xX])?[0-9]*))$/;
 
 /**
  *   Checks if a given string represents an integer number.
@@ -11,6 +11,7 @@ var int = /^(?:[-+]?(?:0|(?:0[xX])?[0-9]*))$/;
  *   isInt('12.3'); // false
  *   isInt('1e3'); // false
  */
-module.exports = function isInt(str) {
+export function isInt(str) {
   return str !== '' && int.test(str);
 };
+export default isInt;

@@ -1,10 +1,8 @@
-// var shims     = require('./_shims');
-var inspect   = require('./inspect');
-var isString  = require('./is/type/string');
-var isNull    = require('./is/type/null');
-var isObject  = require('./is/type/object');
-
-var formatRegExp = /%[sdj%]/g;
+import isObject from "./is/type/object";
+import isNull from "./is/type/null";
+import isString from "./is/type/string";
+import inspect from "./inspect";
+const formatRegExp = /%[sdj%]/g;
 /**
  * Formats a string using placeholder tokens.
  *
@@ -26,25 +24,28 @@ var formatRegExp = /%[sdj%]/g;
  * format('%j', { foo: 'bar' }); // '{"foo":"bar"}'
  * format('no placeholders', 'needed'); // 'no placeholders needed'
  */
-function format(f) {
-  var i;
+export function format(f) {
+  let i;
   if (!isString(f)) {
-    var objects = [];
+    const objects = [];
     for (i = 0; i < arguments.length; i++) {
       objects.push(inspect(arguments[i]));
     }
     return objects.join(' ');
   }
-
   i = 1;
-  var args = arguments;
-  var len = args.length;
-  var str = String(f).replace(formatRegExp, function(x) {
-    if (x === '%%') return '%';
-    if (i >= len) return x;
+  const args = arguments;
+  const len = args.length;
+  let str = String(f).replace(formatRegExp, (x) => {
+    if (x === '%%') 
+return '%';
+    if (i >= len) 
+return x;
     switch (x) {
-      case '%s': return String(args[i++]);
-      case '%d': return Number(args[i++]);
+      case '%s':
+        return String(args[i++]);
+      case '%d':
+        return Number(args[i++]);
       case '%j':
         try {
           return JSON.stringify(args[i++]);
@@ -55,14 +56,14 @@ function format(f) {
         return x;
     }
   });
-  for (var x = args[i]; i < len; x = args[++i]) {
+  for (let x = args[i]; i < len; x = args[++i]) {
     if (isNull(x) || !isObject(x)) {
-      str += ' ' + x;
+      str += ` ${  x}`;
     } else {
-      str += ' ' + inspect(x);
+      str += ` ${  inspect(x)}`;
     }
   }
   return str;
 };
 
-module.exports = format
+export default format;

@@ -1,5 +1,5 @@
-var getKeys = Object.keys;
-var getOwnPropertyNames = Object.getOwnPropertyNames;
+const getKeys = Object.keys;
+const getOwnPropertyNames = Object.getOwnPropertyNames;
 
 /**
  * Returns an array of non-enumerable property names of an object.
@@ -16,14 +16,15 @@ var getOwnPropertyNames = Object.getOwnPropertyNames;
  *
  * var nonEnumProps = getNonEnumerableNames(obj); // nonEnumProps = ['a']
  */
-module.exports = function getNonEnumerableNames(aObject) {
-  var keys, result;
+export function getNonEnumerableNames(aObject) {
+  let keys, result;
   result = getOwnPropertyNames(aObject);
   if (result.length) {
     keys = getKeys(aObject);
-    result = result.filter(function(k) {
-      return keys.indexOf(k) === -1;
+    result = result.filter((k) => {
+      return !keys.includes(k);
     });
   }
   return result;
 };
+export default getNonEnumerableNames;

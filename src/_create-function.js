@@ -12,8 +12,8 @@
  *  }"
  */
 
-var isArray = require('./is/type/array');
-var isObject = require('./is/type/object');
+import isObject from "./is/type/object";
+import isArray from "./is/type/array";
 
 /**
  * Create a function using the given body and scope.
@@ -27,15 +27,15 @@ var isObject = require('./is/type/object');
  *   var fn = _createFunction('function yourFuncName(arg1, arg2){log(arg1+arg2);}', {log:console.log});
  *   fn(2,3); //print 5
  */
-module.exports = function _createFunction(body, scope, values) {
-  var keys;
+export function _createFunction(body, scope, values) {
   if (arguments.length === 1) {
-    return Function('return ' + body)();
+    // eslint-disable-next-line no-new-func
+    return Function(`return ${  body}`)();
   } else {
     if (!isArray(scope) || !isArray(values)) {
       if (isObject(scope)) {
-        keys = Object.keys(scope);
-        values = keys.map(function(k) {
+        const keys = Object.keys(scope);
+        values = keys.map((k) => {
           return scope[k];
         });
         scope = keys;
@@ -44,6 +44,9 @@ module.exports = function _createFunction(body, scope, values) {
         scope = [];
       }
     }
-    return Function(scope, 'return ' + body).apply(null, values);
+    // eslint-disable-next-line no-new-func
+    return Function(scope, `return ${  body}`).apply(null, values);
   }
-};
+}
+
+export default _createFunction;

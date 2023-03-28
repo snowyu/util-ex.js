@@ -1,28 +1,39 @@
-var isEmptyFunction = require('./empty-function');
-var isFunction = require('./type/function');
-var isArguments = require('./type/arguments');
-var hasOwnProperty = Object.prototype.hasOwnProperty;
-var getOwnPropertyNames = Object.getOwnPropertyNames; //>=ECMAScript5 only
+import isArguments from "./type/arguments";
+import isFunction from "./type/function";
+import isEmptyFunction from "./empty-function";
 
-var argsClass = '[object Arguments]',
-    arrayClass = '[object Array]',
-    boolClass = '[object Boolean]',
-    dateClass = '[object Date]',
-    errorClass = '[object Error]',
-    funcClass = '[object Function]',
-    numberClass = '[object Number]',
-    objectClass = '[object Object]',
-    regexpClass = '[object RegExp]',
-    stringClass = '[object String]';
-var support = {};
-(function() {
-  var ctor = function() { this.x = 1; },
-      object = { '0': 1, 'length': 1 },
-      props = [];
+const getOwnPropertyNames = Object.getOwnPropertyNames; // >=ECMAScript5 only
 
-  ctor.prototype = { 'valueOf': 1, 'y': 1 };
-  for (var key in new ctor) { props.push(key); }
-  for (key in arguments) { }
+const argsClass = '[object Arguments]';
+const arrayClass = '[object Array]';
+// const boolClass = '[object Boolean]';
+// const dateClass = '[object Date]';
+// const errorClass = '[object Error]';
+const funcClass = '[object Function]';
+// const numberClass = '[object Number]';
+const objectClass = '[object Object]';
+// const regexpClass = '[object RegExp]';
+const stringClass = '[object String]';
+
+const support = {};
+
+(function () {
+  const Ctor = function () {
+      this.x = 1;
+    };
+  // const object = {
+  //   '0': 1,
+  //   'length': 1
+  // };
+  const props = [];
+  Ctor.prototype = {
+    'valueOf': 1,
+    'y': 1
+  };
+  for (const key in new Ctor()) {
+    props.push(key);
+  }
+  // for (let key in arguments) {}
 
   /**
    * Detect if an `arguments` object's [[Class]] is resolvable (all but Firefox < 4, IE < 9).
@@ -30,8 +41,8 @@ var support = {};
    * @memberOf _.support
    * @type boolean
    */
-  support.argsClass = toString.call(arguments) == argsClass;
-}(1));
+  support.argsClass = toString.call(arguments) === argsClass;
+})(1);
 
 /**
  * Checks if a given value is empty.
@@ -39,30 +50,27 @@ var support = {};
  * @param {*} value - The value to check.
  * @returns {boolean} - Returns `true` if the value is empty, else `false`.
  */
-module.exports = function isEmpty(value) {
-  var result = true;
+export function isEmpty(value) {
+  const result = true;
   if (!value) {
     return result;
   }
-  var className = toString.call(value),
-      length = value.length;
-
-  if ((className == arrayClass || className == stringClass ||
-      (support.argsClass ? className == argsClass : isArguments(value))) ||
-      (className == objectClass && typeof length == 'number' && isFunction(value.splice))) {
+  const className = toString.call(value);
+    const length = value.length;
+  if (className === arrayClass || className === stringClass ||
+      (support.argsClass ? className === argsClass : isArguments(value)) ||
+      className === objectClass && typeof length === 'number' && isFunction(value.splice)) {
     return !length;
   }
-
-  if (className == funcClass) {
-    return isEmptyFunction(value)
+  if (className === funcClass) {
+    return isEmptyFunction(value);
   }
-
-  if (getOwnPropertyNames(value).length > 0) return false;
+  if (getOwnPropertyNames(value).length > 0) {return false;}
   /*
   for (var key in value) {
     if (hasOwnProperty.call(value, key)) return false;
   }
   */
   return result;
-}
-
+};
+export default isEmpty;

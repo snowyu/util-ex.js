@@ -1,4 +1,4 @@
-var isRegExp = require('./type/regexp');
+import isRegExp from "./type/regexp";
 
 /**
  *   Checks if a string matches any item in a list of strings or regular expressions.
@@ -13,8 +13,8 @@ var isRegExp = require('./type/regexp');
  * console.log(isInList(str, list)); // true (no caseSensitive)
  * console.log(isInList(str, list, true)); // false (caseSensitive)
  */
-module.exports = function isInList(str, list, caseSensitive) {
-  var i, item, j, len, result;
+export function isInList(str, list, caseSensitive) {
+  let i, item, j, len, result;
   if (!caseSensitive) {
     str = str.toLowerCase();
   }
@@ -41,3 +41,4 @@ module.exports = function isInList(str, list, caseSensitive) {
   }
   return result;
 };
+export default isInList;

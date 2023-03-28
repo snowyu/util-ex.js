@@ -4,7 +4,7 @@
  * @param {*} arg - The argument to check.
  * @returns {boolean} Whether the argument is a boolean.
  */
-module.exports = function isBool(arg) {
+export function isBool(arg) {
   return typeof arg === 'boolean';
-}
-
+};
+export default isBool;

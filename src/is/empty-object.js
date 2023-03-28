@@ -3,10 +3,11 @@
  * @param {Object} obj - The object to be checked.
  * @returns {boolean} - Whether the object is empty or not.
  */
-module.exports = function isEmptyObject(obj) {
-    var k;
-    for (k in obj) {
-        return false;
-    }
-    return true;
-}
+export function isEmptyObject(obj) {
+  // eslint-disable-next-line no-unreachable-loop
+  for (const k in obj) {
+    return false;
+  }
+  return true;
+};
+export default isEmptyObject;

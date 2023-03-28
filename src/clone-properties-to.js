@@ -1,7 +1,7 @@
-var defineProperty = require('./defineProperty');
+import defineProperty from "./defineProperty";
 
-var getAllOwnKeys = Object.getOwnPropertyNames;
-var getDescriptor = Object.getOwnPropertyDescriptor;
+const getAllOwnKeys = Object.getOwnPropertyNames;
+const getDescriptor = Object.getOwnPropertyDescriptor;
 
 /**
  * Clone all own properties of a source object to a destination object.
@@ -22,15 +22,14 @@ var getDescriptor = Object.getOwnPropertyDescriptor;
  *
  * clonePropertiesTo(obj2, obj1); // obj2 = { a: 1, b: 2, c: 3 }
  */
-function clonePropertiesTo(dest, src) {
-  var attr, i, k, len, ref;
-  ref = getAllOwnKeys(src);
-  for (i = 0, len = ref.length; i < len; i++) {
-    k = ref[i];
-    attr = getDescriptor(src, k);
-    defineProperty(dest, k, void 0, attr);
+export function clonePropertiesTo(dest, src) {
+  const ref = getAllOwnKeys(src);
+  for (let i = 0; i < ref.length; i++) {
+    const k = ref[i];
+    const attr = getDescriptor(src, k);
+    defineProperty(dest, k, undefined, attr);
   }
   return dest;
 };
 
-module.exports = clonePropertiesTo
+export default clonePropertiesTo;

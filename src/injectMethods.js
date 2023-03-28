@@ -1,3 +1,5 @@
+import injectMethod from "./injectMethod";
+import isFunction from "./is/type/function";
 /* injectMethods(object, methods)
 
 inject methods to an object. You can use `this.super()` to call the original method.
@@ -7,9 +9,6 @@ and use `this.self` to get the original `this` object if the original method is 
   * key: the method name to inject
   * value: the new method function
  */
-
-var isFunction = require('./is/type/function');
-var injectMethod = require('./injectMethod');
 
 /**
  * Injects multiple methods into an object, optionally preserving access to the original methods via "`super`" and original instance via "`self`".
@@ -52,19 +51,19 @@ var injectMethod = require('./injectMethod');
  * obj.method2(); // Output: World
  * obj.method3(); // Output: New World
  */
-module.exports = function injectMethods(aObject, aMethods, aOptions) {
-  var inherited, k, replacedMethods, results, v;
+export function injectMethods(aObject, aMethods, aOptions) {
+  let replacedMethods;
   if (aOptions && aOptions.replacedMethods) {
     replacedMethods = aOptions.replacedMethods;
   }
   if (aMethods instanceof Object) {
-    results = [];
-    for (k in aMethods) {
-      v = aMethods[k];
+    const results = [];
+    for (const k in aMethods) {
+      const v = aMethods[k];
       if (!isFunction(v)) {
         continue;
       }
-      inherited = aObject[k];
+      const inherited = aObject[k];
       if (isFunction(inherited) && !(replacedMethods && replacedMethods[k])) {
         results.push(injectMethod(aObject, k, v));
       } else {
@@ -100,3 +99,4 @@ module.exports = (aObject, aMethods) ->
           Function(aScope, "return "+v).apply(@, values)
         )(vOrgMethod)
  */
+export default injectMethods;

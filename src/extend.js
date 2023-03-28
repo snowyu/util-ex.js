@@ -1,5 +1,5 @@
-var isArray = require('./is/type/array');
-var isFunction = require('./is/type/function');
+import isFunction from "./is/type/function";
+import isArray from "./is/type/array";
 
 /**
  * A filter function used to determine which properties to copy.
@@ -32,8 +32,8 @@ var isFunction = require('./is/type/function');
  * extend(dest, [src1, src2], filter);
  * // dest => { a: 1, c: 3 }
  */
-module.exports = function extend(dest, sources, filter) {
-  var i, j, k, key, keys, l, len, len1, len2, len3, src, value;
+export function extend(dest, sources, filter) {
+  let i, j, k, key, keys, l, len, len1, len2, len3, src, value;
   if (!isArray(sources)) {
     sources = [sources];
   }
@@ -67,3 +67,4 @@ module.exports = function extend(dest, sources, filter) {
   }
   return dest;
 };
+export default extend;

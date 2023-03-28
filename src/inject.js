@@ -1,54 +1,48 @@
-// var inherits = require('inherits-ex/lib/inheritsDirectly');
-var defineProperty = require('inherits-ex/lib/defineProperty');
-var isOldArguments = require('./is/type/arguments');
-var arraySlice = Array.prototype.slice;
+import defineProperty from "inherits-ex/lib/defineProperty";
+import isOldArguments from "./is/type/arguments";
+const arraySlice = Array.prototype.slice;
 
-    /*
-    @desc  inject the function
-    @param aOrgFunc     the original function to be injected.
-    @param aBeforeExec  this is called before the execution of the aOrgFunc.
-                        you must return the arguments(new Arguments(arguments))
-                        if you wanna modify the arguments value of the aOrgFunc.
-                        it will stop the execution of the aOrgFunc if you return
-                        a value not an Arguments object nor a undefined value
-    @param aAfterExec   this is called after the execution of the aOrgFunc.
-                        you must add a result argument at the last argument of the
-                        aAfterExec function if you wanna get the result value of the aOrgFunc.
-                        you must add a isDenied argument following the result argument if you
-                        wanna know whether the aOrgFunc is executed.
-                        you must return the result if you wanna modify the result value of the aOrgFunc .
-
-    @Usage  Obj.prototype.Method = inject(Obj.prototype.Method, aFunctionBeforeExec[, aFunctionAfterExec]);
-    @version 1.1
-    @author  Aimingoo&Riceball
-    @history
-      V1.0 -- first released.
-      V1.1 --
-        Supports to deny the aOrgFunc execution in aBeforeExec.
-        Supports around in the aAfterExec, the aAfterExec be always executed even though
-        deny the aOrgFunc execution in aBeforeExec.
-          + isDenied argument to the aAfterExec function. notice the aAfterExec whether
-            the aOrgFunc is executed
-      V1.2 -- Support catch the error in the original function.
-
-    eg:
-    var doTest = function (a) {return a};
-    function beforeTest(a) {
-      alert('before exec: a='+a);
-      a += 3;
-      return arguments;
-    };
-    function afterTest(a, result, isDenied) {
-      alert('after exec: a='+a+';result='+result+';isDenied='+isDenied);
-      return result+5;
-    };
-
-    doTest = inject(doTest, beforeTest, afterTest);
-
-    alert (doTest(2));
-    the result should be 10.
-
-  */
+/*
+@desc  inject the function
+@param aOrgFunc     the original function to be injected.
+@param aBeforeExec  this is called before the execution of the aOrgFunc.
+                    you must return the arguments(new Arguments(arguments))
+                    if you wanna modify the arguments value of the aOrgFunc.
+                    it will stop the execution of the aOrgFunc if you return
+                    a value not an Arguments object nor a undefined value
+@param aAfterExec   this is called after the execution of the aOrgFunc.
+                    you must add a result argument at the last argument of the
+                    aAfterExec function if you wanna get the result value of the aOrgFunc.
+                    you must add a isDenied argument following the result argument if you
+                    wanna know whether the aOrgFunc is executed.
+                    you must return the result if you wanna modify the result value of the aOrgFunc .
+ @Usage  Obj.prototype.Method = inject(Obj.prototype.Method, aFunctionBeforeExec[, aFunctionAfterExec]);
+@version 1.1
+@author  Aimingoo&Riceball
+@history
+  V1.0 -- first released.
+  V1.1 --
+    Supports to deny the aOrgFunc execution in aBeforeExec.
+    Supports around in the aAfterExec, the aAfterExec be always executed even though
+    deny the aOrgFunc execution in aBeforeExec.
+      + isDenied argument to the aAfterExec function. notice the aAfterExec whether
+        the aOrgFunc is executed
+  V1.2 -- Support catch the error in the original function.
+ eg:
+var doTest = function (a) {return a};
+function beforeTest(a) {
+  alert('before exec: a='+a);
+  a += 3;
+  return arguments;
+};
+function afterTest(a, result, isDenied) {
+  alert('after exec: a='+a+';result='+result+';isDenied='+isDenied);
+  return result+5;
+};
+ doTest = inject(doTest, beforeTest, afterTest);
+ alert (doTest(2));
+the result should be 10.
+*/
 
 /**
  * Wraps a function and executes code before and/or after the wrapped function.
@@ -130,11 +124,13 @@ var arraySlice = Array.prototype.slice;
  * ```
  *
  */
-function injectFunc( aOrgFunc, aBeforeExec, aAfterExec ) {
-  return function() {
-    var Result, isDenied=false, args=arraySlice.call(arguments);
-    if (typeof(aBeforeExec) === 'function') {
-      //the result
+export function inject(aOrgFunc, aBeforeExec, aAfterExec) {
+  return function () {
+    let Result;
+    let isDenied = false;
+    let args = arraySlice.call(arguments);
+    if (typeof aBeforeExec === 'function') {
+      // the result
       //  * a return value instead of original function.
       //  * an arguments pass to original function.
       //  * whether deny the original function.
@@ -142,43 +138,41 @@ function injectFunc( aOrgFunc, aBeforeExec, aAfterExec ) {
       //    * return undefined to allow execution
       Result = aBeforeExec.apply(this, args);
       if (isArguments(Result)) {
-        args = arraySlice.call(Result)
+        args = arraySlice.call(Result);
       } else if (isDenied = Result !== undefined) {
-        args.push(Result)
+        args.push(Result);
       }
-      Result = undefined
+      Result = undefined;
     }
-    var err
+    let err;
     try {
-      !isDenied && args.push(aOrgFunc.apply(this, args)); //if (!isDenied) args.push(aOrgFunc.apply(this, args));
+      !isDenied && args.push(aOrgFunc.apply(this, args)); // if (!isDenied) args.push(aOrgFunc.apply(this, args));
     } catch (error) {
       err = error;
       args.push(error);
     }
-
-    if (typeof(aAfterExec) === 'function') {
+    if (typeof aAfterExec === 'function') {
       Result = aAfterExec.apply(this, args.concat(isDenied));
+    } else if (err) {
+      throw err;
     }
-    else if (err) {
-      throw(err);
-    }
-    if (Result === undefined) Result = args.pop();
-
+    if (Result === undefined) {Result = args.pop();}
     return Result;
-  }
+  };
 }
 
 function createArguments(args) {
-  if (arguments.length !== 1 || !Array.isArray(args)) args = arguments;
-  var result = Array.apply(null, args);
+  if (arguments.length !== 1 || !Array.isArray(args))
+args = arguments;
+  const result = Array.apply(null, args);
   defineProperty(result, '__arguments__', true);
   return result;
 }
-injectFunc.createArguments = createArguments
+inject.createArguments = createArguments;
 
 function isArguments(v) {
-  return (v && v.__arguments__) || isOldArguments(v);
+  return v && v.__arguments__ || isOldArguments(v);
 }
-injectFunc.isArguments = isArguments
+inject.isArguments = isArguments;
 
-module.exports = injectFunc
+export default inject;

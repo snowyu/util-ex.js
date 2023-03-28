@@ -1,3 +1,4 @@
-module.exports = function(v) {
+export function isNull(v) {
   return v === null;
-}
+};
+export default isNull;

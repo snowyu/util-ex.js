@@ -1,8 +1,8 @@
-var isObject = require('./object');
-var objectToString = require('../../object-to-string');
-var regexpClass = '[object RegExp]';
+import objectToString from "../../object-to-string";
+import isObject from "./object";
 
-module.exports = function(v) {
+const regexpClass = '[object RegExp]';
+export function isRegExp(v) {
   return isObject(v) && objectToString(v) === regexpClass;
-}
-
+};
+export default isRegExp;

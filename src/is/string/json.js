@@ -1,5 +1,5 @@
-var isFloat = require('./float');
-var isString = require('../type/string');
+import isString from "../type/string";
+import isFloat from "./float";
 
 /**
  * Checks if a string is a valid JSON string.
@@ -14,12 +14,13 @@ var isString = require('../type/string');
  * isJson('{"name": "John", "age": 30'); // false
  * isJson('This is not a JSON string.'); // false
  */
-module.exports = function isJson(v, almost) {
-  var lastIndex, result;
+export function isJson(v, almost) {
+  let lastIndex, result;
   result = isString(v) && (v = v.trim()) !== '';
   if (result) {
     lastIndex = v.length - 1;
-    if (v[0] === '"') { // or v[0] is "'"
+    if (v[0] === '"') {
+      // or v[0] is "'"
       result = v[lastIndex] === v[0];
       if (result) {
         return result;
@@ -44,3 +45,4 @@ module.exports = function isJson(v, almost) {
   }
   return result;
 };
+export default isJson;

@@ -1,6 +1,7 @@
-var isObject = require('./object');
-var objectToString  = require('../../object-to-string');
+import objectToString from "../../object-to-string";
+import isObject from "./object";
 
-module.exports = function isError(e) {
+export function isError(e) {
   return isObject(e) && objectToString(e) === '[object Error]';
-}
+};
+export default isError;

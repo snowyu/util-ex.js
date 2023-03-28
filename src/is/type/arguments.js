@@ -1,4 +1,4 @@
-var argsClass = '[object Arguments]';
+const argsClass = '[object Arguments]';
 
 /**
  * Checks if a value is an `arguments` object.
@@ -13,8 +13,7 @@ var argsClass = '[object Arguments]';
  * isArguments([1, 2, 3]); // => false
  * ```
  */
-module.exports = function isArguments(value) {
-  return value && typeof value == 'object' && typeof value.length == 'number' &&
-    toString.call(value) == argsClass || false;
-}
-
+export function isArguments(value) {
+  return value && typeof value === 'object' && typeof value.length === 'number' && toString.call(value) === argsClass || false;
+};
+export default isArguments;

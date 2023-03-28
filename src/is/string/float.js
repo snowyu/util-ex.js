@@ -1,4 +1,4 @@
-var float = /^(?:[-+]?(?:[0-9]+))?(?:\.[0-9]*)?(?:[eE][\+\-]?(?:[0-9]+))?$/;
+const float = /^(?:[-+]?(?:[0-9]+))?(?:\.[0-9]*)?(?:[eE][\+\-]?(?:[0-9]+))?$/;
 
 /**
  * Checks if a string represents a valid floating point number.
@@ -11,6 +11,7 @@ var float = /^(?:[-+]?(?:[0-9]+))?(?:\.[0-9]*)?(?:[eE][\+\-]?(?:[0-9]+))?$/;
  * isFloat('2.718e-2'); // returns true
  * isFloat('abc'); // returns false
  */
-module.exports = function isFloat(str) {
+export function isFloat(str) {
   return str !== '' && float.test(str);
 };
+export default isFloat;

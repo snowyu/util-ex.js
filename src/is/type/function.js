@@ -1,3 +1,4 @@
-module.exports = function isFunction(arg) {
+export function isFunction(arg) {
   return typeof arg === 'function';
-}
+};
+export default isFunction;

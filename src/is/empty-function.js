@@ -1,7 +1,6 @@
-module.exports = require('inherits-ex/lib/isEmptyFunction');
-/*
-module.exports = function(aFunc) {
-  var result = /^function\s*\S*\s*\(.*\)\s*{[\s;]*}$/.test(aFunc.toString());
-  return result;
-}
-*/
+import isEmptyFunction from "inherits-ex/lib/isEmptyFunction";
+export {default as isEmptyFunction} from "inherits-ex/lib/isEmptyFunction";
+
+// export * from "inherits-ex/lib/isEmptyFunction";
+export default isEmptyFunction;
+

@@ -1,8 +1,7 @@
-var isFunction = require('./is/type/function');
-var extend = require('./_extend');
-var clonePropertiesTo = require('./clone-properties-to');
-var createObject = require('inherits-ex/lib/createObject');
-var getPrototypeOf = require('inherits-ex/lib/getPrototypeOf');
+import getPrototypeOf from "inherits-ex/lib/getPrototypeOf";
+import createObject from "inherits-ex/lib/createObject";
+import clonePropertiesTo from "./clone-properties-to";
+import isFunction from "./is/type/function";
 
 /**
  * Clones an object.
@@ -13,30 +12,30 @@ var getPrototypeOf = require('inherits-ex/lib/getPrototypeOf');
  *
  * @example
 * // Clone a simple object.
-* var myObject = { foo: 'bar' };
-* var clonedObject = cloneObject(myObject);
+* const myObject = { foo: 'bar' };
+* const clonedObject = cloneObject(myObject);
 *
 * @example
 * // Clone an object using a custom clone function.
-* var myObject = { foo: 'bar', clone: function() { return { foo: this.foo }; } };
-* var clonedObject = cloneObject(myObject);
+* const myObject = { foo: 'bar', clone: function() { return { foo: this.foo }; } };
+* const clonedObject = cloneObject(myObject);
 *
 * @example
 * // Clone an object without trying to use a custom clone function.
-* var myObject = { foo: 'bar', clone: function() { return { foo: this.foo }; } };
-* var clonedObject = cloneObject(myObject, false);
+* const myObject = { foo: 'bar', clone: function() { return { foo: this.foo }; } };
+* const clonedObject = cloneObject(myObject, false);
 */
-function cloneObject(aObject, tryCloneFn) {
-  var ctor, proto, result;
+export function cloneObject(aObject, tryCloneFn) {
+  let result;
   if (tryCloneFn !== false && isFunction(aObject.clone)) {
     result = aObject.clone();
   } else {
-    proto = getPrototypeOf(aObject);
-    ctor = proto.hasOwnProperty('Class') ? proto.Class : aObject.constructor;
+    const proto = getPrototypeOf(aObject);
+    const ctor = proto.hasOwnProperty('Class') ? proto.Class : aObject.constructor;
     result = createObject(ctor);
     clonePropertiesTo(result, aObject);
   }
   return result;
 };
 
-module.exports = cloneObject
+export default cloneObject;

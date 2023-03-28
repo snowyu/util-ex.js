@@ -1,1 +1,4 @@
-module.exports = require('./object/get-non-enumerable-names')
+import _objectGetNonEnumerableNames from "./object/get-non-enumerable-names";
+export * from "./object/get-non-enumerable-names";
+
+export default _objectGetNonEnumerableNames;

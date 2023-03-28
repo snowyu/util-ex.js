@@ -1,4 +1,4 @@
-var o2s = Object.prototype.toString;
+const o2s = Object.prototype.toString;
 
 /**
  * The objectToString function returns a string representation of an object's type using the built-in Object.prototype.toString method.
@@ -14,6 +14,7 @@ var o2s = Object.prototype.toString;
  * objectToString([]); // returns '[object Array]'
  * objectToString({}); // returns '[object Object]'
  */
-module.exports = function objectToString(o) {
+export function objectToString(o) {
   return o2s.call(o);
-}
+};
+export default objectToString;

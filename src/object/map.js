@@ -3,8 +3,8 @@
   * enumerable: defaults to true
   * nonEnumerable: defaults to false
 */
-var getOwnPropertyNames = Object.getOwnPropertyNames
-var getObjectKeys = Object.keys
+const getOwnPropertyNames = Object.getOwnPropertyNames;
+const getObjectKeys = Object.keys;
 
 /**
  * Returns an array containing the values of all enumerable or non-enumerable properties of an object.
@@ -27,17 +27,18 @@ var getObjectKeys = Object.keys
  * // Returns ['value2']
  * const result2 = map(myObj, {enumerable: false, nonEnumerable: true});
  */
-module.exports = function map(aObject, aOptions) {
-  var enumerable = true;
-  var nonEnumerable = false;
-  var result = [];
-  var enumKeys;
-  var keys;
+export function map(aObject, aOptions) {
+  let enumerable = true;
+  let nonEnumerable = false;
+  const result = [];
+  let enumKeys;
+  let keys;
   if (aOptions) {
-    if (aOptions.enumerable != null) enumerable = aOptions.enumerable;
-    if (aOptions.nonEnumerable != null) nonEnumerable = aOptions.nonEnumerable;
+    if (aOptions.enumerable != null) 
+enumerable = aOptions.enumerable;
+    if (aOptions.nonEnumerable != null) 
+nonEnumerable = aOptions.nonEnumerable;
   }
-
   if (aObject && (enumerable || nonEnumerable)) {
     if (enumerable && !nonEnumerable) {
       keys = getObjectKeys(aObject);
@@ -45,12 +46,15 @@ module.exports = function map(aObject, aOptions) {
       keys = getOwnPropertyNames(aObject);
       if (!enumerable) {
         enumKeys = getObjectKeys(aObject);
-        keys = keys.filter(function(k){return enumKeys.indexOf(k) < 0});
+        keys = keys.filter((k) => {
+          return !enumKeys.includes(k);
+        });
       }
     }
-    keys.forEach(function(k){
+    keys.forEach((k) => {
       result.push(aObject[k]);
     });
   }
   return result;
 };
+export default map;

@@ -1,4 +1,3 @@
-
 /**
  * Injects method into an object. optionally preserving access to the original method via "`super`" and original instance via "`self`".
  *
@@ -29,16 +28,16 @@
  *
  * obj.method1(); // Output: Hello\nWorld
  */
-function injectMethod(aObject, aMethodName, aNewMethod) {
-  var result;
-  var vOldMethod = aObject[aMethodName];
+export function injectMethod(aObject, aMethodName, aNewMethod) {
+  let result;
+  const vOldMethod = aObject[aMethodName];
   if (result = vOldMethod === undefined) {
     aObject[aMethodName] = aNewMethod;
   } else if (result = typeof vOldMethod === 'function') {
-    aObject[aMethodName] = (function(inherited, method) {
-      return function() {
-        var that = {
-          super: function() {
+    aObject[aMethodName] = function (inherited, method) {
+      return function () {
+        const that = {
+          super () {
             return inherited.apply(this.self, arguments);
           },
           self: this
@@ -47,12 +46,10 @@ function injectMethod(aObject, aMethodName, aNewMethod) {
         Object.setPrototypeOf(that, this);
         return method.apply(that, arguments);
       };
-    })(vOldMethod, aNewMethod);
+    }(vOldMethod, aNewMethod);
   }
   return result;
 };
-
-module.exports = injectMethod
 
 /*
 inheritMethod2 = function(aObject, aMethods) {
@@ -136,3 +133,4 @@ function injectMethod(clazz, methodName, newMethod) {
   }
 }
  */
+export default injectMethod;
