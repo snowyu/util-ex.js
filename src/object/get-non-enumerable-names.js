@@ -22,7 +22,7 @@ export function getNonEnumerableNames(aObject) {
   if (result.length) {
     keys = getKeys(aObject);
     result = result.filter((k) => {
-      return !keys.includes(k);
+      return keys.indexOf(k) === -1;
     });
   }
   return result;

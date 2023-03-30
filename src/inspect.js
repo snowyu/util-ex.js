@@ -1,15 +1,15 @@
-import isString from "./is/type/string";
-import isNumber from "./is/type/number";
-import isNull from "./is/type/null";
-import isError from "./is/type/error";
-import isDate from "./is/type/date";
-import isRegExp from "./is/type/regexp";
-import isFunction from "./is/type/function";
-import isArray from "./is/type/array";
-import isUndefined from "./is/type/undefined";
-import _extend from "./_extend";
-import isBoolean from "./is/type/boolean";
-import * as shims from "./_shims";
+import isString from './is/type/string.js';
+import isNumber from './is/type/number.js';
+import isNull from './is/type/null.js';
+import isError from './is/type/error.js';
+import isDate from './is/type/date.js';
+import isRegExp from './is/type/regexp.js';
+import isFunction from './is/type/function.js';
+import isArray from './is/type/array.js';
+import isUndefined from './is/type/undefined.js';
+import _extend from './_extend.js';
+import isBoolean from './is/type/boolean.js';
+import * as shims from './_shims.js';
 
 const hasOwnProperty = Object.prototype.hasOwnProperty;
 
@@ -265,13 +265,13 @@ function formatProperty(ctx, value, recurseTimes, visibleKeys, key, array) {
     name = `[${  key  }]`;
   }
   if (!str) {
-    if (!ctx.seen.includes(desc.value)) {
+    if (ctx.seen.indexOf(desc.value) === -1) {
       if (isNull(recurseTimes)) {
         str = formatValue(ctx, desc.value, null);
       } else {
         str = formatValue(ctx, desc.value, recurseTimes - 1);
       }
-      if (str.includes('\n')) {
+      if (str.indexOf('\n') !== -1) {
         if (array) {
           str = str.split('\n').map((line) => {
             return `  ${  line}`;
@@ -306,8 +306,7 @@ function reduceToSingleString(output, base, braces) {
   let numLinesEst = 0;
   const length = output.reduce((prev, cur) => {
     numLinesEst++;
-    if (cur.includes('\n'))
-numLinesEst++;
+    if (cur.indexOf('\n') !== -1) {numLinesEst++;}
     return prev + cur.replace(/\u001B\[\d\d?m/g, '').length + 1;
   }, 0);
   if (length > 60) {

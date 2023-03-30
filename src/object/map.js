@@ -34,10 +34,8 @@ export function map(aObject, aOptions) {
   let enumKeys;
   let keys;
   if (aOptions) {
-    if (aOptions.enumerable != null) 
-enumerable = aOptions.enumerable;
-    if (aOptions.nonEnumerable != null) 
-nonEnumerable = aOptions.nonEnumerable;
+    if (aOptions.enumerable != null) {enumerable = aOptions.enumerable;}
+    if (aOptions.nonEnumerable != null) {nonEnumerable = aOptions.nonEnumerable;}
   }
   if (aObject && (enumerable || nonEnumerable)) {
     if (enumerable && !nonEnumerable) {
@@ -47,7 +45,7 @@ nonEnumerable = aOptions.nonEnumerable;
       if (!enumerable) {
         enumKeys = getObjectKeys(aObject);
         keys = keys.filter((k) => {
-          return !enumKeys.includes(k);
+          return enumKeys.indexOf(k) === -1;
         });
       }
     }
