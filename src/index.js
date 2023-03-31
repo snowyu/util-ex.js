@@ -16,6 +16,13 @@ module.exports = {
     isError: require('./is/type/error'),
     isPrimitive: require('./is/type/primitive'),
 
+    isFloatStr: require('./is/string/float'),
+    isFunctionStr: require('./is/string/function'),
+    isIntStr: require('./is/string/int'),
+    isJson: require('./is/string/json'),
+    map: require('./object/map'),
+    getNonEnumerableNames: require('./object/get-non-enumerable-names'),
+
     format: require('./format'),
     inspect: require('./inspect'),
     log: require('./log'),
@@ -64,6 +71,9 @@ module.exports = {
     inheritsObject: require('inherits-ex/lib/inheritsObject'),
     //get latest non-empty constructor function through inherits link:
     getConstructor: require('inherits-ex/lib/getConstructor'),
-    inject: require('./inject')
+    inject: require('./inject'),
+    injectMethod: require('./injectMethod'),
+    injectMethods: require('./injectMethods'),
+
 }
 

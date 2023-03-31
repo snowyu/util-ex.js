@@ -5,12 +5,12 @@ var int = /^(?:[-+]?(?:0|(?:0[xX])?[0-9]*))$/;
  *   @param {string} str - The string to check.
  *   @returns {boolean} Whether or not the string represents an integer.
  *   @example
- *   isInt('42'); // true
- *   isInt('0'); // true
- *   isInt('-123'); // true
- *   isInt('12.3'); // false
- *   isInt('1e3'); // false
+ *   isIntStr('42'); // true
+ *   isIntStr('0'); // true
+ *   isIntStr('-123'); // true
+ *   isIntStr('12.3'); // false
+ *   isIntStr('1e3'); // false
  */
-module.exports = function isInt(str) {
+module.exports = function isIntStr(str) {
   return str !== '' && int.test(str);
 };
