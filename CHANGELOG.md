@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.0.0](https://github.com/snowyu/util-ex.js/compare/v0.3.18...v1.0.0) (2023-03-31)
+
+
+### Features
+
+* export more functions to index ([10dfb41](https://github.com/snowyu/util-ex.js/commit/10dfb41bc4d030e932d89e70ea75b7e88edbacc6))
+
 ### [0.3.18](https://github.com/snowyu/util-ex.js/compare/v0.3.17...v0.3.18) (2023-03-31)
 
 
