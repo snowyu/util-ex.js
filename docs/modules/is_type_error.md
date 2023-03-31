@@ -30,4 +30,4 @@
 
 #### Defined in
 
-[src/is/type/error.js:4](https://github.com/snowyu/util-ex.js/blob/f71e464/src/is/type/error.js#L4)
+[src/is/type/error.js:4](https://github.com/snowyu/util-ex.js/blob/10dfb41/src/is/type/error.js#L4)

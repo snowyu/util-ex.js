@@ -23,11 +23,11 @@ Checks if a given string represents an integer number.
 **`Example`**
 
 ```ts
-isInt('42'); // true
-  isInt('0'); // true
-  isInt('-123'); // true
-  isInt('12.3'); // false
-  isInt('1e3'); // false
+isIntStr('42'); // true
+  isIntStr('0'); // true
+  isIntStr('-123'); // true
+  isIntStr('12.3'); // false
+  isIntStr('1e3'); // false
 ```
 
 #### Parameters
@@ -44,4 +44,4 @@ Whether or not the string represents an integer.
 
 #### Defined in
 
-[src/is/string/int.js:14](https://github.com/snowyu/util-ex.js/blob/f71e464/src/is/string/int.js#L14)
+[src/is/string/int.js:14](https://github.com/snowyu/util-ex.js/blob/10dfb41/src/is/string/int.js#L14)

@@ -34,4 +34,4 @@ Checks if a given value is empty.
 
 #### Defined in
 
-[src/is/empty.js:42](https://github.com/snowyu/util-ex.js/blob/f71e464/src/is/empty.js#L42)
+[src/is/empty.js:42](https://github.com/snowyu/util-ex.js/blob/10dfb41/src/is/empty.js#L42)

@@ -23,11 +23,11 @@ Checks if a string represents a valid floating point number.
 **`Example`**
 
 ```ts
-isFloat('3.14'); // returns true
-isFloat('-0.5'); // returns true
-isFloat('2.718e0'); // returns true
-isFloat('2.718e-2'); // returns true
-isFloat('abc'); // returns false
+isFloatStr('3.14'); // returns true
+isFloatStr('-0.5'); // returns true
+isFloatStr('2.718e0'); // returns true
+isFloatStr('2.718e-2'); // returns true
+isFloatStr('abc'); // returns false
 ```
 
 #### Parameters
@@ -44,4 +44,4 @@ isFloat('abc'); // returns false
 
 #### Defined in
 
-[src/is/string/float.js:14](https://github.com/snowyu/util-ex.js/blob/f71e464/src/is/string/float.js#L14)
+[src/is/string/float.js:14](https://github.com/snowyu/util-ex.js/blob/10dfb41/src/is/string/float.js#L14)

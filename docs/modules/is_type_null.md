@@ -30,4 +30,4 @@
 
 #### Defined in
 
-[src/is/type/null.js:1](https://github.com/snowyu/util-ex.js/blob/f71e464/src/is/type/null.js#L1)
+[src/is/type/null.js:1](https://github.com/snowyu/util-ex.js/blob/10dfb41/src/is/type/null.js#L1)

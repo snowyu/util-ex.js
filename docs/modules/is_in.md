@@ -45,4 +45,4 @@ console.log(isInList(str, list, true)); // false (caseSensitive)
 
 #### Defined in
 
-[src/is/in.js:16](https://github.com/snowyu/util-ex.js/blob/f71e464/src/is/in.js#L16)
+[src/is/in.js:16](https://github.com/snowyu/util-ex.js/blob/10dfb41/src/is/in.js#L16)

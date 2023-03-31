@@ -30,4 +30,4 @@
 
 #### Defined in
 
-[src/is/type/regexp.js:5](https://github.com/snowyu/util-ex.js/blob/f71e464/src/is/type/regexp.js#L5)
+[src/is/type/regexp.js:5](https://github.com/snowyu/util-ex.js/blob/10dfb41/src/is/type/regexp.js#L5)

@@ -23,8 +23,8 @@ Determines if a string represents a valid JavaScript function.
 **`Example`**
 
 ```ts
-isFunction('function add(x, y) { return x + y; }') // true
-isFunction('const x = 5;') // false
+isFunctionStr('function add(x, y) { return x + y; }') // true
+isFunctionStr('const x = 5;') // false
 ```
 
 #### Parameters
@@ -41,4 +41,4 @@ isFunction('const x = 5;') // false
 
 #### Defined in
 
-[src/is/string/function.js:9](https://github.com/snowyu/util-ex.js/blob/f71e464/src/is/string/function.js#L9)
+[src/is/string/function.js:9](https://github.com/snowyu/util-ex.js/blob/10dfb41/src/is/string/function.js#L9)

@@ -116,4 +116,4 @@ If `aAfterExec` is a function, it will be called with the same context, argument
 
 #### Defined in
 
-[src/inject.js:133](https://github.com/snowyu/util-ex.js/blob/f71e464/src/inject.js#L133)
+[src/inject.js:133](https://github.com/snowyu/util-ex.js/blob/10dfb41/src/inject.js#L133)
