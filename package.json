@@ -44,7 +44,7 @@
     "test"
   ],
   "scripts": {
-    "build": "npm run build.ts && mkdir -p lib && cp src/*.js lib/",
+    "build": "npm run build.ts && mkdir -p lib && cp -r src/* lib/",
     "build.ts": "tsc",
     "clean": "rm -fr web docs types lib",
     "clean.doc": "rm -fr web docs",
