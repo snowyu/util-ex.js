@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.18](https://github.com/snowyu/util-ex.js/compare/v0.3.17...v0.3.18) (2023-03-31)
+
+
+### Bug Fixes
+
+* forget to cp subdir to lib ([f58d416](https://github.com/snowyu/util-ex.js/commit/f58d416f51acbfc2ef54a707e547fd574330296b))
+
 ### [0.3.17](https://github.com/snowyu/util-ex.js/compare/v0.3.16...v0.3.17) (2023-03-30)
 
 
