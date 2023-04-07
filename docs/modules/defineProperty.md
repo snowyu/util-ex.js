@@ -4,20 +4,12 @@
 
 ## Table of contents
 
-### Namespaces
+### Properties
 
-- [export&#x3D;](defineProperty.export_.md)
+- [default](defineProperty.md#default)
 
-### Variables
+## Properties
 
-- [export&#x3D;](defineProperty.md#export&#x3D;)
+### default
 
-## Variables
-
-### export&#x3D;
-
-• **export=**: `any`
-
-#### Defined in
-
-[src/defineProperty.js:1](https://github.com/snowyu/util-ex.js/blob/f71e464/src/defineProperty.js#L1)
+• **default**: `any`

@@ -4,19 +4,25 @@
 
 ## Table of contents
 
-### Namespaces
+### References
 
-- [export&#x3D;](is_type_function.export_.md)
+- [default](is_type_function.md#default)
 
 ### Functions
 
-- [export&#x3D;](is_type_function.md#export&#x3D;)
+- [isFunction](is_type_function.md#isfunction)
+
+## References
+
+### default
+
+Renames and re-exports [isFunction](is_type_function.md#isfunction)
 
 ## Functions
 
-### export&#x3D;
+### isFunction
 
-▸ **export=**(`arg`): `boolean`
+▸ **isFunction**(`arg`): `boolean`
 
 #### Parameters
 
@@ -30,4 +36,4 @@
 
 #### Defined in
 
-[src/is/type/function.js:1](https://github.com/snowyu/util-ex.js/blob/f71e464/src/is/type/function.js#L1)
+[is/type/function.js:1](https://github.com/snowyu/util-ex.js/blob/b4dc093/src/is/type/function.js#L1)

@@ -1,4 +1,4 @@
-import defineProperty from "./defineProperty";
+import defineProperty from "./defineProperty.js";
 
 const getAllOwnKeys = Object.getOwnPropertyNames;
 const getDescriptor = Object.getOwnPropertyDescriptor;
@@ -11,10 +11,10 @@ const getDescriptor = Object.getOwnPropertyDescriptor;
  * @description
  * This function clones all own properties of a source object to a destination object.
  *
- * @param {Object} dest - The destination object to clone the properties to.
- * @param {Object} src - The source object to clone the properties from.
+ * @param {object} dest - The destination object to clone the properties to.
+ * @param {object} src - The source object to clone the properties from.
  *
- * @returns {Object} - The destination object with cloned properties from the source object.
+ * @returns {object} - The destination object with cloned properties from the source object.
  *
  * @example
  * var obj1 = { a: 1, b: 2 };

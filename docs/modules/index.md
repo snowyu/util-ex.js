@@ -4,58 +4,292 @@
 
 ## Table of contents
 
-### Namespaces
+### References
 
-- [export&#x3D;](index.export_.md)
+- [ExtendFn](index.md#extendfn)
+- [FilterFn](index.md#filterfn)
+- [\_createFunction](index.md#_createfunction)
+- [\_extend](index.md#_extend)
+- [cloneObject](index.md#cloneobject)
+- [clonePropertiesTo](index.md#clonepropertiesto)
+- [createFunction](index.md#createfunction)
+- [extend](index.md#extend)
+- [format](index.md#format)
+- [getNonEnumerableNames](index.md#getnonenumerablenames)
+- [inject](index.md#inject)
+- [injectMethod](index.md#injectmethod)
+- [injectMethods](index.md#injectmethods)
+- [inspect](index.md#inspect)
+- [isArguments](index.md#isarguments)
+- [isArray](index.md#isarray)
+- [isBool](index.md#isbool)
+- [isBuffer](index.md#isbuffer)
+- [isDate](index.md#isdate)
+- [isEmpty](index.md#isempty)
+- [isEmptyObject](index.md#isemptyobject)
+- [isError](index.md#iserror)
+- [isFloatStr](index.md#isfloatstr)
+- [isFunction](index.md#isfunction)
+- [isFunctionStr](index.md#isfunctionstr)
+- [isInList](index.md#isinlist)
+- [isInt](index.md#isint)
+- [isIntStr](index.md#isintstr)
+- [isJson](index.md#isjson)
+- [isNull](index.md#isnull)
+- [isNullOrUndefined](index.md#isnullorundefined)
+- [isNumber](index.md#isnumber)
+- [isObject](index.md#isobject)
+- [isPrimitive](index.md#isprimitive)
+- [isRegExp](index.md#isregexp)
+- [isString](index.md#isstring)
+- [isUndefined](index.md#isundefined)
+- [log](index.md#log)
+- [map](index.md#map)
+- [newFunction](index.md#newfunction)
+- [objectToString](index.md#objecttostring)
 
-### Variables
+## References
 
-- [export&#x3D;](index.md#export&#x3D;)
+### ExtendFn
 
-## Variables
+Re-exports [ExtendFn](extend.md#extendfn)
 
-### export&#x3D;
+___
 
-• **export=**: `Object`
+### FilterFn
 
-#### Type declaration
+Re-exports [FilterFn](extend.md#filterfn)
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `_extend` | `any` | - |
-| `createObject` | `any` | - |
-| `createObjectOld` | (`aClass`: `any`, `aArguments`: `any`) => `any` | - |
-| `createObjectWith` | `any` | - |
-| `format` | (`f`: `any`, ...`args`: `any`) => `string` | Formats a string using placeholder tokens. If the first argument is a string, it is treated as a format string that specifies placeholders for the subsequent arguments, which will be inserted into the string in place of the placeholders. The placeholders are specified using '%s' for string, '%d' for number, and '%j' for JSON. If the first argument is not a string, all arguments will be inspected and concatenated into a space-separated string. **`Example`** ```ts format('%s %s', 'hello', 'world'); // 'hello world' format('%d %s', 42, 'answer'); // '42 answer' format('%j', { foo: 'bar' }); // '{"foo":"bar"}' format('no placeholders', 'needed'); // 'no placeholders needed' ``` |
-| `getConstructor` | `any` | - |
-| `inherits` | `any` | Inherit the prototype methods from one constructor into another. The Function.prototype.inherits from lang.js rewritten as a standalone function (not on Function.prototype). NOTE: If this file is to be loaded during bootstrapping this function needs to be rewritten using some native functions as prototype setup using normal JavaScript does not work as expected during bootstrapping (see mirror.js in r114903). **`Param`** Constructor function which needs to inherit the prototype. **`Param`** Constructor function to inherit prototype from. |
-| `inheritsDirectly` | `any` | - |
-| `inheritsObject` | `any` | - |
-| `inject` | typeof [`export=`](inject.md#export=) | - |
-| `inspect` | typeof [`export=`](inspect.md#export=) | - |
-| `isArguments` | (`value`: `any`) => `boolean` | Checks if a value is an `arguments` object. **`Example`** ```js function myFunction() { return isArguments(arguments); } console.log(myFunction()); // true, since the `arguments` object is an instance of `Arguments` isArguments([1, 2, 3]); // => false ``` |
-| `isArray` | (`arg`: `any`) => arg is any[] | - |
-| `isBoolean` | (`arg`: `any`) => `boolean` | Determines whether the given argument is a boolean. |
-| `isDate` | (`d`: `any`) => `boolean` | Determines whether a value is a date object. |
-| `isEmpty` | (`value`: `any`) => `boolean` | Checks if a given value is empty. |
-| `isEmptyFunction` | `any` | - |
-| `isEmptyObject` | (`obj`: `any`) => `boolean` | Check if an object is empty. |
-| `isError` | (`e`: `any`) => `boolean` | - |
-| `isFunction` | (`arg`: `any`) => `boolean` | - |
-| `isInheritedFrom` | `any` | - |
-| `isInheritedFromStr` | `any` | - |
-| `isNull` | (`v`: `any`) => `boolean` | - |
-| `isNullOrUndefined` | (`arg`: `any`) => `boolean` | - |
-| `isNumber` | (`arg`: `any`) => `boolean` | - |
-| `isObject` | (`arg`: `any`) => `boolean` | - |
-| `isPrimitive` | (`arg`: `any`) => `boolean` | - |
-| `isRegExp` | (`v`: `any`) => `boolean` | - |
-| `isString` | (`arg`: `any`) => `boolean` | - |
-| `isUndefined` | (`arg`: `any`) => `boolean` | - |
-| `log` | (...`args`: `any`) => `void` | Logs a message to the console with a timestamp prefix. |
-| `newPrototype` | `any` | - |
-| `objectToString` | (`o`: `any`) => `string` | The objectToString function returns a string representation of an object's type using the built-in Object.prototype.toString method. The method call Object.prototype.toString.call(o) will return a string in the format [object Type], where Type represents the object's type. For example, if o is an array, the function will return the string [object Array]. If o is a date object, it will return the string [object Date]. This can be useful for determining the type of an object, especially when dealing with values that may be of different types. **`Example`** ```ts objectToString([]); // returns '[object Array]' objectToString({}); // returns '[object Object]' ``` |
+___
 
-#### Defined in
+### \_createFunction
 
-[src/index.js:1](https://github.com/snowyu/util-ex.js/blob/f71e464/src/index.js#L1)
+Re-exports [_createFunction](create_function.md#_createfunction)
+
+___
+
+### \_extend
+
+Re-exports [_extend](extend.md#_extend)
+
+___
+
+### cloneObject
+
+Re-exports [cloneObject](clone_object.md#cloneobject)
+
+___
+
+### clonePropertiesTo
+
+Re-exports [clonePropertiesTo](clone_properties_to.md#clonepropertiesto)
+
+___
+
+### createFunction
+
+Re-exports [createFunction](createFunction.md#createfunction)
+
+___
+
+### extend
+
+Re-exports [extend](extend.md#extend)
+
+___
+
+### format
+
+Re-exports [format](format.md#format)
+
+___
+
+### getNonEnumerableNames
+
+Re-exports [getNonEnumerableNames](object_get_non_enumerable_names.md#getnonenumerablenames)
+
+___
+
+### inject
+
+Re-exports [inject](inject.md#inject)
+
+___
+
+### injectMethod
+
+Re-exports [injectMethod](injectMethod.md#injectmethod)
+
+___
+
+### injectMethods
+
+Re-exports [injectMethods](injectMethods.md#injectmethods)
+
+___
+
+### inspect
+
+Re-exports [inspect](inspect.md#inspect)
+
+___
+
+### isArguments
+
+Re-exports [isArguments](is_type_arguments.md#isarguments)
+
+___
+
+### isArray
+
+Re-exports [isArray](is_type_array.md#isarray)
+
+___
+
+### isBool
+
+Re-exports [isBool](is_type_boolean.md#isbool)
+
+___
+
+### isBuffer
+
+Re-exports [isBuffer](is_type_buffer.md#isbuffer)
+
+___
+
+### isDate
+
+Re-exports [isDate](is_type_date.md#isdate)
+
+___
+
+### isEmpty
+
+Re-exports [isEmpty](is_empty.md#isempty)
+
+___
+
+### isEmptyObject
+
+Re-exports [isEmptyObject](is_empty_object.md#isemptyobject)
+
+___
+
+### isError
+
+Re-exports [isError](is_type_error.md#iserror)
+
+___
+
+### isFloatStr
+
+Re-exports [isFloatStr](is_string_float.md#isfloatstr)
+
+___
+
+### isFunction
+
+Re-exports [isFunction](is_type_function.md#isfunction)
+
+___
+
+### isFunctionStr
+
+Re-exports [isFunctionStr](is_string_function.md#isfunctionstr)
+
+___
+
+### isInList
+
+Re-exports [isInList](is_in.md#isinlist)
+
+___
+
+### isInt
+
+Re-exports [isInt](is_type_integer.md#isint)
+
+___
+
+### isIntStr
+
+Re-exports [isIntStr](is_string_int.md#isintstr)
+
+___
+
+### isJson
+
+Re-exports [isJson](is_string_json.md#isjson)
+
+___
+
+### isNull
+
+Re-exports [isNull](is_type_null.md#isnull)
+
+___
+
+### isNullOrUndefined
+
+Re-exports [isNullOrUndefined](is_type_null_or_undefined.md#isnullorundefined)
+
+___
+
+### isNumber
+
+Re-exports [isNumber](is_type_number.md#isnumber)
+
+___
+
+### isObject
+
+Re-exports [isObject](is_type_object.md#isobject)
+
+___
+
+### isPrimitive
+
+Re-exports [isPrimitive](is_type_primitive.md#isprimitive)
+
+___
+
+### isRegExp
+
+Re-exports [isRegExp](is_type_regexp.md#isregexp)
+
+___
+
+### isString
+
+Re-exports [isString](is_type_string.md#isstring)
+
+___
+
+### isUndefined
+
+Re-exports [isUndefined](is_type_undefined.md#isundefined)
+
+___
+
+### log
+
+Re-exports [log](log.md#log)
+
+___
+
+### map
+
+Re-exports [map](object_map.md#map)
+
+___
+
+### newFunction
+
+Re-exports [newFunction](new_function.md#newfunction)
+
+___
+
+### objectToString
+
+Re-exports [objectToString](object_to_string.md#objecttostring)

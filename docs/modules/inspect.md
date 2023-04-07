@@ -4,19 +4,29 @@
 
 ## Table of contents
 
+### References
+
+- [default](inspect.md#default)
+
 ### Namespaces
 
-- [export&#x3D;](inspect.export_.md)
+- [inspect](inspect.inspect.md)
 
 ### Functions
 
-- [export&#x3D;](inspect.md#export&#x3D;)
+- [inspect](inspect.md#inspect)
+
+## References
+
+### default
+
+Renames and re-exports [inspect](inspect.md#inspect)
 
 ## Functions
 
-### export&#x3D;
+### inspect
 
-▸ **export=**(`obj`, `opts`, `...args`): `string`
+▸ **inspect**(`obj`, `opts`, `...args`): `string`
 
 Return a string representation of an object, including its properties and nested objects, with customizable options.
 
@@ -39,4 +49,4 @@ The formatted string representing the object.
 
 #### Defined in
 
-[src/inspect.js:32](https://github.com/snowyu/util-ex.js/blob/f71e464/src/inspect.js#L32)
+[inspect.js:31](https://github.com/snowyu/util-ex.js/blob/b4dc093/src/inspect.js#L31)

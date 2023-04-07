@@ -4,15 +4,25 @@
 
 ## Table of contents
 
+### References
+
+- [default](clone_object.md#default)
+
 ### Functions
 
-- [export&#x3D;](clone_object.md#export&#x3D;)
+- [cloneObject](clone_object.md#cloneobject)
+
+## References
+
+### default
+
+Renames and re-exports [cloneObject](clone_object.md#cloneobject)
 
 ## Functions
 
-### export&#x3D;
+### cloneObject
 
-▸ **export=**(`aObject`, `tryCloneFn?`): `any`
+▸ **cloneObject**(`aObject`, `tryCloneFn?`): `any`
 
 Clones an object.
 
@@ -20,24 +30,24 @@ Clones an object.
 
 ```ts
 // Clone a simple object.
-var myObject = { foo: 'bar' };
-var clonedObject = cloneObject(myObject);
+const myObject = { foo: 'bar' };
+const clonedObject = cloneObject(myObject);
 ```
 
 **`Example`**
 
 ```ts
 // Clone an object using a custom clone function.
-var myObject = { foo: 'bar', clone: function() { return { foo: this.foo }; } };
-var clonedObject = cloneObject(myObject);
+const myObject = { foo: 'bar', clone: function() { return { foo: this.foo }; } };
+const clonedObject = cloneObject(myObject);
 ```
 
 **`Example`**
 
 ```ts
 // Clone an object without trying to use a custom clone function.
-var myObject = { foo: 'bar', clone: function() { return { foo: this.foo }; } };
-var clonedObject = cloneObject(myObject, false);
+const myObject = { foo: 'bar', clone: function() { return { foo: this.foo }; } };
+const clonedObject = cloneObject(myObject, false);
 ```
 
 #### Parameters
@@ -55,4 +65,4 @@ The cloned object.
 
 #### Defined in
 
-[src/clone-object.js:29](https://github.com/snowyu/util-ex.js/blob/f71e464/src/clone-object.js#L29)
+[clone-object.js:28](https://github.com/snowyu/util-ex.js/blob/b4dc093/src/clone-object.js#L28)

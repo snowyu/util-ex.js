@@ -1,14 +1,14 @@
-import getPrototypeOf from "inherits-ex/lib/getPrototypeOf";
-import createObject from "inherits-ex/lib/createObject";
-import clonePropertiesTo from "./clone-properties-to";
-import isFunction from "./is/type/function";
+import getPrototypeOf from 'inherits-ex/lib/getPrototypeOf';
+import createObject from 'inherits-ex/lib/createObject';
+import clonePropertiesTo from './clone-properties-to.js';
+import isFunction from './is/type/function.js';
 
 /**
  * Clones an object.
  *
- * @param {Object} aObject - The object to be cloned.
+ * @param {object} aObject - The object to be cloned.
  * @param {boolean|function} [tryCloneFn=true] - A boolean indicating whether or not to try to clone the object using a '`clone`' function, or a function that can be used to clone the object. If set to `false`, the object will not be cloned using the '`clone`' function, even if it exists.
- * @returns {Object} The cloned object.
+ * @returns {object} The cloned object.
  *
  * @example
 * // Clone a simple object.

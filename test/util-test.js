@@ -18,12 +18,12 @@ import {
   isUndefined,
   isNullOrUndefined,
   isObject,
-  isFunction,
+  isFunctionStr,
   isString,
-} from "../src/";
+} from "../src/index.js";
 
-import extend from "../src/extend";
-import log from "../src/log";
+import extend from '../src/extend.js';
+import log from '../src/log.js';
 
 describe("isEmptyObject", function () {
   it("should be empty", function () {
@@ -84,9 +84,9 @@ describe("inject", function () {
       return [a, b, c];
     });
     onBefore = sinon.spy(function (a, b, c) {
-      a = 2;
-      b = "B";
-      c = 4;
+      arguments[0] = a = 2;
+      arguments[1] = b = "B";
+      arguments[2] = c = 4;
       return arguments;
     });
     run = inject(runOrg, onBefore);
@@ -239,19 +239,19 @@ describe("isObject", function () {
 });
 describe("isFunction", function () {
   it("should check function type correct", function () {
-    isFunction(function () {}).should.be.true;
-    isFunction(Date).should.be.true;
-    isFunction(RegExp).should.be.true;
+    isFunctionStr(function () {}).should.be.true;
+    isFunctionStr(Date).should.be.true;
+    isFunctionStr(RegExp).should.be.true;
   });
   return it("should check an other type to false", function () {
-    isFunction(new RegExp()).should.be.false;
-    isFunction(new function () {}()).should.be.false;
-    isFunction(false).should.be.false;
-    isFunction(true).should.be.false;
-    isFunction(0).should.be.false;
-    isFunction(null).should.be.false;
-    isFunction(void 0).should.be.false;
-    isFunction("").should.be.false;
+    isFunctionStr(new RegExp()).should.be.false;
+    isFunctionStr(new function () {}()).should.be.false;
+    isFunctionStr(false).should.be.false;
+    isFunctionStr(true).should.be.false;
+    isFunctionStr(0).should.be.false;
+    isFunctionStr(null).should.be.false;
+    isFunctionStr(void 0).should.be.false;
+    isFunctionStr("").should.be.false;
   });
 });
 describe("isString", function () {

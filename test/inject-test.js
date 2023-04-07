@@ -6,7 +6,7 @@ var expect = chai.expect;
 var should = chai.should();
 chai.use(sinonChai);
 
-import inject from "../src/inject";
+import inject from '../src/inject.js';
 
 describe("inject", function () {
   it("should inject function and modifying arguments with beforeExec, afterExec", function () {

@@ -4,20 +4,32 @@
 
 ## Table of contents
 
-### Namespaces
+### References
 
-- [export&#x3D;](is_type_buffer.export_.md)
+- [default](is_type_buffer.md#default)
 
 ### Variables
 
-- [export&#x3D;](is_type_buffer.md#export&#x3D;)
+- [isBuffer](is_type_buffer.md#isbuffer)
+
+## References
+
+### default
+
+Renames and re-exports [isBuffer](is_type_buffer.md#isbuffer)
 
 ## Variables
 
-### export&#x3D;
+### isBuffer
 
-• **export=**: `any`
+• `Const` **isBuffer**: `any`
+
+Check if a value is a Buffer object.
+
+**`Param`**
+
+The value to check.
 
 #### Defined in
 
-[src/is/type/buffer.js:6](https://github.com/snowyu/util-ex.js/blob/f71e464/src/is/type/buffer.js#L6)
+[is/type/buffer.js:6](https://github.com/snowyu/util-ex.js/blob/b4dc093/src/is/type/buffer.js#L6)

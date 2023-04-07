@@ -4,15 +4,25 @@
 
 ## Table of contents
 
+### References
+
+- [default](injectMethod.md#default)
+
 ### Functions
 
-- [export&#x3D;](injectMethod.md#export&#x3D;)
+- [injectMethod](injectMethod.md#injectmethod)
+
+## References
+
+### default
+
+Renames and re-exports [injectMethod](injectMethod.md#injectmethod)
 
 ## Functions
 
-### export&#x3D;
+### injectMethod
 
-▸ **export=**(`aObject`, `aMethodName`, `aNewMethod`): `boolean`
+▸ **injectMethod**(`aObject`, `aMethodName`, `aNewMethod`): `boolean`
 
 Injects method into an object. optionally preserving access to the original method via "`super`" and original instance via "`self`".
 
@@ -57,4 +67,4 @@ whether the injection is successful.
 
 #### Defined in
 
-[src/injectMethod.js:32](https://github.com/snowyu/util-ex.js/blob/f71e464/src/injectMethod.js#L32)
+[injectMethod.js:31](https://github.com/snowyu/util-ex.js/blob/b4dc093/src/injectMethod.js#L31)

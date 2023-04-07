@@ -4,19 +4,25 @@
 
 ## Table of contents
 
-### Namespaces
+### References
 
-- [export&#x3D;](is_in.export_.md)
+- [default](is_in.md#default)
 
 ### Functions
 
-- [export&#x3D;](is_in.md#export&#x3D;)
+- [isInList](is_in.md#isinlist)
+
+## References
+
+### default
+
+Renames and re-exports [isInList](is_in.md#isinlist)
 
 ## Functions
 
-### export&#x3D;
+### isInList
 
-▸ **export=**(`str`, `list`, `caseSensitive`): `boolean`
+▸ **isInList**(`str`, `list`, `caseSensitive`): `boolean`
 
 Checks if a string matches any item in a list of strings or regular expressions.
 
@@ -45,4 +51,4 @@ console.log(isInList(str, list, true)); // false (caseSensitive)
 
 #### Defined in
 
-[src/is/in.js:16](https://github.com/snowyu/util-ex.js/blob/f71e464/src/is/in.js#L16)
+[is/in.js:16](https://github.com/snowyu/util-ex.js/blob/b4dc093/src/is/in.js#L16)

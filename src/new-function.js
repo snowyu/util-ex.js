@@ -1,6 +1,6 @@
-import createFunc from "./_create-function";
-import isFunction from "./is/string/function";
-import isString from "./is/type/string";
+import createFunc from './_create-function.js';
+import isFunctionStr from './is/string/function.js';
+import isString from './is/type/string.js';
 
 /*
  * Usage:
@@ -19,9 +19,9 @@ import isString from "./is/type/string";
 /**
  * Creates a new function with the given name, arguments, body, scope and values.
  *
- * If only one argument is provided and it is a function, returns a new function with the same code.
- * If only one argument is provided and it is not a function, returns a new empty function with the given name.
- * If multiple arguments are provided, creates a new function with the given name, arguments and body.
+ * * If only one argument is provided and it is a function, returns a new function with the same code.
+ * * If only one argument is provided and it is not a function, returns a new empty function with the given name.
+ * * If multiple arguments are provided, creates a new function with the given name, arguments and body.
  *
  * @param {string|Function} name The name of the function or the function itself.
  * @param {string[]} args An array of argument names for the function.
@@ -44,12 +44,12 @@ import isString from "./is/type/string";
  */
 export function newFunction(name, args, body, scope, values) {
   if (arguments.length === 1) {
-    if (!isFunction(name)) {
+    if (!isFunctionStr(name)) {
       name = `function ${  name  }(){}`;
     }
     return createFunc(name);
   }
-  if (isFunction(name)) {
+  if (isFunctionStr(name)) {
     scope = args;
     values = body;
   } else {

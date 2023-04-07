@@ -4,45 +4,19 @@
 
 ## Table of contents
 
-### Namespaces
+### References
 
-- [export&#x3D;](get_non_enumerable_names.export_.md)
+- [default](get_non_enumerable_names.md#default)
+- [getNonEnumerableNames](get_non_enumerable_names.md#getnonenumerablenames)
 
-### Functions
+## References
 
-- [export&#x3D;](get_non_enumerable_names.md#export&#x3D;)
+### default
 
-## Functions
+Renames and re-exports [getNonEnumerableNames](object_get_non_enumerable_names.md#getnonenumerablenames)
 
-### export&#x3D;
+___
 
-▸ **export=**(`aObject`): `string`[]
+### getNonEnumerableNames
 
-Returns an array of non-enumerable property names of an object.
-
-**`Example`**
-
-```ts
-var obj = Object.create(null, {
-  a: { value: 1 },
-  b: { value: 2, enumerable: true }
-});
-
-var nonEnumProps = getNonEnumerableNames(obj); // nonEnumProps = ['a']
-```
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `aObject` | `any` | The object to retrieve non-enumerable property names from. |
-
-#### Returns
-
-`string`[]
-
-- An array of non-enumerable property names of the object.
-
-#### Defined in
-
-[src/object/get-non-enumerable-names.js:19](https://github.com/snowyu/util-ex.js/blob/f71e464/src/object/get-non-enumerable-names.js#L19)
+Re-exports [getNonEnumerableNames](object_get_non_enumerable_names.md#getnonenumerablenames)

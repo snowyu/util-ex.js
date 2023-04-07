@@ -99,13 +99,13 @@ function stylizeWithColor(str, styleType) {
   }
 }
 
-function stylizeNoColor(str, styleType) {
+function stylizeNoColor(str, _styleType) {
   return str;
 }
 
 function arrayToHash(array) {
   const hash = {};
-  array.forEach((val, idx) => {
+  array.forEach((val) => {
     hash[val] = true;
   });
   return hash;
@@ -303,11 +303,13 @@ function formatProperty(ctx, value, recurseTimes, visibleKeys, key, array) {
 }
 
 function reduceToSingleString(output, base, braces) {
+  // eslint-disable-next-line unused-imports/no-unused-vars
   let numLinesEst = 0;
   const length = output.reduce((prev, cur) => {
     numLinesEst++;
     if (cur.indexOf('\n') !== -1) {numLinesEst++;}
-    return prev + cur.replace(/\u001B\[\d\d?m/g, '').length + 1;
+  // eslint-disable-next-line no-control-regex
+  return prev + cur.replace(/\u001B\[\d\d?m/g, '').length + 1;
   }, 0);
   if (length > 60) {
     return `${braces[0] + (base === '' ? '' : `${base  }\n `)  } ${  output.join(',\n  ')  } ${  braces[1]}`;

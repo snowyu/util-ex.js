@@ -4,15 +4,25 @@
 
 ## Table of contents
 
+### References
+
+- [default](clone_properties_to.md#default)
+
 ### Functions
 
-- [export&#x3D;](clone_properties_to.md#export&#x3D;)
+- [clonePropertiesTo](clone_properties_to.md#clonepropertiesto)
+
+## References
+
+### default
+
+Renames and re-exports [clonePropertiesTo](clone_properties_to.md#clonepropertiesto)
 
 ## Functions
 
-### export&#x3D;
+### clonePropertiesTo
 
-▸ **export=**(`dest`, `src`): `any`
+▸ **clonePropertiesTo**(`dest`, `src`): `any`
 
 Clone all own properties of a source object to a destination object.
 
@@ -48,4 +58,4 @@ clonePropertiesTo(obj2, obj1); // obj2 = { a: 1, b: 2, c: 3 }
 
 #### Defined in
 
-[src/clone-properties-to.js:25](https://github.com/snowyu/util-ex.js/blob/f71e464/src/clone-properties-to.js#L25)
+[clone-properties-to.js:25](https://github.com/snowyu/util-ex.js/blob/b4dc093/src/clone-properties-to.js#L25)

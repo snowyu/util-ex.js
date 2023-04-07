@@ -1,5 +1,7 @@
-export * from './empty';
-export * from './empty-function';
-export * from './empty-object';
-export * from './in';
-export * from './type';
+export * from './empty.js';
+// eslint-disable-next-line import/export
+export * from './empty-function.js';
+export * from './empty-object.js';
+export * from './in.js';
+export * from './type/index.js';
+export * from './string/index.js';

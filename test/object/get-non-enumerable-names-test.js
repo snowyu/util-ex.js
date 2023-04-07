@@ -5,8 +5,8 @@ var assert = chai.assert;
 var should = chai.should();
 chai.use(sinonChai);
 
-import getNames from "../../src/get-non-enumerable-names";
-import defineProperty from "../../src/defineProperty";
+import getNames from '../../src/get-non-enumerable-names.js';
+import defineProperty from '../../src/defineProperty.js';
 
 describe("get-non-enumerable-names", function () {
   it("should get non-enumerable names", function () {

@@ -1,5 +1,5 @@
-import objectToString from "../../object-to-string";
-import isObject from "./object";
+import objectToString from '../../object-to-string.js';
+import isObject from './object.js';
 
 const dateClass = '[object Date]';
 

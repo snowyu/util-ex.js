@@ -4,19 +4,25 @@
 
 ## Table of contents
 
-### Namespaces
+### References
 
-- [export&#x3D;](is_type_primitive.export_.md)
+- [default](is_type_primitive.md#default)
 
 ### Functions
 
-- [export&#x3D;](is_type_primitive.md#export&#x3D;)
+- [isPrimitive](is_type_primitive.md#isprimitive)
+
+## References
+
+### default
+
+Renames and re-exports [isPrimitive](is_type_primitive.md#isprimitive)
 
 ## Functions
 
-### export&#x3D;
+### isPrimitive
 
-▸ **export=**(`arg`): `boolean`
+▸ **isPrimitive**(`arg`): `boolean`
 
 #### Parameters
 
@@ -30,4 +36,4 @@
 
 #### Defined in
 
-[src/is/type/primitive.js:1](https://github.com/snowyu/util-ex.js/blob/f71e464/src/is/type/primitive.js#L1)
+[is/type/primitive.js:1](https://github.com/snowyu/util-ex.js/blob/b4dc093/src/is/type/primitive.js#L1)

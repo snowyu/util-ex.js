@@ -4,19 +4,25 @@
 
 ## Table of contents
 
-### Namespaces
+### References
 
-- [export&#x3D;](is_type_error.export_.md)
+- [default](is_type_error.md#default)
 
 ### Functions
 
-- [export&#x3D;](is_type_error.md#export&#x3D;)
+- [isError](is_type_error.md#iserror)
+
+## References
+
+### default
+
+Renames and re-exports [isError](is_type_error.md#iserror)
 
 ## Functions
 
-### export&#x3D;
+### isError
 
-▸ **export=**(`e`): `boolean`
+▸ **isError**(`e`): `boolean`
 
 #### Parameters
 
@@ -30,4 +36,4 @@
 
 #### Defined in
 
-[src/is/type/error.js:4](https://github.com/snowyu/util-ex.js/blob/f71e464/src/is/type/error.js#L4)
+[is/type/error.js:4](https://github.com/snowyu/util-ex.js/blob/b4dc093/src/is/type/error.js#L4)

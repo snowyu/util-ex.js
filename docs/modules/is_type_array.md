@@ -4,30 +4,40 @@
 
 ## Table of contents
 
-### Namespaces
+### References
 
-- [export&#x3D;](is_type_array.export_.md)
+- [default](is_type_array.md#default)
 
 ### Functions
 
-- [export&#x3D;](is_type_array.md#export&#x3D;)
+- [isArray](is_type_array.md#isarray)
+
+## References
+
+### default
+
+Renames and re-exports [isArray](is_type_array.md#isarray)
 
 ## Functions
 
-### export&#x3D;
+### isArray
 
-▸ **export=**(`obj`): `boolean`
+▸ **isArray**(`obj`): `boolean`
+
+Determines whether a given value is an Array.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `obj` | `any` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `obj` | `any` | The value to be checked. |
 
 #### Returns
 
 `boolean`
 
+`true` if the value is an Array, `false` otherwise.
+
 #### Defined in
 
-[src/is/type/array.js:9](https://github.com/snowyu/util-ex.js/blob/f71e464/src/is/type/array.js#L9)
+[is/type/array.js:9](https://github.com/snowyu/util-ex.js/blob/b4dc093/src/is/type/array.js#L9)

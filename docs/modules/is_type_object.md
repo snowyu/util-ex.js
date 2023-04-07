@@ -4,19 +4,25 @@
 
 ## Table of contents
 
-### Namespaces
+### References
 
-- [export&#x3D;](is_type_object.export_.md)
+- [default](is_type_object.md#default)
 
 ### Functions
 
-- [export&#x3D;](is_type_object.md#export&#x3D;)
+- [isObject](is_type_object.md#isobject)
+
+## References
+
+### default
+
+Renames and re-exports [isObject](is_type_object.md#isobject)
 
 ## Functions
 
-### export&#x3D;
+### isObject
 
-▸ **export=**(`arg`): `boolean`
+▸ **isObject**(`arg`): `boolean`
 
 #### Parameters
 
@@ -30,4 +36,4 @@
 
 #### Defined in
 
-[src/is/type/object.js:1](https://github.com/snowyu/util-ex.js/blob/f71e464/src/is/type/object.js#L1)
+[is/type/object.js:1](https://github.com/snowyu/util-ex.js/blob/b4dc093/src/is/type/object.js#L1)

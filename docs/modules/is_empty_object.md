@@ -4,19 +4,25 @@
 
 ## Table of contents
 
-### Namespaces
+### References
 
-- [export&#x3D;](is_empty_object.export_.md)
+- [default](is_empty_object.md#default)
 
 ### Functions
 
-- [export&#x3D;](is_empty_object.md#export&#x3D;)
+- [isEmptyObject](is_empty_object.md#isemptyobject)
+
+## References
+
+### default
+
+Renames and re-exports [isEmptyObject](is_empty_object.md#isemptyobject)
 
 ## Functions
 
-### export&#x3D;
+### isEmptyObject
 
-▸ **export=**(`obj`): `boolean`
+▸ **isEmptyObject**(`obj`): `boolean`
 
 Check if an object is empty.
 
@@ -34,4 +40,4 @@ Check if an object is empty.
 
 #### Defined in
 
-[src/is/empty-object.js:6](https://github.com/snowyu/util-ex.js/blob/f71e464/src/is/empty-object.js#L6)
+[is/empty-object.js:6](https://github.com/snowyu/util-ex.js/blob/b4dc093/src/is/empty-object.js#L6)

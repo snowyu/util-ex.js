@@ -5,8 +5,8 @@ var assert = chai.assert;
 var should = chai.should();
 chai.use(sinonChai);
 
-import defineProperty from "../../src/defineProperty";
-import map from "../../src/object/map";
+import defineProperty from '../../src/defineProperty.js';
+import map from '../../src/object/map.js';
 
 describe('object/map', function () {
   it('should map an object values to an array', function () {

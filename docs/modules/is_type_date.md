@@ -4,19 +4,25 @@
 
 ## Table of contents
 
-### Namespaces
+### References
 
-- [export&#x3D;](is_type_date.export_.md)
+- [default](is_type_date.md#default)
 
 ### Functions
 
-- [export&#x3D;](is_type_date.md#export&#x3D;)
+- [isDate](is_type_date.md#isdate)
+
+## References
+
+### default
+
+Renames and re-exports [isDate](is_type_date.md#isdate)
 
 ## Functions
 
-### export&#x3D;
+### isDate
 
-▸ **export=**(`d`): `boolean`
+▸ **isDate**(`d`): `boolean`
 
 Determines whether a value is a date object.
 
@@ -34,4 +40,4 @@ Determines whether a value is a date object.
 
 #### Defined in
 
-[src/is/type/date.js:10](https://github.com/snowyu/util-ex.js/blob/f71e464/src/is/type/date.js#L10)
+[is/type/date.js:11](https://github.com/snowyu/util-ex.js/blob/b4dc093/src/is/type/date.js#L11)

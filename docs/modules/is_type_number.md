@@ -4,19 +4,25 @@
 
 ## Table of contents
 
-### Namespaces
+### References
 
-- [export&#x3D;](is_type_number.export_.md)
+- [default](is_type_number.md#default)
 
 ### Functions
 
-- [export&#x3D;](is_type_number.md#export&#x3D;)
+- [isNumber](is_type_number.md#isnumber)
+
+## References
+
+### default
+
+Renames and re-exports [isNumber](is_type_number.md#isnumber)
 
 ## Functions
 
-### export&#x3D;
+### isNumber
 
-▸ **export=**(`arg`): `boolean`
+▸ **isNumber**(`arg`): `boolean`
 
 #### Parameters
 
@@ -30,4 +36,4 @@
 
 #### Defined in
 
-[src/is/type/number.js:1](https://github.com/snowyu/util-ex.js/blob/f71e464/src/is/type/number.js#L1)
+[is/type/number.js:1](https://github.com/snowyu/util-ex.js/blob/b4dc093/src/is/type/number.js#L1)

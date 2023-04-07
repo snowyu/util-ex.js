@@ -4,19 +4,25 @@
 
 ## Table of contents
 
-### Namespaces
+### References
 
-- [export&#x3D;](is_type_regexp.export_.md)
+- [default](is_type_regexp.md#default)
 
 ### Functions
 
-- [export&#x3D;](is_type_regexp.md#export&#x3D;)
+- [isRegExp](is_type_regexp.md#isregexp)
+
+## References
+
+### default
+
+Renames and re-exports [isRegExp](is_type_regexp.md#isregexp)
 
 ## Functions
 
-### export&#x3D;
+### isRegExp
 
-▸ **export=**(`v`): `boolean`
+▸ **isRegExp**(`v`): `boolean`
 
 #### Parameters
 
@@ -30,4 +36,4 @@
 
 #### Defined in
 
-[src/is/type/regexp.js:5](https://github.com/snowyu/util-ex.js/blob/f71e464/src/is/type/regexp.js#L5)
+[is/type/regexp.js:5](https://github.com/snowyu/util-ex.js/blob/b4dc093/src/is/type/regexp.js#L5)

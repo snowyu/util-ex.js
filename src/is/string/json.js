@@ -1,5 +1,5 @@
-import isString from "../type/string";
-import isFloat from "./float";
+import isString from '../type/string.js';
+import isFloatStr from './float.js';
 
 /**
  * Checks if a string is a valid JSON string.
@@ -30,7 +30,7 @@ export function isJson(v, almost) {
     } else if (v[0] === '[') {
       result = v[lastIndex] === ']';
     } else {
-      result = isFloat(v);
+      result = isFloatStr(v);
       if (result) {
         return result;
       }

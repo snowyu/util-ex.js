@@ -1,4 +1,4 @@
-import _objectGetNonEnumerableNames from "./object/get-non-enumerable-names";
-export * from "./object/get-non-enumerable-names";
+import getNonEnumerableNames from "./object/get-non-enumerable-names.js";
 
-export default _objectGetNonEnumerableNames;
+export * from "./object/get-non-enumerable-names.js";
+export default getNonEnumerableNames;

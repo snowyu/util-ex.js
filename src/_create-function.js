@@ -12,8 +12,8 @@
  *  }"
  */
 
-import isObject from "./is/type/object";
-import isArray from "./is/type/array";
+import isObject from "./is/type/object.js";
+import isArray from "./is/type/array.js";
 
 /**
  * Create a function using the given body and scope.

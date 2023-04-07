@@ -5,7 +5,7 @@ var assert = chai.assert;
 var should = chai.should();
 chai.use(sinonChai);
 
-import injectMethods from "../src/injectMethods";
+import injectMethods from '../src/injectMethods.js';
 
 describe("injectMethods", function () {
   it("should inject methods to an object", function () {

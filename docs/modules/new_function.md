@@ -4,25 +4,31 @@
 
 ## Table of contents
 
-### Namespaces
+### References
 
-- [export&#x3D;](new_function.export_.md)
+- [default](new_function.md#default)
 
 ### Functions
 
-- [export&#x3D;](new_function.md#export&#x3D;)
+- [newFunction](new_function.md#newfunction)
+
+## References
+
+### default
+
+Renames and re-exports [newFunction](new_function.md#newfunction)
 
 ## Functions
 
-### export&#x3D;
+### newFunction
 
-▸ **export=**(`name`, `args`, `body`, `scope`, `values`, `...args`): `Function`
+▸ **newFunction**(`name`, `args`, `body`, `scope`, `values`, `...args`): `Function`
 
 Creates a new function with the given name, arguments, body, scope and values.
 
-If only one argument is provided and it is a function, returns a new function with the same code.
-If only one argument is provided and it is not a function, returns a new empty function with the given name.
-If multiple arguments are provided, creates a new function with the given name, arguments and body.
+* If only one argument is provided and it is a function, returns a new function with the same code.
+* If only one argument is provided and it is not a function, returns a new empty function with the given name.
+* If multiple arguments are provided, creates a new function with the given name, arguments and body.
 
 **`Example`**
 
@@ -59,4 +65,4 @@ A new function with the given name, arguments, body, scope and values.
 
 #### Defined in
 
-[src/new-function.js:51](https://github.com/snowyu/util-ex.js/blob/f71e464/src/new-function.js#L51)
+[new-function.js:45](https://github.com/snowyu/util-ex.js/blob/b4dc093/src/new-function.js#L45)

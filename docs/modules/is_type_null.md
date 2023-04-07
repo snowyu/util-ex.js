@@ -4,19 +4,25 @@
 
 ## Table of contents
 
-### Namespaces
+### References
 
-- [export&#x3D;](is_type_null.export_.md)
+- [default](is_type_null.md#default)
 
 ### Functions
 
-- [export&#x3D;](is_type_null.md#export&#x3D;)
+- [isNull](is_type_null.md#isnull)
+
+## References
+
+### default
+
+Renames and re-exports [isNull](is_type_null.md#isnull)
 
 ## Functions
 
-### export&#x3D;
+### isNull
 
-▸ **export=**(`v`): `boolean`
+▸ **isNull**(`v`): `boolean`
 
 #### Parameters
 
@@ -30,4 +36,4 @@
 
 #### Defined in
 
-[src/is/type/null.js:1](https://github.com/snowyu/util-ex.js/blob/f71e464/src/is/type/null.js#L1)
+[is/type/null.js:1](https://github.com/snowyu/util-ex.js/blob/b4dc093/src/is/type/null.js#L1)

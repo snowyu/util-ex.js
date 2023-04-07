@@ -5,7 +5,7 @@ var assert = chai.assert;
 var should = chai.should();
 chai.use(sinonChai);
 
-import isInt from "../src/is/type/integer";
+import isInt from '../src/is/type/integer.js';
 
 describe("is/type/integer", function () {
   it("should test value whether integer", function () {

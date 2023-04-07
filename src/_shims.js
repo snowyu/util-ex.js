@@ -1,5 +1,6 @@
 let _keys, _getOwnPropertyNames;
 // In IE the description property of an error is visible
+// eslint-disable-next-line unicorn/error-message
 if ((new Error()).hasOwnProperty('description')) {
   const ERROR_PROPERTY_FILTER = function (obj, array) {
     if (Object.prototype.toString.call(obj) === '[object Error]') {

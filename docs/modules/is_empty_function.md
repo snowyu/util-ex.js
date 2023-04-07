@@ -4,20 +4,12 @@
 
 ## Table of contents
 
-### Namespaces
+### References
 
-- [export&#x3D;](is_empty_function.export_.md)
+- [default](is_empty_function.md#default)
 
-### Variables
+## References
 
-- [export&#x3D;](is_empty_function.md#export&#x3D;)
+### default
 
-## Variables
-
-### export&#x3D;
-
-• **export=**: `any`
-
-#### Defined in
-
-[src/is/empty-function.js:1](https://github.com/snowyu/util-ex.js/blob/f71e464/src/is/empty-function.js#L1)
+Re-exports [default](defineProperty.md#default)

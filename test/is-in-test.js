@@ -5,7 +5,7 @@ var assert = chai.assert;
 var should = chai.should();
 chai.use(sinonChai);
 
-import isIn from "../src/is/in";
+import isIn from '../src/is/in.js';
 
 describe('is/in', function () {
   it('should test a case-sensitive string whether in a list', function () {

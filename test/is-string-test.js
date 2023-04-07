@@ -5,9 +5,9 @@ var assert = chai.assert;
 var should = chai.should();
 chai.use(sinonChai);
 
-import isJson from "../src/is/string/json";
-import isInt from "../src/is/string/int";
-import isFunctionStr from "../src/is/string/function";
+import isJson from '../src/is/string/json.js';
+import isInt from '../src/is/string/int.js';
+import isFunctionStr from '../src/is/string/function.js';
 
 describe("is/string/int", function () {
   it("should test string whether integer", function () {

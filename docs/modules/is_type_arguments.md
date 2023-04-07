@@ -4,19 +4,25 @@
 
 ## Table of contents
 
-### Namespaces
+### References
 
-- [export&#x3D;](is_type_arguments.export_.md)
+- [default](is_type_arguments.md#default)
 
 ### Functions
 
-- [export&#x3D;](is_type_arguments.md#export&#x3D;)
+- [isArguments](is_type_arguments.md#isarguments)
+
+## References
+
+### default
+
+Renames and re-exports [isArguments](is_type_arguments.md#isarguments)
 
 ## Functions
 
-### export&#x3D;
+### isArguments
 
-▸ **export=**(`value`): `boolean`
+▸ **isArguments**(`value`): `boolean`
 
 Checks if a value is an `arguments` object.
 
@@ -44,4 +50,4 @@ Returns `true` if `value` is an `arguments` object, else `false`.
 
 #### Defined in
 
-[src/is/type/arguments.js:16](https://github.com/snowyu/util-ex.js/blob/f71e464/src/is/type/arguments.js#L16)
+[is/type/arguments.js:16](https://github.com/snowyu/util-ex.js/blob/b4dc093/src/is/type/arguments.js#L16)

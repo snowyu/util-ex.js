@@ -4,19 +4,25 @@
 
 ## Table of contents
 
-### Namespaces
+### References
 
-- [export&#x3D;](injectMethods.export_.md)
+- [default](injectMethods.md#default)
 
 ### Functions
 
-- [export&#x3D;](injectMethods.md#export&#x3D;)
+- [injectMethods](injectMethods.md#injectmethods)
+
+## References
+
+### default
+
+Renames and re-exports [injectMethods](injectMethods.md#injectmethods)
 
 ## Functions
 
-### export&#x3D;
+### injectMethods
 
-▸ **export=**(`aObject`, `aMethods`, `aOptions?`): `boolean`
+▸ **injectMethods**(`aObject`, `aMethods`, `aOptions?`): `boolean`
 
 Injects multiple methods into an object, optionally preserving access to the original methods via "`super`" and original instance via "`self`".
 
@@ -71,4 +77,4 @@ Whether the injections are successful.
 
 #### Defined in
 
-[src/injectMethods.js:55](https://github.com/snowyu/util-ex.js/blob/f71e464/src/injectMethods.js#L55)
+[injectMethods.js:54](https://github.com/snowyu/util-ex.js/blob/b4dc093/src/injectMethods.js#L54)

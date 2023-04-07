@@ -4,19 +4,29 @@
 
 ## Table of contents
 
+### References
+
+- [default](inject.md#default)
+
 ### Namespaces
 
-- [export&#x3D;](inject.export_.md)
+- [inject](inject.inject.md)
 
 ### Functions
 
-- [export&#x3D;](inject.md#export&#x3D;)
+- [inject](inject.md#inject)
+
+## References
+
+### default
+
+Renames and re-exports [inject](inject.md#inject)
 
 ## Functions
 
-### export&#x3D;
+### inject
 
-▸ **export=**(`aOrgFunc`, `aBeforeExec`, `aAfterExec`): `Function`
+▸ **inject**(`aOrgFunc`, `aBeforeExec`, `aAfterExec`): `Function`
 
 Wraps a function and executes code before and/or after the wrapped function.
 
@@ -116,4 +126,4 @@ If `aAfterExec` is a function, it will be called with the same context, argument
 
 #### Defined in
 
-[src/inject.js:133](https://github.com/snowyu/util-ex.js/blob/f71e464/src/inject.js#L133)
+[inject.js:128](https://github.com/snowyu/util-ex.js/blob/b4dc093/src/inject.js#L128)

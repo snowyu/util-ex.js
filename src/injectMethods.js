@@ -1,5 +1,5 @@
-import injectMethod from "./injectMethod";
-import isFunction from "./is/type/function";
+import injectMethod from "./injectMethod.js";
+import isFunction from "./is/type/function.js";
 /* injectMethods(object, methods)
 
 inject methods to an object. You can use `this.super()` to call the original method.

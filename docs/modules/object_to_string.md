@@ -4,19 +4,25 @@
 
 ## Table of contents
 
-### Namespaces
+### References
 
-- [export&#x3D;](object_to_string.export_.md)
+- [default](object_to_string.md#default)
 
 ### Functions
 
-- [export&#x3D;](object_to_string.md#export&#x3D;)
+- [objectToString](object_to_string.md#objecttostring)
+
+## References
+
+### default
+
+Renames and re-exports [objectToString](object_to_string.md#objecttostring)
 
 ## Functions
 
-### export&#x3D;
+### objectToString
 
-▸ **export=**(`o`): `string`
+▸ **objectToString**(`o`): `string`
 
 The objectToString function returns a string representation of an object's type using the built-in Object.prototype.toString method.
 
@@ -45,4 +51,4 @@ objectToString({}); // returns '[object Object]'
 
 #### Defined in
 
-[src/object-to-string.js:17](https://github.com/snowyu/util-ex.js/blob/f71e464/src/object-to-string.js#L17)
+[object-to-string.js:17](https://github.com/snowyu/util-ex.js/blob/b4dc093/src/object-to-string.js#L17)

@@ -1,4 +1,4 @@
-import isRegExp from "./type/regexp";
+import isRegExp from './type/regexp.js';
 
 /**
  *   Checks if a string matches any item in a list of strings or regular expressions.

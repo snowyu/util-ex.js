@@ -4,19 +4,25 @@
 
 ## Table of contents
 
-### Namespaces
+### References
 
-- [export&#x3D;](log.export_.md)
+- [default](log.md#default)
 
 ### Functions
 
-- [export&#x3D;](log.md#export&#x3D;)
+- [log](log.md#log)
+
+## References
+
+### default
+
+Renames and re-exports [log](log.md#log)
 
 ## Functions
 
-### export&#x3D;
+### log
 
-▸ **export=**(`...args`): `void`
+▸ **log**(`...args`): `void`
 
 Logs a message to the console with a timestamp prefix.
 
@@ -32,4 +38,4 @@ Logs a message to the console with a timestamp prefix.
 
 #### Defined in
 
-[src/log.js:26](https://github.com/snowyu/util-ex.js/blob/f71e464/src/log.js#L26)
+[log.js:21](https://github.com/snowyu/util-ex.js/blob/b4dc093/src/log.js#L21)

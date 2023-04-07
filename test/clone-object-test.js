@@ -5,7 +5,7 @@ var assert = chai.assert;
 var should = chai.should();
 chai.use(sinonChai);
 
-import cloneObject from "../src/clone-object";
+import cloneObject from '../src/clone-object.js';
 
 describe("cloneObject", function () {
   it("should clone a plain object", function () {

@@ -4,30 +4,36 @@
 
 ## Table of contents
 
-### Namespaces
+### References
 
-- [export&#x3D;](is_string_float.export_.md)
+- [default](is_string_float.md#default)
 
 ### Functions
 
-- [export&#x3D;](is_string_float.md#export&#x3D;)
+- [isFloatStr](is_string_float.md#isfloatstr)
+
+## References
+
+### default
+
+Renames and re-exports [isFloatStr](is_string_float.md#isfloatstr)
 
 ## Functions
 
-### export&#x3D;
+### isFloatStr
 
-▸ **export=**(`str`): `boolean`
+▸ **isFloatStr**(`str`): `boolean`
 
 Checks if a string represents a valid floating point number.
 
 **`Example`**
 
 ```ts
-isFloat('3.14'); // returns true
-isFloat('-0.5'); // returns true
-isFloat('2.718e0'); // returns true
-isFloat('2.718e-2'); // returns true
-isFloat('abc'); // returns false
+isFloatStr('3.14'); // returns true
+isFloatStr('-0.5'); // returns true
+isFloatStr('2.718e0'); // returns true
+isFloatStr('2.718e-2'); // returns true
+isFloatStr('abc'); // returns false
 ```
 
 #### Parameters
@@ -44,4 +50,4 @@ isFloat('abc'); // returns false
 
 #### Defined in
 
-[src/is/string/float.js:14](https://github.com/snowyu/util-ex.js/blob/f71e464/src/is/string/float.js#L14)
+[is/string/float.js:14](https://github.com/snowyu/util-ex.js/blob/b4dc093/src/is/string/float.js#L14)

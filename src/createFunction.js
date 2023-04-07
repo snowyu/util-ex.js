@@ -1,4 +1,4 @@
-import _createFunc from "./_create-function";
+import _createFunc from "./_create-function.js";
 
 /*
  * Usage:

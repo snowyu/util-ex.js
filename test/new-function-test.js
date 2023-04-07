@@ -5,7 +5,7 @@ var assert = chai.assert;
 var should = chai.should();
 chai.use(sinonChai);
 
-import createFunction from "../src/new-function";
+import createFunction from '../src/new-function.js';
 
 describe("newFunction", function () {
   it("should create a function via string", function () {

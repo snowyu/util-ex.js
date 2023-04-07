@@ -4,15 +4,25 @@
 
 ## Table of contents
 
+### References
+
+- [default](format.md#default)
+
 ### Functions
 
-- [export&#x3D;](format.md#export&#x3D;)
+- [format](format.md#format)
+
+## References
+
+### default
+
+Renames and re-exports [format](format.md#format)
 
 ## Functions
 
-### export&#x3D;
+### format
 
-▸ **export=**(`f`, `...args`): `string`
+▸ **format**(`f`, `...args`): `string`
 
 Formats a string using placeholder tokens.
 
@@ -29,7 +39,7 @@ concatenated into a space-separated string.
 ```ts
 format('%s %s', 'hello', 'world'); // 'hello world'
 format('%d %s', 42, 'answer'); // '42 answer'
-format('%j', { foo: 'bar' }); // '{"foo":"bar"}'
+format('%j', { foo: 'bar' }); // '{'foo':'bar'}'
 format('no placeholders', 'needed'); // 'no placeholders needed'
 ```
 
@@ -48,4 +58,4 @@ The formatted string.
 
 #### Defined in
 
-[src/format.js:29](https://github.com/snowyu/util-ex.js/blob/f71e464/src/format.js#L29)
+[format.js:28](https://github.com/snowyu/util-ex.js/blob/b4dc093/src/format.js#L28)

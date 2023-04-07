@@ -4,19 +4,25 @@
 
 ## Table of contents
 
-### Namespaces
+### References
 
-- [export&#x3D;](is_type_string.export_.md)
+- [default](is_type_string.md#default)
 
 ### Functions
 
-- [export&#x3D;](is_type_string.md#export&#x3D;)
+- [isString](is_type_string.md#isstring)
+
+## References
+
+### default
+
+Renames and re-exports [isString](is_type_string.md#isstring)
 
 ## Functions
 
-### export&#x3D;
+### isString
 
-▸ **export=**(`arg`): `boolean`
+▸ **isString**(`arg`): `boolean`
 
 #### Parameters
 
@@ -30,4 +36,4 @@
 
 #### Defined in
 
-[src/is/type/string.js:1](https://github.com/snowyu/util-ex.js/blob/f71e464/src/is/type/string.js#L1)
+[is/type/string.js:1](https://github.com/snowyu/util-ex.js/blob/b4dc093/src/is/type/string.js#L1)

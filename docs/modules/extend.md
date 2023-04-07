@@ -4,9 +4,9 @@
 
 ## Table of contents
 
-### Namespaces
+### References
 
-- [export&#x3D;](extend.export_.md)
+- [default](extend.md#default-1)
 
 ### Type Aliases
 
@@ -14,7 +14,13 @@
 
 ### Functions
 
-- [export&#x3D;](extend.md#export&#x3D;-1)
+- [extend](extend.md#extend)
+
+## References
+
+### default
+
+Renames and re-exports [extend](extend.md#extend)
 
 ## Type Aliases
 
@@ -39,13 +45,13 @@
 
 #### Defined in
 
-[src/extend.js:6](https://github.com/snowyu/util-ex.js/blob/f71e464/src/extend.js#L6)
+[extend.js:6](https://github.com/snowyu/util-ex.js/blob/b4dc093/src/extend.js#L6)
 
 ## Functions
 
-### export&#x3D;
+### extend
 
-▸ **export=**(`dest`, `sources`, `filter`): `any`
+▸ **extend**(`dest`, `sources`, `filter`): `any`
 
 Extends an object with properties from one or more source objects.
 
@@ -66,7 +72,7 @@ var dest = { a: 1 };
 var src1 = { b: 2 };
 var src2 = { c: 3 };
 var filter = function(key, value) {
-  return key !== 'b';
+  return key !== 'b.js';
 };
 extend(dest, [src1, src2], filter);
 // dest => { a: 1, c: 3 }
@@ -88,4 +94,4 @@ extend(dest, [src1, src2], filter);
 
 #### Defined in
 
-[src/extend.js:35](https://github.com/snowyu/util-ex.js/blob/f71e464/src/extend.js#L35)
+[extend.js:35](https://github.com/snowyu/util-ex.js/blob/b4dc093/src/extend.js#L35)

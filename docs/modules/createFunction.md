@@ -4,19 +4,25 @@
 
 ## Table of contents
 
-### Namespaces
+### References
 
-- [export&#x3D;](createFunction.export_.md)
+- [default](createFunction.md#default)
 
 ### Functions
 
-- [export&#x3D;](createFunction.md#export&#x3D;)
+- [createFunction](createFunction.md#createfunction)
+
+## References
+
+### default
+
+Renames and re-exports [createFunction](createFunction.md#createfunction)
 
 ## Functions
 
-### export&#x3D;
+### createFunction
 
-▸ **export=**(`name`, `args?`, `body`, `scope?`, `values?`, `...args`): `Function`
+▸ **createFunction**(`name`, `args?`, `body`, `scope?`, `values?`, `...args`): `Function`
 
 Creates a new function with the given name, arguments, and body, and optionally with the given scope and values.
 
@@ -51,4 +57,4 @@ var g = createFunction('myFunc', ['a', 'b'], 'console.log(a + b);', {Math, conso
 
 #### Defined in
 
-[src/createFunction.js:43](https://github.com/snowyu/util-ex.js/blob/f71e464/src/createFunction.js#L43)
+[createFunction.js:33](https://github.com/snowyu/util-ex.js/blob/b4dc093/src/createFunction.js#L33)

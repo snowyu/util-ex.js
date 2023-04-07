@@ -4,19 +4,25 @@
 
 ## Table of contents
 
-### Namespaces
+### References
 
-- [export&#x3D;](object_map.export_.md)
+- [default](object_map.md#default)
 
 ### Functions
 
-- [export&#x3D;](object_map.md#export&#x3D;)
+- [map](object_map.md#map)
+
+## References
+
+### default
+
+Renames and re-exports [map](object_map.md#map)
 
 ## Functions
 
-### export&#x3D;
+### map
 
-▸ **export=**(`aObject`, `aOptions?`): `any`[]
+▸ **map**(`aObject`, `aOptions?`): `any`[]
 
 Returns an array containing the values of all enumerable or non-enumerable properties of an object.
 
@@ -53,4 +59,4 @@ An array containing the mapped property values.
 
 #### Defined in
 
-[src/object/map.js:30](https://github.com/snowyu/util-ex.js/blob/f71e464/src/object/map.js#L30)
+[object/map.js:30](https://github.com/snowyu/util-ex.js/blob/b4dc093/src/object/map.js#L30)

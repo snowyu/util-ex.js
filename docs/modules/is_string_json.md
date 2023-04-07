@@ -4,19 +4,25 @@
 
 ## Table of contents
 
-### Namespaces
+### References
 
-- [export&#x3D;](is_string_json.export_.md)
+- [default](is_string_json.md#default)
 
 ### Functions
 
-- [export&#x3D;](is_string_json.md#export&#x3D;)
+- [isJson](is_string_json.md#isjson)
+
+## References
+
+### default
+
+Renames and re-exports [isJson](is_string_json.md#isjson)
 
 ## Functions
 
-### export&#x3D;
+### isJson
 
-▸ **export=**(`v`, `almost`): `boolean`
+▸ **isJson**(`v`, `almost`): `boolean`
 
 Checks if a string is a valid JSON string.
 
@@ -44,4 +50,4 @@ isJson('This is not a JSON string.'); // false
 
 #### Defined in
 
-[src/is/string/json.js:17](https://github.com/snowyu/util-ex.js/blob/f71e464/src/is/string/json.js#L17)
+[is/string/json.js:17](https://github.com/snowyu/util-ex.js/blob/b4dc093/src/is/string/json.js#L17)

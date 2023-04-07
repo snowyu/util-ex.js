@@ -1,5 +1,5 @@
-import isFunction from "./is/type/function";
-import isArray from "./is/type/array";
+import isFunction from './is/type/function.js';
+import isArray from './is/type/array.js';
 
 /**
  * A filter function used to determine which properties to copy.
@@ -27,7 +27,7 @@ import isArray from "./is/type/array";
  * var src1 = { b: 2 };
  * var src2 = { c: 3 };
  * var filter = function(key, value) {
- *   return key !== 'b';
+ *   return key !== 'b.js';
  * };
  * extend(dest, [src1, src2], filter);
  * // dest => { a: 1, c: 3 }

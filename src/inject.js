@@ -1,5 +1,6 @@
 import defineProperty from "inherits-ex/lib/defineProperty";
-import isOldArguments from "./is/type/arguments";
+import isOldArguments from "./is/type/arguments.js";
+
 const arraySlice = Array.prototype.slice;
 
 /*
@@ -69,7 +70,7 @@ the result should be 10.
  * const originalFunc = (a, b) => a + b;
  * const beforeFunc = (a, b) => console.log(`Before execution: a = ${a}, b = ${b}`);
  * const afterFunc = (result) => console.log(`After execution: result = ${result}`);
- * const wrappedFunc = injectFunc(originalFunc, beforeFunc, afterFunc);
+ * const wrappedFunc = inject(originalFunc, beforeFunc, afterFunc);
  * const result = wrappedFunc(1, 2); // Logs "Before execution: a = 1, b = 2" and "After execution: result = 3"
  * ```
  *
@@ -86,7 +87,7 @@ the result should be 10.
  *   console.log(`After execution: result = ${result}, isDenied = ${isDenied}`);
  *   return result * 2;
  * };
- * const wrappedFunc = injectFunc(originalFunc, beforeFunc, afterFunc);
+ * const wrappedFunc = inject(originalFunc, beforeFunc, afterFunc);
  * const result = wrappedFunc(1, 2); // Logs "Before execution: a = 1, b = 2", "After execution: result = 6, isDenied = false"
  * console.log(result); // Output: 12
  * ```
@@ -103,7 +104,7 @@ the result should be 10.
  *   console.log(`After execution: result = ${result}, isDenied = ${isDenied}`);
  *   return "Modified return value";
  * };
- * const wrappedFunc = injectFunc(originalFunc, beforeFunc, afterFunc);
+ * const wrappedFunc = inject(originalFunc, beforeFunc, afterFunc);
  * const result = wrappedFunc(1, 2); // Logs "Before execution: a = 1, b = 2", "After execution: result = Modified return value, isDenied = true"
  * console.log(result); // Output: "Modified return value"
  * ```
@@ -119,7 +120,7 @@ the result should be 10.
  * const afterFunc = (result, isDenied) => {
  *   console.log(`After execution: result = ${result}, isDenied = ${isDenied}`);
  * };
- * const wrappedFunc = injectFunc(originalFunc, beforeFunc, afterFunc);
+ * const wrappedFunc = inject(originalFunc, beforeFunc, afterFunc);
  * wrappedFunc(); // Logs "Before execution", "After execution: result = [Error: Original function error], isDenied = false"
  * ```
  *

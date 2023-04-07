@@ -1,6 +1,6 @@
-import isArguments from "./type/arguments";
-import isFunction from "./type/function";
-import isEmptyFunction from "./empty-function";
+import isArguments from './type/arguments.js';
+import isFunction from './type/function.js';
+import isEmptyFunction from './empty-function.js';
 
 const getOwnPropertyNames = Object.getOwnPropertyNames; // >=ECMAScript5 only
 

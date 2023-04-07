@@ -1,7 +1,8 @@
-import isObject from "./is/type/object";
-import isNull from "./is/type/null";
-import isString from "./is/type/string";
-import inspect from "./inspect";
+import isObject from './is/type/object.js';
+import isNull from './is/type/null.js';
+import isString from './is/type/string.js';
+import inspect from './inspect.js';
+
 const formatRegExp = /%[sdj%]/g;
 /**
  * Formats a string using placeholder tokens.
@@ -21,7 +22,7 @@ const formatRegExp = /%[sdj%]/g;
  * @example
  * format('%s %s', 'hello', 'world'); // 'hello world'
  * format('%d %s', 42, 'answer'); // '42 answer'
- * format('%j', { foo: 'bar' }); // '{"foo":"bar"}'
+ * format('%j', { foo: 'bar' }); // '{'foo':'bar'}'
  * format('no placeholders', 'needed'); // 'no placeholders needed'
  */
 export function format(f) {
@@ -37,10 +38,8 @@ export function format(f) {
   const args = arguments;
   const len = args.length;
   let str = String(f).replace(formatRegExp, (x) => {
-    if (x === '%%') 
-return '%';
-    if (i >= len) 
-return x;
+    if (x === '%%') {return '%.js';}
+    if (i >= len) {return x;}
     switch (x) {
       case '%s':
         return String(args[i++]);
@@ -50,7 +49,7 @@ return x;
         try {
           return JSON.stringify(args[i++]);
         } catch (_) {
-          return '[Circular]';
+          return '[Circular].js';
         }
       default:
         return x;

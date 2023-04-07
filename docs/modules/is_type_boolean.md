@@ -4,19 +4,25 @@
 
 ## Table of contents
 
-### Namespaces
+### References
 
-- [export&#x3D;](is_type_boolean.export_.md)
+- [default](is_type_boolean.md#default)
 
 ### Functions
 
-- [export&#x3D;](is_type_boolean.md#export&#x3D;)
+- [isBool](is_type_boolean.md#isbool)
+
+## References
+
+### default
+
+Renames and re-exports [isBool](is_type_boolean.md#isbool)
 
 ## Functions
 
-### export&#x3D;
+### isBool
 
-▸ **export=**(`arg`): `boolean`
+▸ **isBool**(`arg`): `boolean`
 
 Determines whether the given argument is a boolean.
 
@@ -34,4 +40,4 @@ Whether the argument is a boolean.
 
 #### Defined in
 
-[src/is/type/boolean.js:7](https://github.com/snowyu/util-ex.js/blob/f71e464/src/is/type/boolean.js#L7)
+[is/type/boolean.js:7](https://github.com/snowyu/util-ex.js/blob/b4dc093/src/is/type/boolean.js#L7)
