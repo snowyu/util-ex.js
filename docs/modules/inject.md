@@ -41,7 +41,7 @@ If aAfterExec is not a function and an error occurs while executing the wrapped 
 const originalFunc = (a, b) => a + b;
 const beforeFunc = (a, b) => console.log(`Before execution: a = ${a}, b = ${b}`);
 const afterFunc = (result) => console.log(`After execution: result = ${result}`);
-const wrappedFunc = injectFunc(originalFunc, beforeFunc, afterFunc);
+const wrappedFunc = inject(originalFunc, beforeFunc, afterFunc);
 const result = wrappedFunc(1, 2); // Logs "Before execution: a = 1, b = 2" and "After execution: result = 3"
 ```
 
@@ -59,7 +59,7 @@ const afterFunc = (result, isDenied) => {
   console.log(`After execution: result = ${result}, isDenied = ${isDenied}`);
   return result * 2;
 };
-const wrappedFunc = injectFunc(originalFunc, beforeFunc, afterFunc);
+const wrappedFunc = inject(originalFunc, beforeFunc, afterFunc);
 const result = wrappedFunc(1, 2); // Logs "Before execution: a = 1, b = 2", "After execution: result = 6, isDenied = false"
 console.log(result); // Output: 12
 ```
@@ -77,7 +77,7 @@ const afterFunc = (result, isDenied) => {
   console.log(`After execution: result = ${result}, isDenied = ${isDenied}`);
   return "Modified return value";
 };
-const wrappedFunc = injectFunc(originalFunc, beforeFunc, afterFunc);
+const wrappedFunc = inject(originalFunc, beforeFunc, afterFunc);
 const result = wrappedFunc(1, 2); // Logs "Before execution: a = 1, b = 2", "After execution: result = Modified return value, isDenied = true"
 console.log(result); // Output: "Modified return value"
 ```
@@ -95,7 +95,7 @@ const beforeFunc = () => {
 const afterFunc = (result, isDenied) => {
   console.log(`After execution: result = ${result}, isDenied = ${isDenied}`);
 };
-const wrappedFunc = injectFunc(originalFunc, beforeFunc, afterFunc);
+const wrappedFunc = inject(originalFunc, beforeFunc, afterFunc);
 wrappedFunc(); // Logs "Before execution", "After execution: result = [Error: Original function error], isDenied = false"
 ```
 
@@ -126,4 +126,4 @@ If `aAfterExec` is a function, it will be called with the same context, argument
 
 #### Defined in
 
-[inject.js:128](https://github.com/snowyu/util-ex.js/blob/b4dc093/src/inject.js#L128)
+[inject.js:128](https://github.com/snowyu/util-ex.js/blob/de980c9/src/inject.js#L128)

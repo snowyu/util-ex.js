@@ -50,4 +50,4 @@ isJson('This is not a JSON string.'); // false
 
 #### Defined in
 
-[is/string/json.js:17](https://github.com/snowyu/util-ex.js/blob/b4dc093/src/is/string/json.js#L17)
+[is/string/json.js:17](https://github.com/snowyu/util-ex.js/blob/de980c9/src/is/string/json.js#L17)

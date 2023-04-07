@@ -23,6 +23,8 @@ If aAfterExec is not a function and an error occurs while executing the wrapped 
 **`Example`**
 
 ```js
+import { inject as injectFunc } from 'util-ex'
+
 // Wrapping a function with injectFunc
 const originalFunc = (a, b) => a + b;
 const beforeFunc = (a, b) => console.log(`Before execution: a = ${a}, b = ${b}`);
@@ -127,6 +129,8 @@ Injects method into an object. optionally preserving access to the original meth
 **`Example`**
 
 ```ts
+import { injectMethod } from 'util-ex'
+
 var obj = {
   method1: function() {
     console.log('Hello');
@@ -162,10 +166,14 @@ whether the injection is successful.
     newFunction(name, arguments, body[, scope[, values]])
     newFunction(functionString[, scope[, values]])
 
-create a function via string.
+Creates a new function with the given name, arguments, body, scope and values.
+
+* If only one argument is provided and it is a function, returns a new function with the same code.
+* If only one argument is provided and it is not a function, returns a new empty function with the given name.
+* If multiple arguments are provided, creates a new function with the given name, arguments and body.
 
 ```js
-newFunction = require('util-ex/lib/new-function')
+import { newFunction } from 'util-ex'
 
 var fn = newFunction('yourFuncName', ['arg1', 'arg2'], 'return log(arg1+arg2);', {log:console.log})
 newFunction('function yourFuncName(){}')

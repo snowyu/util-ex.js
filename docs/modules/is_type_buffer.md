@@ -32,4 +32,4 @@ The value to check.
 
 #### Defined in
 
-[is/type/buffer.js:6](https://github.com/snowyu/util-ex.js/blob/b4dc093/src/is/type/buffer.js#L6)
+[is/type/buffer.js:6](https://github.com/snowyu/util-ex.js/blob/de980c9/src/is/type/buffer.js#L6)

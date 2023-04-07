@@ -40,4 +40,4 @@ Checks if a given value is empty.
 
 #### Defined in
 
-[is/empty.js:53](https://github.com/snowyu/util-ex.js/blob/b4dc093/src/is/empty.js#L53)
+[is/empty.js:53](https://github.com/snowyu/util-ex.js/blob/de980c9/src/is/empty.js#L53)

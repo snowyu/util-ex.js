@@ -50,4 +50,4 @@ Whether or not the string represents an integer.
 
 #### Defined in
 
-[is/string/int.js:14](https://github.com/snowyu/util-ex.js/blob/b4dc093/src/is/string/int.js#L14)
+[is/string/int.js:14](https://github.com/snowyu/util-ex.js/blob/de980c9/src/is/string/int.js#L14)

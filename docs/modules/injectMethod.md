@@ -67,4 +67,4 @@ whether the injection is successful.
 
 #### Defined in
 
-[injectMethod.js:31](https://github.com/snowyu/util-ex.js/blob/b4dc093/src/injectMethod.js#L31)
+[injectMethod.js:31](https://github.com/snowyu/util-ex.js/blob/de980c9/src/injectMethod.js#L31)

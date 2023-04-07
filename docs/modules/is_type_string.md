@@ -36,4 +36,4 @@ Renames and re-exports [isString](is_type_string.md#isstring)
 
 #### Defined in
 
-[is/type/string.js:1](https://github.com/snowyu/util-ex.js/blob/b4dc093/src/is/type/string.js#L1)
+[is/type/string.js:1](https://github.com/snowyu/util-ex.js/blob/de980c9/src/is/type/string.js#L1)
