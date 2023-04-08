@@ -7,7 +7,6 @@
     "name": "Riceball LEE",
     "email": "snowyu.lee@gmail.com"
   },
-  "types": "./types",
   "files": [
     "README.md",
     "LICENSE-MIT",
@@ -57,10 +56,10 @@
   "scripts": {
     "build": "npm run build.cjs && npm run build.ts && npm run doc.md",
     "build.cjs": "babel src --out-dir lib --config-file ./.babelrc",
-    "build.ts": "tsc",
-    "clean": "rm -fr web docs types lib",
+    "build.ts": "tsc --outDir lib",
+    "clean": "rm -fr web docs lib",
     "clean.doc": "rm -fr web docs",
-    "clean.ts": "rm -fr types",
+    "clean.ts": "rm -fr lib/*.d.ts",
     "clean.lib": "rm -fr lib",
     "doc": "typedoc --plugin none --out web ./src",
     "doc.md": "typedoc --plugin typedoc-plugin-markdown --out docs ./src",
