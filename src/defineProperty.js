@@ -1,6 +1,6 @@
-import defineProperty from "inherits-ex/lib/defineProperty";
+import {defineProperty} from "inherits-ex/lib/defineProperty";
 
-export * from "inherits-ex/lib/defineProperty";
+export {defineProperty} from "inherits-ex/lib/defineProperty";
 export default defineProperty;
 
 // var isObject = require('./is/type/object');
