@@ -32,6 +32,9 @@
     "url": "https://github.com/snowyu/util-ex.js/issues"
   },
   "license": "MIT",
+  "engines": {
+    "node": ">=8"
+  },
   "devDependencies": {
     "@antfu/eslint-config": "^0.38.4",
     "@babel/cli": "^7.21.0",
@@ -65,12 +68,11 @@
     "doc.md": "typedoc --plugin typedoc-plugin-markdown --out docs ./src",
     "lint": "npx eslint --config .eslintrc.yml src",
     "lint.fix": "npm run lint -- --fix",
-    "release": "npm run clean && npm run build && npx standard-version",
+    "release": "npm run clean && npm run build && npx standard-version -s",
     "release.alpha": "npm run release -- --prerelease alpha",
     "test": "mocha"
   },
   "dependencies": {
-    "inherits-ex": "^2.1.0-alpha.3",
-    "xtend": "^4.0.2"
+    "inherits-ex": "^2.1.0-alpha.4"
   }
 }
