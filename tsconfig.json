@@ -7,7 +7,10 @@
       "allowJs": true,
       // Generate d.ts files
       "declaration": true,
-      // This compiler run should
+      "esModuleInterop": true,
+      "module": "CommonJS",
+      "target": "ES6",
+        // This compiler run should
       // only output d.ts files
       "emitDeclarationOnly": true,
       // Types should go into this directory.
