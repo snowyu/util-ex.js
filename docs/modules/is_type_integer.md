@@ -8,7 +8,7 @@
 
 - [default](is_type_integer.md#default)
 
-### Variables
+### Functions
 
 - [isInt](is_type_integer.md#isint)
 
@@ -18,12 +18,22 @@
 
 Renames and re-exports [isInt](is_type_integer.md#isint)
 
-## Variables
+## Functions
 
 ### isInt
 
-• `Const` **isInt**: `any`
+▸ **isInt**(`value`): `boolean`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `unknown` |
+
+#### Returns
+
+`boolean`
 
 #### Defined in
 
-[is/type/integer.js:1](https://github.com/snowyu/util-ex.js/blob/de980c9/src/is/type/integer.js#L1)
+[src/is/type/integer.js:1](https://github.com/snowyu/util-ex.js/blob/61a93bc/src/is/type/integer.js#L1)

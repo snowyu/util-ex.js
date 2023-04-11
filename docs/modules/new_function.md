@@ -65,4 +65,4 @@ A new function with the given name, arguments, body, scope and values.
 
 #### Defined in
 
-[new-function.js:45](https://github.com/snowyu/util-ex.js/blob/de980c9/src/new-function.js#L45)
+[src/new-function.js:45](https://github.com/snowyu/util-ex.js/blob/61a93bc/src/new-function.js#L45)

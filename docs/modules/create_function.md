@@ -50,4 +50,4 @@ var fn = _createFunction('function yourFuncName(arg1, arg2){log(arg1+arg2);}', {
 
 #### Defined in
 
-[_create-function.js:30](https://github.com/snowyu/util-ex.js/blob/de980c9/src/_create-function.js#L30)
+[src/_create-function.js:30](https://github.com/snowyu/util-ex.js/blob/61a93bc/src/_create-function.js#L30)

@@ -38,4 +38,4 @@ Logs a message to the console with a timestamp prefix.
 
 #### Defined in
 
-[log.js:21](https://github.com/snowyu/util-ex.js/blob/de980c9/src/log.js#L21)
+[src/log.js:21](https://github.com/snowyu/util-ex.js/blob/61a93bc/src/log.js#L21)

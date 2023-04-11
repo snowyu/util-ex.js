@@ -7,9 +7,16 @@
 ### References
 
 - [default](is_empty_function.md#default)
+- [isEmptyFunction](is_empty_function.md#isemptyfunction)
 
 ## References
 
 ### default
 
-Re-exports [default](defineProperty.md#default)
+Renames and re-exports [isEmptyFunction](index.md#isemptyfunction)
+
+___
+
+### isEmptyFunction
+
+Re-exports [isEmptyFunction](index.md#isemptyfunction)

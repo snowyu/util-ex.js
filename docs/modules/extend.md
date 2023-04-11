@@ -45,7 +45,7 @@ Renames and re-exports [extend](extend.md#extend)
 
 #### Defined in
 
-[extend.js:6](https://github.com/snowyu/util-ex.js/blob/de980c9/src/extend.js#L6)
+[src/extend.js:6](https://github.com/snowyu/util-ex.js/blob/61a93bc/src/extend.js#L6)
 
 ## Functions
 
@@ -94,4 +94,4 @@ extend(dest, [src1, src2], filter);
 
 #### Defined in
 
-[extend.js:35](https://github.com/snowyu/util-ex.js/blob/de980c9/src/extend.js#L35)
+[src/extend.js:35](https://github.com/snowyu/util-ex.js/blob/61a93bc/src/extend.js#L35)

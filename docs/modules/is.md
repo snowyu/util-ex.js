@@ -12,6 +12,7 @@
 - [isBuffer](is.md#isbuffer)
 - [isDate](is.md#isdate)
 - [isEmpty](is.md#isempty)
+- [isEmptyFunction](is.md#isemptyfunction)
 - [isEmptyObject](is.md#isemptyobject)
 - [isError](is.md#iserror)
 - [isFloatStr](is.md#isfloatstr)
@@ -65,6 +66,12 @@ ___
 ### isEmpty
 
 Re-exports [isEmpty](is_empty.md#isempty)
+
+___
+
+### isEmptyFunction
+
+Re-exports [isEmptyFunction](index.md#isemptyfunction)
 
 ___
 

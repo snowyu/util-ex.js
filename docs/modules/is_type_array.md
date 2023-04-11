@@ -40,4 +40,4 @@ Determines whether a given value is an Array.
 
 #### Defined in
 
-[is/type/array.js:9](https://github.com/snowyu/util-ex.js/blob/de980c9/src/is/type/array.js#L9)
+[src/is/type/array.js:9](https://github.com/snowyu/util-ex.js/blob/61a93bc/src/is/type/array.js#L9)

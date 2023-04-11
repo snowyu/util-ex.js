@@ -36,4 +36,4 @@ Renames and re-exports [isUndefined](is_type_undefined.md#isundefined)
 
 #### Defined in
 
-[is/type/undefined.js:1](https://github.com/snowyu/util-ex.js/blob/de980c9/src/is/type/undefined.js#L1)
+[src/is/type/undefined.js:1](https://github.com/snowyu/util-ex.js/blob/61a93bc/src/is/type/undefined.js#L1)

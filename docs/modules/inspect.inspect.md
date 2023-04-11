@@ -37,7 +37,7 @@
 
 #### Defined in
 
-[inspect.js:64](https://github.com/snowyu/util-ex.js/blob/de980c9/src/inspect.js#L64)
+[src/inspect.js:64](https://github.com/snowyu/util-ex.js/blob/61a93bc/src/inspect.js#L64)
 
 ___
 
@@ -60,4 +60,4 @@ ___
 
 #### Defined in
 
-[inspect.js:81](https://github.com/snowyu/util-ex.js/blob/de980c9/src/inspect.js#L81)
+[src/inspect.js:81](https://github.com/snowyu/util-ex.js/blob/61a93bc/src/inspect.js#L81)

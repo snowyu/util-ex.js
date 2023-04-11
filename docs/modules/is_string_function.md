@@ -47,4 +47,4 @@ isFunctionStr('const x = 5;') // false
 
 #### Defined in
 
-[is/string/function.js:9](https://github.com/snowyu/util-ex.js/blob/de980c9/src/is/string/function.js#L9)
+[src/is/string/function.js:9](https://github.com/snowyu/util-ex.js/blob/61a93bc/src/is/string/function.js#L9)

@@ -59,4 +59,4 @@ An array containing the mapped property values.
 
 #### Defined in
 
-[object/map.js:30](https://github.com/snowyu/util-ex.js/blob/de980c9/src/object/map.js#L30)
+[src/object/map.js:30](https://github.com/snowyu/util-ex.js/blob/61a93bc/src/object/map.js#L30)

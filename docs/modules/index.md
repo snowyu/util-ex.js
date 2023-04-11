@@ -6,13 +6,13 @@
 
 ### References
 
-- [ExtendFn](index.md#extendfn)
 - [FilterFn](index.md#filterfn)
 - [\_createFunction](index.md#_createfunction)
 - [\_extend](index.md#_extend)
 - [cloneObject](index.md#cloneobject)
 - [clonePropertiesTo](index.md#clonepropertiesto)
 - [createFunction](index.md#createfunction)
+- [defineProperty](index.md#defineproperty)
 - [extend](index.md#extend)
 - [format](index.md#format)
 - [getNonEnumerableNames](index.md#getnonenumerablenames)
@@ -48,13 +48,11 @@
 - [newFunction](index.md#newfunction)
 - [objectToString](index.md#objecttostring)
 
+### Functions
+
+- [isEmptyFunction](index.md#isemptyfunction)
+
 ## References
-
-### ExtendFn
-
-Re-exports [ExtendFn](extend.md#extendfn)
-
-___
 
 ### FilterFn
 
@@ -89,6 +87,12 @@ ___
 ### createFunction
 
 Re-exports [createFunction](createFunction.md#createfunction)
+
+___
+
+### defineProperty
+
+Re-exports [defineProperty](defineProperty.md#defineproperty)
 
 ___
 
@@ -293,3 +297,27 @@ ___
 ### objectToString
 
 Re-exports [objectToString](object_to_string.md#objecttostring)
+
+## Functions
+
+### isEmptyFunction
+
+▸ **isEmptyFunction**(`aFunc`): `boolean`
+
+Checks whether a given function is empty or not.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `aFunc` | `Function` | The function to be checked. |
+
+#### Returns
+
+`boolean`
+
+- True if the function is empty, false otherwise.
+
+#### Defined in
+
+node_modules/inherits-ex/lib/isEmptyFunction.d.ts:6
