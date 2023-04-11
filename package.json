@@ -59,7 +59,7 @@
   "scripts": {
     "build": "npm run build.cjs && npm run build.ts && npm run doc.md",
     "build.cjs": "babel src --out-dir lib --config-file ./.babelrc",
-    "build.ts": "tsc --outDir lib",
+    "build.ts": "tsc --declaration --emitDeclarationOnly --outDir lib",
     "clean": "rm -fr web docs lib",
     "clean.doc": "rm -fr web docs",
     "clean.ts": "rm -fr lib/*.d.ts",
@@ -73,6 +73,6 @@
     "test": "mocha"
   },
   "dependencies": {
-    "inherits-ex": "^2.1.0-alpha.4"
+    "inherits-ex": "^2.1.0-alpha.5"
   }
 }
