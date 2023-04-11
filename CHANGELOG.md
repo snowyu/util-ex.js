@@ -1,6 +1,13 @@
 # Changelog
 
-All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
+
+## [2.0.0-alpha.4](https://github.com/snowyu/util-ex.js/compare/v2.0.0-alpha.3...v2.0.0-alpha.4) (2023-04-11)
+
+
+### Bug Fixes
+
+* **re-export:** defineProperty ([61a93bc](https://github.com/snowyu/util-ex.js/commit/61a93bc5b631e3d3ef0aeb74b722a5ba349af654))
 
 ## [2.0.0-alpha.3](https://github.com/snowyu/util-ex.js/compare/v2.0.0-alpha.2...v2.0.0-alpha.3) (2023-04-11)
 
