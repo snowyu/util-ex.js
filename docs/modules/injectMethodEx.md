@@ -49,4 +49,4 @@ a.method(12, 3)
 
 #### Defined in
 
-[src/injectMethodEx.js:25](https://github.com/snowyu/util-ex.js/blob/10dfb41/src/injectMethodEx.js#L25)
+[src/injectMethodEx.js:25](https://github.com/snowyu/util-ex.js/blob/a11fd0d/src/injectMethodEx.js#L25)

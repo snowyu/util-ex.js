@@ -39,7 +39,7 @@
 
 #### Defined in
 
-[src/extend.js:6](https://github.com/snowyu/util-ex.js/blob/10dfb41/src/extend.js#L6)
+[src/extend.js:6](https://github.com/snowyu/util-ex.js/blob/a11fd0d/src/extend.js#L6)
 
 ## Functions
 
@@ -88,4 +88,4 @@ extend(dest, [src1, src2], filter);
 
 #### Defined in
 
-[src/extend.js:35](https://github.com/snowyu/util-ex.js/blob/10dfb41/src/extend.js#L35)
+[src/extend.js:35](https://github.com/snowyu/util-ex.js/blob/a11fd0d/src/extend.js#L35)

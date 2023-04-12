@@ -34,4 +34,4 @@ Determines whether a value is a date object.
 
 #### Defined in
 
-[src/is/type/date.js:10](https://github.com/snowyu/util-ex.js/blob/10dfb41/src/is/type/date.js#L10)
+[src/is/type/date.js:10](https://github.com/snowyu/util-ex.js/blob/a11fd0d/src/is/type/date.js#L10)

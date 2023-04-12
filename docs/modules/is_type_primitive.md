@@ -30,4 +30,4 @@
 
 #### Defined in
 
-[src/is/type/primitive.js:1](https://github.com/snowyu/util-ex.js/blob/10dfb41/src/is/type/primitive.js#L1)
+[src/is/type/primitive.js:1](https://github.com/snowyu/util-ex.js/blob/a11fd0d/src/is/type/primitive.js#L1)

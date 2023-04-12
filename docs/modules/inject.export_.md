@@ -15,17 +15,17 @@
 
 ### createArguments
 
-• **createArguments**: (`args`: `any`, ...`args`: `any`) => `any`
+• **createArguments**: (`aArgs`: `any`, ...`args`: `any`) => `any`
 
 #### Type declaration
 
-▸ (`args`, `...args`): `any`
+▸ (`aArgs`, `...args`): `any`
 
 ##### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `args` | `any` |
+| `aArgs` | `any` |
 | `...args` | `any` |
 
 ##### Returns
@@ -34,7 +34,7 @@
 
 #### Defined in
 
-[src/inject.js:177](https://github.com/snowyu/util-ex.js/blob/10dfb41/src/inject.js#L177)
+[src/inject.js:177](https://github.com/snowyu/util-ex.js/blob/a11fd0d/src/inject.js#L177)
 
 ___
 
@@ -58,4 +58,4 @@ ___
 
 #### Defined in
 
-[src/inject.js:182](https://github.com/snowyu/util-ex.js/blob/10dfb41/src/inject.js#L182)
+[src/inject.js:182](https://github.com/snowyu/util-ex.js/blob/a11fd0d/src/inject.js#L182)

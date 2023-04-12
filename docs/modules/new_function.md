@@ -16,7 +16,7 @@
 
 ### export&#x3D;
 
-▸ **export=**(`name`, `args`, `body`, `scope`, `values`, `...args`): `Function`
+▸ **export=**(`name`, `aArgs`, `body`, `scope`, `values`, `...args`): `Function`
 
 Creates a new function with the given name, arguments, body, scope and values.
 
@@ -45,11 +45,11 @@ subWithLog(5,2); // print 3
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `name` | `string` \| `Function` | The name of the function or the function itself. |
-| `args` | `string`[] | An array of argument names for the function. |
+| `aArgs` | `string`[] | An array of argument names for the function. |
 | `body` | `string` | The body of the function. |
 | `scope` | `any` | The scope for the function. |
 | `values` | `any` | The values to apply to the scope. |
-| `...args` | `any` | An array of argument names for the function. |
+| `...args` | `any` | - |
 
 #### Returns
 
@@ -59,4 +59,4 @@ A new function with the given name, arguments, body, scope and values.
 
 #### Defined in
 
-[src/new-function.js:51](https://github.com/snowyu/util-ex.js/blob/10dfb41/src/new-function.js#L51)
+[src/new-function.js:51](https://github.com/snowyu/util-ex.js/blob/a11fd0d/src/new-function.js#L51)

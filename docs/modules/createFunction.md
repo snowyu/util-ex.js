@@ -16,7 +16,7 @@
 
 ### export&#x3D;
 
-▸ **export=**(`name`, `args?`, `body`, `scope?`, `values?`, `...args`): `Function`
+▸ **export=**(`name`, `aArgs?`, `body`, `scope?`, `values?`, `...args`): `Function`
 
 Creates a new function with the given name, arguments, and body, and optionally with the given scope and values.
 
@@ -37,11 +37,11 @@ var g = createFunction('myFunc', ['a', 'b'], 'console.log(a + b);', {Math, conso
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `name` | `string` | The name of the function. |
-| `args?` | `string` \| `string`[] | An array of argument names. or function body if it's string. |
+| `aArgs?` | `string` \| `string`[] | An array of argument names. or function body if it's string. |
 | `body` | `string` | The function body as a string. |
 | `scope?` | `any` | An array of scope names, or an object with scope names as keys and their corresponding values as values. |
 | `values?` | `any`[] | An array of values corresponding to the scope names, if scope is an array. |
-| `...args` | `any` | An array of argument names. or function body if it's string. |
+| `...args` | `any` | - |
 
 #### Returns
 
@@ -51,4 +51,4 @@ var g = createFunction('myFunc', ['a', 'b'], 'console.log(a + b);', {Math, conso
 
 #### Defined in
 
-[src/createFunction.js:43](https://github.com/snowyu/util-ex.js/blob/10dfb41/src/createFunction.js#L43)
+[src/createFunction.js:43](https://github.com/snowyu/util-ex.js/blob/a11fd0d/src/createFunction.js#L43)

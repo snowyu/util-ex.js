@@ -66,4 +66,4 @@
 
 #### Defined in
 
-[src/index.js:1](https://github.com/snowyu/util-ex.js/blob/10dfb41/src/index.js#L1)
+[src/index.js:1](https://github.com/snowyu/util-ex.js/blob/a11fd0d/src/index.js#L1)
