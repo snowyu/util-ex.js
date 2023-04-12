@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [2.0.0-alpha.7](https://github.com/snowyu/util-ex.js/compare/v2.0.0-alpha.6...v2.0.0-alpha.7) (2023-04-12)
+
+
+### Bug Fixes
+
+* **ts:** Duplicate identifier 'args'. ([f2bfa34](https://github.com/snowyu/util-ex.js/commit/f2bfa349dfd67fd16b1065adb92e47460d39e8dc))
+
 ## [2.0.0-alpha.6](https://github.com/snowyu/util-ex.js/compare/v2.0.0-alpha.5...v2.0.0-alpha.6) (2023-04-12)
 
 ## [2.0.0-alpha.5](https://github.com/snowyu/util-ex.js/compare/v2.0.0-alpha.4...v2.0.0-alpha.5) (2023-04-12)
