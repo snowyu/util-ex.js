@@ -2,7 +2,7 @@
   "name": "util-ex",
   "description": "Browser-friendly enhanced util fully compatible with standard node.js",
   "homepage": "https://github.com/snowyu/util-ex.js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": {
     "name": "Riceball LEE",
     "email": "snowyu.lee@gmail.com"
@@ -51,7 +51,7 @@
     "clean.lib": "rm -fr lib",
     "doc": "typedoc --plugin none --out web ./src",
     "doc.md": "typedoc --plugin typedoc-plugin-markdown --out docs ./src",
-    "release": "npm run build && npm run doc.md && npx standard-version",
+    "release": "npm run build && npm run doc.md && git add docs && git ci -m 'docs: update API docs' && npx standard-version -s",
     "release.alpha": "npx standard-version --prerelease alpha",
     "release.major": "npx standard-version -r major",
     "test": "mocha"

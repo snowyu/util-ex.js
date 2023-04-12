@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.2](https://github.com/snowyu/util-ex.js/compare/v1.0.1...v1.0.2) (2023-04-12)
+
+
+### Bug Fixes
+
+* **ts:** Duplicate identifier 'args'. ([a11fd0d](https://github.com/snowyu/util-ex.js/commit/a11fd0d37206dcd8ad6d965f7c3715e7f21a1fad))
+
 ### [1.0.1](https://github.com/snowyu/util-ex.js/compare/v1.0.0...v1.0.1) (2023-04-12)
 
 
