@@ -7,7 +7,6 @@
     "name": "Riceball LEE",
     "email": "snowyu.lee@gmail.com"
   },
-  "types": "./types",
   "files": [
     "README.md",
     "LICENSE-MIT",
@@ -45,7 +44,7 @@
   ],
   "scripts": {
     "build": "npm run build.ts && mkdir -p lib && cp -r src/* lib/",
-    "build.ts": "tsc",
+    "build.ts": "tsc --declaration --emitDeclarationOnly --outDir lib",
     "clean": "rm -fr web docs types lib",
     "clean.doc": "rm -fr web docs",
     "clean.ts": "rm -fr types",
