@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [2.0.0-alpha.5](https://github.com/snowyu/util-ex.js/compare/v2.0.0-alpha.4...v2.0.0-alpha.5) (2023-04-12)
+
+
+### Bug Fixes
+
+* **injectMethod:** this.super can not bind original `this` ([871abc9](https://github.com/snowyu/util-ex.js/commit/871abc96f2e8e2e1353f5ad60b60cc817dbd11ba))
+
 ## [2.0.0-alpha.4](https://github.com/snowyu/util-ex.js/compare/v2.0.0-alpha.3...v2.0.0-alpha.4) (2023-04-11)
 
 
