@@ -101,4 +101,31 @@ describe("injectMethod", function() {
     injectMethod(Test.prototype, 'exec', newExec).should.be.false;
     Test.prototype.exec.should.be.equal(123);
   });
+  it("should inject old method to an object", function () {
+    var t
+    function Test() {
+      t = this
+      this.initialize.apply(this, arguments);
+    }
+    var orgExec = sinon.spy(function () {
+      should.exist(this);
+      this.should.be.equal(t);
+    });
+    Test.prototype.initialize = orgExec
+    var newExec = sinon.spy(function () {
+      should.exist(this.super);
+      should.exist(this.self);
+      should.exist(this.initialize);
+      this.self.should.be.equal(t);
+      this.super.call(null, 1, 2);
+      this.initialize.call(this.self, 6, 6);
+    });
+    injectMethod(Test.prototype, 'initialize', newExec).should.be.true;
+    t = new Test(4,5)
+    newExec.should.have.been.calledOnce;
+    newExec.should.have.been.calledWith(4, 5);
+    orgExec.should.have.been.calledTwice;
+    orgExec.should.have.been.calledWith(1, 2);
+    orgExec.should.have.been.calledWith(6, 6);
+  });
 });

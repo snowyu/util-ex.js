@@ -38,9 +38,7 @@ function injectMethod(aObject, aMethodName, aNewMethod) {
     aObject[aMethodName] = (function(inherited, method) {
       return function() {
         var that = {
-          super: function() {
-            return inherited.apply(this.self, arguments);
-          },
+          super: inherited.bind(this),
           self: this
         };
         that[aMethodName] = inherited;
