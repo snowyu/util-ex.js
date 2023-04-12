@@ -51,4 +51,4 @@ objectToString({}); // returns '[object Object]'
 
 #### Defined in
 
-[src/object-to-string.js:17](https://github.com/snowyu/util-ex.js/blob/f2bfa34/src/object-to-string.js#L17)
+[src/object-to-string.js:17](https://github.com/snowyu/util-ex.js/blob/485ec28/src/object-to-string.js#L17)

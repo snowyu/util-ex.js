@@ -77,4 +77,4 @@ Whether the injections are successful.
 
 #### Defined in
 
-[src/injectMethods.js:54](https://github.com/snowyu/util-ex.js/blob/f2bfa34/src/injectMethods.js#L54)
+[src/injectMethods.js:54](https://github.com/snowyu/util-ex.js/blob/485ec28/src/injectMethods.js#L54)
