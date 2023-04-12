@@ -32,4 +32,4 @@ Logs a message to the console with a timestamp prefix.
 
 #### Defined in
 
-[src/log.js:26](https://github.com/snowyu/util-ex.js/blob/a11fd0d/src/log.js#L26)
+[src/log.js:26](https://github.com/snowyu/util-ex.js/blob/0666556/src/log.js#L26)

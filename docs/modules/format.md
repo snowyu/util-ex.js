@@ -48,4 +48,4 @@ The formatted string.
 
 #### Defined in
 
-[src/format.js:29](https://github.com/snowyu/util-ex.js/blob/a11fd0d/src/format.js#L29)
+[src/format.js:29](https://github.com/snowyu/util-ex.js/blob/0666556/src/format.js#L29)

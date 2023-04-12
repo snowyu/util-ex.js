@@ -20,4 +20,4 @@
 
 #### Defined in
 
-[src/is/empty-function.js:1](https://github.com/snowyu/util-ex.js/blob/a11fd0d/src/is/empty-function.js#L1)
+[src/is/empty-function.js:1](https://github.com/snowyu/util-ex.js/blob/0666556/src/is/empty-function.js#L1)

@@ -44,4 +44,4 @@ isFloatStr('abc'); // returns false
 
 #### Defined in
 
-[src/is/string/float.js:14](https://github.com/snowyu/util-ex.js/blob/a11fd0d/src/is/string/float.js#L14)
+[src/is/string/float.js:14](https://github.com/snowyu/util-ex.js/blob/0666556/src/is/string/float.js#L14)

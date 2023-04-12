@@ -30,4 +30,4 @@
 
 #### Defined in
 
-[src/is/type/function.js:1](https://github.com/snowyu/util-ex.js/blob/a11fd0d/src/is/type/function.js#L1)
+[src/is/type/function.js:1](https://github.com/snowyu/util-ex.js/blob/0666556/src/is/type/function.js#L1)

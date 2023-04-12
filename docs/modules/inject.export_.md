@@ -34,7 +34,7 @@
 
 #### Defined in
 
-[src/inject.js:177](https://github.com/snowyu/util-ex.js/blob/a11fd0d/src/inject.js#L177)
+[src/inject.js:177](https://github.com/snowyu/util-ex.js/blob/0666556/src/inject.js#L177)
 
 ___
 
@@ -58,4 +58,4 @@ ___
 
 #### Defined in
 
-[src/inject.js:182](https://github.com/snowyu/util-ex.js/blob/a11fd0d/src/inject.js#L182)
+[src/inject.js:182](https://github.com/snowyu/util-ex.js/blob/0666556/src/inject.js#L182)

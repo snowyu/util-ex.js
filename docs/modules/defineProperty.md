@@ -20,4 +20,4 @@
 
 #### Defined in
 
-[src/defineProperty.js:1](https://github.com/snowyu/util-ex.js/blob/a11fd0d/src/defineProperty.js#L1)
+[src/defineProperty.js:1](https://github.com/snowyu/util-ex.js/blob/0666556/src/defineProperty.js#L1)
