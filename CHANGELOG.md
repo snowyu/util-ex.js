@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.1](https://github.com/snowyu/util-ex.js/compare/v1.0.0...v1.0.1) (2023-04-12)
+
+
+### Bug Fixes
+
+* **injectMethod:** this.super can not bind original `this` ([83ebe4d](https://github.com/snowyu/util-ex.js/commit/83ebe4d79cdbeb29fadd617ad6feb036d16ab8cd))
+* **ts:** Supports multiple entries typescript declaration files ([5825228](https://github.com/snowyu/util-ex.js/commit/5825228e6edef1a8a0566c69d941534e168acb43))
+
 ## [1.0.0](https://github.com/snowyu/util-ex.js/compare/v0.3.18...v1.0.0) (2023-03-31)
 
 
