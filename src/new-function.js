@@ -30,7 +30,7 @@ var createFunc = require('./_create-function');
  * If multiple arguments are provided, creates a new function with the given name, arguments and body.
  *
  * @param {string|Function} name The name of the function or the function itself.
- * @param {string[]} args An array of argument names for the function.
+ * @param {string[]} aArgs An array of argument names for the function.
  * @param {string} body The body of the function.
  * @param {object} scope The scope for the function.
  * @param {object} values The values to apply to the scope.
@@ -48,7 +48,7 @@ var createFunc = require('./_create-function');
  * var subWithLog=newFunction(sub, {log:console.log})
  * subWithLog(5,2); // print 3
  */
-module.exports = function newFunction(name, args, body, scope, values) {
+module.exports = function newFunction(name, aArgs, body, scope, values) {
   if (arguments.length === 1) {
     if (!isFunction(name)) {
       name = 'function ' + name + '(){}';
@@ -56,18 +56,18 @@ module.exports = function newFunction(name, args, body, scope, values) {
     return createFunc(name);
   }
   if (isFunction(name)) {
-    scope = args;
+    scope = aArgs;
     values = body;
   } else {
-    if (isString(args)) {
+    if (isString(aArgs)) {
       values = scope;
       scope = body;
-      body = args;
-      args = [];
-    } else if (args == null) {
-      args = [];
+      body = aArgs;
+      aArgs = [];
+    } else if (aArgs == null) {
+      aArgs = [];
     }
-    name = 'function ' + name + '(' + args.join(', ') + ') {\n' + body + '\n}';
+    name = 'function ' + name + '(' + aArgs.join(', ') + ') {\n' + body + '\n}';
   }
   return createFunc(name, scope, values);
 };

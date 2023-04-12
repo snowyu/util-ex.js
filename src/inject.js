@@ -168,9 +168,9 @@ function injectFunc( aOrgFunc, aBeforeExec, aAfterExec ) {
   }
 }
 
-function createArguments(args) {
-  if (arguments.length !== 1 || !Array.isArray(args)) args = arguments;
-  var result = Array.apply(null, args);
+function createArguments(aArgs) {
+  if (arguments.length !== 1 || !Array.isArray(aArgs)) aArgs = arguments;
+  var result = Array.apply(null, aArgs);
   defineProperty(result, '__arguments__', true);
   return result;
 }
