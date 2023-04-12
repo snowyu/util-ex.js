@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [2.0.0-alpha.8](https://github.com/snowyu/util-ex.js/compare/v2.0.0-alpha.7...v2.0.0-alpha.8) (2023-04-12)
+
+
+### Bug Fixes
+
+* **ts:** required parameter cannot follow an optional parameter ([485ec28](https://github.com/snowyu/util-ex.js/commit/485ec28030bc62f2397405214014cdb20f4dd55b))
+
 ## [2.0.0-alpha.7](https://github.com/snowyu/util-ex.js/compare/v2.0.0-alpha.6...v2.0.0-alpha.7) (2023-04-12)
 
 
