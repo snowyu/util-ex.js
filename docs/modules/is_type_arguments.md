@@ -50,4 +50,4 @@ Returns `true` if `value` is an `arguments` object, else `false`.
 
 #### Defined in
 
-[src/is/type/arguments.js:16](https://github.com/snowyu/util-ex.js/blob/61a93bc/src/is/type/arguments.js#L16)
+[src/is/type/arguments.js:16](https://github.com/snowyu/util-ex.js/blob/f2bfa34/src/is/type/arguments.js#L16)

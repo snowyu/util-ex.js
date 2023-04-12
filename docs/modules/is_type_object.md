@@ -36,4 +36,4 @@ Renames and re-exports [isObject](is_type_object.md#isobject)
 
 #### Defined in
 
-[src/is/type/object.js:1](https://github.com/snowyu/util-ex.js/blob/61a93bc/src/is/type/object.js#L1)
+[src/is/type/object.js:1](https://github.com/snowyu/util-ex.js/blob/f2bfa34/src/is/type/object.js#L1)

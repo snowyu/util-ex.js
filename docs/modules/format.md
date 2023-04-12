@@ -58,4 +58,4 @@ The formatted string.
 
 #### Defined in
 
-[src/format.js:28](https://github.com/snowyu/util-ex.js/blob/61a93bc/src/format.js#L28)
+[src/format.js:28](https://github.com/snowyu/util-ex.js/blob/f2bfa34/src/format.js#L28)
