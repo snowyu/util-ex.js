@@ -162,10 +162,9 @@ export function inject(aOrgFunc, aBeforeExec, aAfterExec) {
   };
 }
 
-function createArguments(args) {
-  if (arguments.length !== 1 || !Array.isArray(args))
-args = arguments;
-  const result = Array.apply(null, args);
+function createArguments(aArgs) {
+  if (arguments.length !== 1 || !Array.isArray(aArgs)) {aArgs = arguments}
+  const result = Array.apply(null, aArgs);
   defineProperty(result, '__arguments__', true);
   return result;
 }
