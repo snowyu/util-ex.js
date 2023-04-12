@@ -15,7 +15,7 @@ import _createFunc from "./_create-function.js";
  *
  * @param {string} name - The name of the function.
  * @param {string|string[]=} [aArgs] - An array of argument names. or function body if it's string.
- * @param {string} body - The function body as a string.
+ * @param {string} [body] - The function body as a string.
  * @param {(string[]|Object)} [scope] - An array of scope names, or an object with scope names as keys and their corresponding values as values.
  * @param {Array} [values] - An array of values corresponding to the scope names, if scope is an array.
  * @returns {Function} - The newly created function.
