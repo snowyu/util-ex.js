@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [2.0.0-alpha.10](https://github.com/snowyu/util-ex.js/compare/v2.0.0-alpha.9...v2.0.0-alpha.10) (2024-03-15)
+
+
+### Bug Fixes
+
+* webpack5 Module parse failed: 'import' and 'export' may appear only with 'sourceType: module' ([8b5398b](https://github.com/snowyu/util-ex.js/commit/8b5398b030db047464ff16b14313b48331a5107a))
+
 ## [2.0.0-alpha.9](https://github.com/snowyu/util-ex.js/compare/v2.0.0-alpha.8...v2.0.0-alpha.9) (2024-03-15)
 
 ## [2.0.0-alpha.8](https://github.com/snowyu/util-ex.js/compare/v2.0.0-alpha.7...v2.0.0-alpha.8) (2023-04-12)
