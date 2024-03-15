@@ -27,7 +27,7 @@
 
 #### Defined in
 
-[src/_shims.js:16](https://github.com/snowyu/util-ex.js/blob/fa686d8/src/_shims.js#L16)
+[src/_shims.js:16](https://github.com/snowyu/util-ex.js/blob/8b5398b/src/_shims.js#L16)
 
 ___
 
@@ -47,4 +47,4 @@ ___
 
 #### Defined in
 
-[src/_shims.js:13](https://github.com/snowyu/util-ex.js/blob/fa686d8/src/_shims.js#L13)
+[src/_shims.js:13](https://github.com/snowyu/util-ex.js/blob/8b5398b/src/_shims.js#L13)

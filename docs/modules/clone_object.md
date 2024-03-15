@@ -65,4 +65,4 @@ The cloned object.
 
 #### Defined in
 
-[src/clone-object.js:28](https://github.com/snowyu/util-ex.js/blob/fa686d8/src/clone-object.js#L28)
+[src/clone-object.js:28](https://github.com/snowyu/util-ex.js/blob/8b5398b/src/clone-object.js#L28)

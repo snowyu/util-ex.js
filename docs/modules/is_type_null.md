@@ -36,4 +36,4 @@ Renames and re-exports [isNull](is_type_null.md#isnull)
 
 #### Defined in
 
-[src/is/type/null.js:1](https://github.com/snowyu/util-ex.js/blob/fa686d8/src/is/type/null.js#L1)
+[src/is/type/null.js:1](https://github.com/snowyu/util-ex.js/blob/8b5398b/src/is/type/null.js#L1)

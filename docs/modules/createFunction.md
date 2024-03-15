@@ -57,4 +57,4 @@ var g = createFunction('myFunc', ['a', 'b'], 'console.log(a + b);', {Math, conso
 
 #### Defined in
 
-[src/createFunction.js:33](https://github.com/snowyu/util-ex.js/blob/fa686d8/src/createFunction.js#L33)
+[src/createFunction.js:33](https://github.com/snowyu/util-ex.js/blob/8b5398b/src/createFunction.js#L33)

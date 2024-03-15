@@ -58,4 +58,4 @@ clonePropertiesTo(obj2, obj1); // obj2 = { a: 1, b: 2, c: 3 }
 
 #### Defined in
 
-[src/clone-properties-to.js:25](https://github.com/snowyu/util-ex.js/blob/fa686d8/src/clone-properties-to.js#L25)
+[src/clone-properties-to.js:25](https://github.com/snowyu/util-ex.js/blob/8b5398b/src/clone-properties-to.js#L25)
