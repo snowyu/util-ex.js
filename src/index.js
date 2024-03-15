@@ -1,3 +1,4 @@
+// @sourceType: module
 export * from './_create-function.js';
 export * from './_extend.js';
 export * from './clone-object.js';
