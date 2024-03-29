@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [2.0.0-alpha.11](https://github.com/snowyu/util-ex.js/compare/v2.0.0-alpha.10...v2.0.0-alpha.11) (2024-03-29)
+
+
+### Features
+
+* add toRegExp and isRegExpStr functions ([6dff38f](https://github.com/snowyu/util-ex.js/commit/6dff38ff3c1833ed422f1482b0a2b2bfd1168020))
+
 ## [2.0.0-alpha.10](https://github.com/snowyu/util-ex.js/compare/v2.0.0-alpha.9...v2.0.0-alpha.10) (2024-03-15)
 
 
