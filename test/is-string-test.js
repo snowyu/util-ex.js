@@ -8,6 +8,7 @@ chai.use(sinonChai);
 import isJson from '../src/is/string/json.js';
 import isInt from '../src/is/string/int.js';
 import isFunctionStr from '../src/is/string/function.js';
+import isRegExpStr from '../src/is/string/regexp.js';
 
 describe("is/string/int", function () {
   it("should test string whether integer", function () {
@@ -54,5 +55,16 @@ describe("is/string/function", function () {
   it("should test function string", function () {
     isFunctionStr('function abs(){}').should.be.true;
     isFunctionStr('functionabs(){}').should.be.false;
+  });
+});
+
+describe("is/string/regexp", function () {
+  it("should test regexp string", function () {
+    isRegExpStr('/[a-z]/').should.be.true;
+    isRegExpStr('/[a-z]/g').should.be.true;
+    isRegExpStr('/[a-z]/gi').should.be.true;
+    isRegExpStr('function abs(/[a-z]/){}').should.be.false;
+    isRegExpStr('/test').should.be.false;
+    isRegExpStr('//').should.be.false;
   });
 });
