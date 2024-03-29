@@ -26,18 +26,6 @@ Renames and re-exports [createFunction](createFunction.md#createfunction)
 
 Creates a new function with the given name, arguments, and body, and optionally with the given scope and values.
 
-**`Example`**
-
-```ts
-// Create a function with no arguments, with scope 'Math' and values [Math]:
-var f = createFunction('myFunc', 'return Math.PI', ['Math'], [Math]);
-var f = createFunction('myFunc', 'return Math.PI', {Math: Math});
-
-// Create a function with two arguments, with scope 'Math' and values [Math], and scope 'console' and values [console]:
-var g = createFunction('myFunc', ['a', 'b'], 'console.log(a + b);', ['Math', 'console'], [Math, console]);
-var g = createFunction('myFunc', ['a', 'b'], 'console.log(a + b);', {Math, console});
-```
-
 #### Parameters
 
 | Name | Type | Description |
@@ -55,6 +43,18 @@ var g = createFunction('myFunc', ['a', 'b'], 'console.log(a + b);', {Math, conso
 
 - The newly created function.
 
+**`Example`**
+
+```ts
+// Create a function with no arguments, with scope 'Math' and values [Math]:
+var f = createFunction('myFunc', 'return Math.PI', ['Math'], [Math]);
+var f = createFunction('myFunc', 'return Math.PI', {Math: Math});
+
+// Create a function with two arguments, with scope 'Math' and values [Math], and scope 'console' and values [console]:
+var g = createFunction('myFunc', ['a', 'b'], 'console.log(a + b);', ['Math', 'console'], [Math, console]);
+var g = createFunction('myFunc', ['a', 'b'], 'console.log(a + b);', {Math, console});
+```
+
 #### Defined in
 
-[src/createFunction.js:33](https://github.com/snowyu/util-ex.js/blob/8b5398b/src/createFunction.js#L33)
+[src/createFunction.js:33](https://github.com/snowyu/util-ex.js/blob/6dff38f/src/createFunction.js#L33)

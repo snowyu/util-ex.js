@@ -31,6 +31,7 @@
 - [is/string/function](modules/is_string_function.md)
 - [is/string/int](modules/is_string_int.md)
 - [is/string/json](modules/is_string_json.md)
+- [is/string/regexp](modules/is_string_regexp.md)
 - [is/type](modules/is_type.md)
 - [is/type/arguments](modules/is_type_arguments.md)
 - [is/type/array](modules/is_type_array.md)
@@ -54,3 +55,4 @@
 - [object-to-string](modules/object_to_string.md)
 - [object/get-non-enumerable-names](modules/object_get_non_enumerable_names.md)
 - [object/map](modules/object_map.md)
+- [to-regexp](modules/to_regexp.md)

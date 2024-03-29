@@ -10,6 +10,7 @@
 - [isFunctionStr](is_string.md#isfunctionstr)
 - [isIntStr](is_string.md#isintstr)
 - [isJson](is_string.md#isjson)
+- [isRegExpStr](is_string.md#isregexpstr)
 
 ## References
 
@@ -34,3 +35,9 @@ ___
 ### isJson
 
 Re-exports [isJson](is_string_json.md#isjson)
+
+___
+
+### isRegExpStr
+
+Re-exports [isRegExpStr](is_string_regexp.md#isregexpstr)

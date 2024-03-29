@@ -26,6 +26,19 @@ Renames and re-exports [cloneObject](clone_object.md#cloneobject)
 
 Clones an object.
 
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `aObject` | `any` | The object to be cloned. |
+| `tryCloneFn?` | `boolean` \| `Function` | A boolean indicating whether or not to try to clone the object using a '`clone`' function, or a function that can be used to clone the object. If set to `false`, the object will not be cloned using the '`clone`' function, even if it exists. |
+
+#### Returns
+
+`any`
+
+The cloned object.
+
 **`Example`**
 
 ```ts
@@ -50,19 +63,6 @@ const myObject = { foo: 'bar', clone: function() { return { foo: this.foo }; } }
 const clonedObject = cloneObject(myObject, false);
 ```
 
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `aObject` | `any` | The object to be cloned. |
-| `tryCloneFn?` | `boolean` \| `Function` | A boolean indicating whether or not to try to clone the object using a '`clone`' function, or a function that can be used to clone the object. If set to `false`, the object will not be cloned using the '`clone`' function, even if it exists. |
-
-#### Returns
-
-`any`
-
-The cloned object.
-
 #### Defined in
 
-[src/clone-object.js:28](https://github.com/snowyu/util-ex.js/blob/8b5398b/src/clone-object.js#L28)
+[src/clone-object.js:28](https://github.com/snowyu/util-ex.js/blob/6dff38f/src/clone-object.js#L28)

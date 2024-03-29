@@ -26,15 +26,6 @@ Renames and re-exports [isInList](is_in.md#isinlist)
 
 Checks if a string matches any item in a list of strings or regular expressions.
 
-**`Example`**
-
-```ts
-const list = ['apple', 'banana', 'orange'];
-const str = 'Banana';
-console.log(isInList(str, list)); // true (no caseSensitive)
-console.log(isInList(str, list, true)); // false (caseSensitive)
-```
-
 #### Parameters
 
 | Name | Type | Description |
@@ -49,6 +40,15 @@ console.log(isInList(str, list, true)); // false (caseSensitive)
 
 - True if there is a match, false otherwise.
 
+**`Example`**
+
+```ts
+const list = ['apple', 'banana', 'orange'];
+const str = 'Banana';
+console.log(isInList(str, list)); // true (no caseSensitive)
+console.log(isInList(str, list, true)); // false (caseSensitive)
+```
+
 #### Defined in
 
-[src/is/in.js:16](https://github.com/snowyu/util-ex.js/blob/8b5398b/src/is/in.js#L16)
+[src/is/in.js:16](https://github.com/snowyu/util-ex.js/blob/6dff38f/src/is/in.js#L16)

@@ -32,6 +32,20 @@ Injects method into an object. optionally preserving access to the original meth
 * The `this[aMethodName]` is also the original method, but not bound yet.
 * `this.self` is the original instance!
 
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `aObject` | `any` | the target object to inject |
+| `aMethodName` | `string` | the target method to inject |
+| `aNewMethod` | `Function` | the new method to be injected into the aObject. |
+
+#### Returns
+
+`boolean`
+
+whether the injection is successful.
+
 **`Example`**
 
 ```ts
@@ -51,20 +65,6 @@ injectMethod(obj, 'method1', newMethod);
 obj.method1(); // Output: Hello\nWorld
 ```
 
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `aObject` | `any` | the target object to inject |
-| `aMethodName` | `string` | the target method to inject |
-| `aNewMethod` | `Function` | the new method to be injected into the aObject. |
-
-#### Returns
-
-`boolean`
-
-whether the injection is successful.
-
 #### Defined in
 
-[src/injectMethod.js:31](https://github.com/snowyu/util-ex.js/blob/8b5398b/src/injectMethod.js#L31)
+[src/injectMethod.js:31](https://github.com/snowyu/util-ex.js/blob/6dff38f/src/injectMethod.js#L31)

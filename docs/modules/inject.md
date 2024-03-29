@@ -8,10 +8,6 @@
 
 - [default](inject.md#default)
 
-### Namespaces
-
-- [inject](inject.inject.md)
-
 ### Functions
 
 - [inject](inject.md#inject)
@@ -29,6 +25,31 @@ Renames and re-exports [inject](inject.md#inject)
 ▸ **inject**(`aOrgFunc`, `aBeforeExec`, `aAfterExec`): `Function`
 
 Wraps a function and executes code before and/or after the wrapped function.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `aOrgFunc` | `Function` | The function to be wrapped. |
+| `aBeforeExec` | `Function` | A function to be executed before the wrapped function `aOrgFunc`. |
+| `aAfterExec` | `Function` | A function to be executed after the wrapped function `aOrgFunc`. |
+
+#### Returns
+
+`Function`
+
+A new function that wraps the original function.
+
+BeforeExec:
+If `aBeforeExec` is a function, it will be called with the same context and arguments as the wrapped function.
+- If it returns an `Arguments` object, the wrapped function will be called with the modified arguments.
+- If it returns a value other than `undefined`, the wrapped function will not be called and this value will be returned as result instead.
+
+AfterExec:
+If `aAfterExec` is a function, it will be called with the same context, arguments with additional the result of the `aOrgFunc` and isDenied flag.
+- If the `aOrgFunc` throws an error, the `result` parameter will be an `Error` object.
+- If `aAfterExec` returns a value, it will be used as the final result of the wrapped function.
+- If `isDenied` parameter is true, it means `aOrgFunc` was not called during execution of the wrapped function.
 
 **`Throws`**
 
@@ -99,31 +120,6 @@ const wrappedFunc = inject(originalFunc, beforeFunc, afterFunc);
 wrappedFunc(); // Logs "Before execution", "After execution: result = [Error: Original function error], isDenied = false"
 ```
 
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `aOrgFunc` | `Function` | The function to be wrapped. |
-| `aBeforeExec` | `Function` | A function to be executed before the wrapped function `aOrgFunc`. |
-| `aAfterExec` | `Function` | A function to be executed after the wrapped function `aOrgFunc`. |
-
-#### Returns
-
-`Function`
-
-A new function that wraps the original function.
-
-BeforeExec:
-If `aBeforeExec` is a function, it will be called with the same context and arguments as the wrapped function.
-- If it returns an `Arguments` object, the wrapped function will be called with the modified arguments.
-- If it returns a value other than `undefined`, the wrapped function will not be called and this value will be returned as result instead.
-
-AfterExec:
-If `aAfterExec` is a function, it will be called with the same context, arguments with additional the result of the `aOrgFunc` and isDenied flag.
-- If the `aOrgFunc` throws an error, the `result` parameter will be an `Error` object.
-- If `aAfterExec` returns a value, it will be used as the final result of the wrapped function.
-- If `isDenied` parameter is true, it means `aOrgFunc` was not called during execution of the wrapped function.
-
 #### Defined in
 
-[src/inject.js:128](https://github.com/snowyu/util-ex.js/blob/8b5398b/src/inject.js#L128)
+[src/inject.js:128](https://github.com/snowyu/util-ex.js/blob/6dff38f/src/inject.js#L128)

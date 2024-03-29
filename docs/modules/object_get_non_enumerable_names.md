@@ -26,17 +26,6 @@ Renames and re-exports [getNonEnumerableNames](object_get_non_enumerable_names.m
 
 Returns an array of non-enumerable property names of an object.
 
-**`Example`**
-
-```ts
-var obj = Object.create(null, {
-  a: { value: 1 },
-  b: { value: 2, enumerable: true }
-});
-
-var nonEnumProps = getNonEnumerableNames(obj); // nonEnumProps = ['a']
-```
-
 #### Parameters
 
 | Name | Type | Description |
@@ -49,6 +38,17 @@ var nonEnumProps = getNonEnumerableNames(obj); // nonEnumProps = ['a']
 
 - An array of non-enumerable property names of the object.
 
+**`Example`**
+
+```ts
+var obj = Object.create(null, {
+  a: { value: 1 },
+  b: { value: 2, enumerable: true }
+});
+
+var nonEnumProps = getNonEnumerableNames(obj); // nonEnumProps = ['a']
+```
+
 #### Defined in
 
-[src/object/get-non-enumerable-names.js:19](https://github.com/snowyu/util-ex.js/blob/8b5398b/src/object/get-non-enumerable-names.js#L19)
+[src/object/get-non-enumerable-names.js:19](https://github.com/snowyu/util-ex.js/blob/6dff38f/src/object/get-non-enumerable-names.js#L19)

@@ -26,13 +26,6 @@ Renames and re-exports [_createFunction](create_function.md#_createfunction)
 
 Create a function using the given body and scope.
 
-**`Example`**
-
-```ts
-var fn = _createFunction('function yourFuncName(arg1, arg2){log(arg1+arg2);}', {log:console.log});
-  fn(2,3); //print 5
-```
-
 #### Parameters
 
 | Name | Type | Description |
@@ -48,6 +41,13 @@ var fn = _createFunction('function yourFuncName(arg1, arg2){log(arg1+arg2);}', {
 
 - The created function.
 
+**`Example`**
+
+```ts
+var fn = _createFunction('function yourFuncName(arg1, arg2){log(arg1+arg2);}', {log:console.log});
+  fn(2,3); //print 5
+```
+
 #### Defined in
 
-[src/_create-function.js:30](https://github.com/snowyu/util-ex.js/blob/8b5398b/src/_create-function.js#L30)
+[src/_create-function.js:30](https://github.com/snowyu/util-ex.js/blob/6dff38f/src/_create-function.js#L30)

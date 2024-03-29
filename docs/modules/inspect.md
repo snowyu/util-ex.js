@@ -8,10 +8,6 @@
 
 - [default](inspect.md#default)
 
-### Namespaces
-
-- [inspect](inspect.inspect.md)
-
 ### Functions
 
 - [inspect](inspect.md#inspect)
@@ -49,4 +45,4 @@ The formatted string representing the object.
 
 #### Defined in
 
-[src/inspect.js:31](https://github.com/snowyu/util-ex.js/blob/8b5398b/src/inspect.js#L31)
+[src/inspect.js:31](https://github.com/snowyu/util-ex.js/blob/6dff38f/src/inspect.js#L31)

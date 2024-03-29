@@ -26,16 +26,6 @@ Renames and re-exports [isIntStr](is_string_int.md#isintstr)
 
 Checks if a given string represents an integer number.
 
-**`Example`**
-
-```ts
-isIntStr('42'); // true
-  isIntStr('0'); // true
-  isIntStr('-123'); // true
-  isIntStr('12.3'); // false
-  isIntStr('1e3'); // false
-```
-
 #### Parameters
 
 | Name | Type | Description |
@@ -48,6 +38,16 @@ isIntStr('42'); // true
 
 Whether or not the string represents an integer.
 
+**`Example`**
+
+```ts
+isIntStr('42'); // true
+  isIntStr('0'); // true
+  isIntStr('-123'); // true
+  isIntStr('12.3'); // false
+  isIntStr('1e3'); // false
+```
+
 #### Defined in
 
-[src/is/string/int.js:14](https://github.com/snowyu/util-ex.js/blob/8b5398b/src/is/string/int.js#L14)
+[src/is/string/int.js:14](https://github.com/snowyu/util-ex.js/blob/6dff38f/src/is/string/int.js#L14)

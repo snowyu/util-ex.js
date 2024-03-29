@@ -34,15 +34,6 @@ specified using '%s' for string, '%d' for number, and '%j' for JSON.
 If the first argument is not a string, all arguments will be inspected and
 concatenated into a space-separated string.
 
-**`Example`**
-
-```ts
-format('%s %s', 'hello', 'world'); // 'hello world'
-format('%d %s', 42, 'answer'); // '42 answer'
-format('%j', { foo: 'bar' }); // '{'foo':'bar'}'
-format('no placeholders', 'needed'); // 'no placeholders needed'
-```
-
 #### Parameters
 
 | Name | Type | Description |
@@ -56,6 +47,15 @@ format('no placeholders', 'needed'); // 'no placeholders needed'
 
 The formatted string.
 
+**`Example`**
+
+```ts
+format('%s %s', 'hello', 'world'); // 'hello world'
+format('%d %s', 42, 'answer'); // '42 answer'
+format('%j', { foo: 'bar' }); // '{'foo':'bar'}'
+format('no placeholders', 'needed'); // 'no placeholders needed'
+```
+
 #### Defined in
 
-[src/format.js:28](https://github.com/snowyu/util-ex.js/blob/8b5398b/src/format.js#L28)
+[src/format.js:28](https://github.com/snowyu/util-ex.js/blob/6dff38f/src/format.js#L28)

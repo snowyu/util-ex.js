@@ -28,6 +28,7 @@
 - [isObject](is.md#isobject)
 - [isPrimitive](is.md#isprimitive)
 - [isRegExp](is.md#isregexp)
+- [isRegExpStr](is.md#isregexpstr)
 - [isString](is.md#isstring)
 - [isUndefined](is.md#isundefined)
 
@@ -162,6 +163,12 @@ ___
 ### isRegExp
 
 Re-exports [isRegExp](is_type_regexp.md#isregexp)
+
+___
+
+### isRegExpStr
+
+Re-exports [isRegExpStr](is_string_regexp.md#isregexpstr)
 
 ___
 

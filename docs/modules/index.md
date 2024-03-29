@@ -41,12 +41,14 @@
 - [isObject](index.md#isobject)
 - [isPrimitive](index.md#isprimitive)
 - [isRegExp](index.md#isregexp)
+- [isRegExpStr](index.md#isregexpstr)
 - [isString](index.md#isstring)
 - [isUndefined](index.md#isundefined)
 - [log](index.md#log)
 - [map](index.md#map)
 - [newFunction](index.md#newfunction)
 - [objectToString](index.md#objecttostring)
+- [toRegExp](index.md#toregexp)
 
 ### Functions
 
@@ -264,6 +266,12 @@ Re-exports [isRegExp](is_type_regexp.md#isregexp)
 
 ___
 
+### isRegExpStr
+
+Re-exports [isRegExpStr](is_string_regexp.md#isregexpstr)
+
+___
+
 ### isString
 
 Re-exports [isString](is_type_string.md#isstring)
@@ -298,6 +306,12 @@ ___
 
 Re-exports [objectToString](object_to_string.md#objecttostring)
 
+___
+
+### toRegExp
+
+Re-exports [toRegExp](to_regexp.md#toregexp)
+
 ## Functions
 
 ### isEmptyFunction
@@ -318,6 +332,13 @@ Checks whether a given function is empty or not.
 
 - True if the function is empty, false otherwise.
 
+**`Example`**
+
+```ts
+isEmptyFunction(Array.prototype.push); // -> false
+isEmptyFunction(()=>{}); // -> true
+```
+
 #### Defined in
 
-node_modules/inherits-ex/lib/isEmptyFunction.d.ts:6
+node_modules/inherits-ex/lib/isEmptyFunction.d.ts:10

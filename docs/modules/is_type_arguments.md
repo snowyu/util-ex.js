@@ -26,16 +26,6 @@ Renames and re-exports [isArguments](is_type_arguments.md#isarguments)
 
 Checks if a value is an `arguments` object.
 
-**`Example`**
-
-```js
-function myFunction() {
-  return isArguments(arguments);
-}
-console.log(myFunction()); // true, since the `arguments` object is an instance of `Arguments`
-isArguments([1, 2, 3]); // => false
-```
-
 #### Parameters
 
 | Name | Type | Description |
@@ -48,6 +38,16 @@ isArguments([1, 2, 3]); // => false
 
 Returns `true` if `value` is an `arguments` object, else `false`.
 
+**`Example`**
+
+```js
+function myFunction() {
+  return isArguments(arguments);
+}
+console.log(myFunction()); // true, since the `arguments` object is an instance of `Arguments`
+isArguments([1, 2, 3]); // => false
+```
+
 #### Defined in
 
-[src/is/type/arguments.js:16](https://github.com/snowyu/util-ex.js/blob/8b5398b/src/is/type/arguments.js#L16)
+[src/is/type/arguments.js:16](https://github.com/snowyu/util-ex.js/blob/6dff38f/src/is/type/arguments.js#L16)

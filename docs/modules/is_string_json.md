@@ -26,15 +26,6 @@ Renames and re-exports [isJson](is_string_json.md#isjson)
 
 Checks if a string is a valid JSON string.
 
-**`Example`**
-
-```ts
-isJson('{"name": "John", "age": 30}'); // true
-isJson('[1, 2, 3]'); // true
-isJson('{"name": "John", "age": 30'); // false
-isJson('This is not a JSON string.'); // false
-```
-
 #### Parameters
 
 | Name | Type | Description |
@@ -48,6 +39,15 @@ isJson('This is not a JSON string.'); // false
 
 - Returns true if the string is valid JSON, false otherwise.
 
+**`Example`**
+
+```ts
+isJson('{"name": "John", "age": 30}'); // true
+isJson('[1, 2, 3]'); // true
+isJson('{"name": "John", "age": 30'); // false
+isJson('This is not a JSON string.'); // false
+```
+
 #### Defined in
 
-[src/is/string/json.js:17](https://github.com/snowyu/util-ex.js/blob/8b5398b/src/is/string/json.js#L17)
+[src/is/string/json.js:17](https://github.com/snowyu/util-ex.js/blob/6dff38f/src/is/string/json.js#L17)

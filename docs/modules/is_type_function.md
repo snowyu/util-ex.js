@@ -36,4 +36,4 @@ Renames and re-exports [isFunction](is_type_function.md#isfunction)
 
 #### Defined in
 
-[src/is/type/function.js:1](https://github.com/snowyu/util-ex.js/blob/8b5398b/src/is/type/function.js#L1)
+[src/is/type/function.js:1](https://github.com/snowyu/util-ex.js/blob/6dff38f/src/is/type/function.js#L1)
