@@ -2,7 +2,7 @@
 /**
  * Get all names of an object, include non-enumerable properties.
  * @param {object} obj - The object to get names from
- * @param {boolean} inherited - whether includes inherited properties, defaults to true
+ * @param {boolean} [inherited] - whether includes inherited properties, defaults to true
  * @returns {string[]} An array of all names of the object
  */
 export function getAllNames(obj, inherited) {
