@@ -36,4 +36,4 @@ Renames and re-exports [isInt](is_type_integer.md#isint)
 
 #### Defined in
 
-[src/is/type/integer.js:1](https://github.com/snowyu/util-ex.js/blob/c071696/src/is/type/integer.js#L1)
+[src/is/type/integer.js:1](https://github.com/snowyu/util-ex.js/blob/d94968d/src/is/type/integer.js#L1)

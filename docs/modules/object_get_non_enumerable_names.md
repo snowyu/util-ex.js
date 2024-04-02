@@ -51,4 +51,4 @@ var nonEnumProps = getNonEnumerableNames(obj); // nonEnumProps = ['a']
 
 #### Defined in
 
-[src/object/get-non-enumerable-names.js:19](https://github.com/snowyu/util-ex.js/blob/c071696/src/object/get-non-enumerable-names.js#L19)
+[src/object/get-non-enumerable-names.js:19](https://github.com/snowyu/util-ex.js/blob/d94968d/src/object/get-non-enumerable-names.js#L19)

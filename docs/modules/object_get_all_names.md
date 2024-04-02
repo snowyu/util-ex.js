@@ -22,7 +22,7 @@ Renames and re-exports [getAllNames](object_get_all_names.md#getallnames)
 
 ### getAllNames
 
-▸ **getAllNames**(`obj`, `inherited`): `string`[]
+▸ **getAllNames**(`obj`, `inherited?`): `string`[]
 
 Get all names of an object, include non-enumerable properties.
 
@@ -31,7 +31,7 @@ Get all names of an object, include non-enumerable properties.
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `obj` | `any` | The object to get names from |
-| `inherited` | `boolean` | whether includes inherited properties, defaults to true |
+| `inherited?` | `boolean` | whether includes inherited properties, defaults to true |
 
 #### Returns
 
@@ -41,4 +41,4 @@ An array of all names of the object
 
 #### Defined in
 
-[src/object/get-all-names.js:8](https://github.com/snowyu/util-ex.js/blob/c071696/src/object/get-all-names.js#L8)
+[src/object/get-all-names.js:8](https://github.com/snowyu/util-ex.js/blob/d94968d/src/object/get-all-names.js#L8)
