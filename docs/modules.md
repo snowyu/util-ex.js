@@ -53,6 +53,7 @@
 - [new-function](modules/new_function.md)
 - [object](modules/object.md)
 - [object-to-string](modules/object_to_string.md)
+- [object/get-all-names](modules/object_get_all_names.md)
 - [object/get-non-enumerable-names](modules/object_get_non_enumerable_names.md)
 - [object/map](modules/object_map.md)
 - [to-regexp](modules/to_regexp.md)

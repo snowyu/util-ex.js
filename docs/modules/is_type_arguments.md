@@ -50,4 +50,4 @@ isArguments([1, 2, 3]); // => false
 
 #### Defined in
 
-[src/is/type/arguments.js:16](https://github.com/snowyu/util-ex.js/blob/6dff38f/src/is/type/arguments.js#L16)
+[src/is/type/arguments.js:16](https://github.com/snowyu/util-ex.js/blob/c071696/src/is/type/arguments.js#L16)

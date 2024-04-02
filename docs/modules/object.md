@@ -6,10 +6,17 @@
 
 ### References
 
+- [getAllNames](object.md#getallnames)
 - [getNonEnumerableNames](object.md#getnonenumerablenames)
 - [map](object.md#map)
 
 ## References
+
+### getAllNames
+
+Re-exports [getAllNames](object_get_all_names.md#getallnames)
+
+___
 
 ### getNonEnumerableNames
 

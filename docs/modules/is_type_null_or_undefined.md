@@ -36,4 +36,4 @@ Renames and re-exports [isNullOrUndefined](is_type_null_or_undefined.md#isnullor
 
 #### Defined in
 
-[src/is/type/null-or-undefined.js:1](https://github.com/snowyu/util-ex.js/blob/6dff38f/src/is/type/null-or-undefined.js#L1)
+[src/is/type/null-or-undefined.js:1](https://github.com/snowyu/util-ex.js/blob/c071696/src/is/type/null-or-undefined.js#L1)

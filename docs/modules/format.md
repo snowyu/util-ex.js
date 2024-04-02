@@ -58,4 +58,4 @@ format('no placeholders', 'needed'); // 'no placeholders needed'
 
 #### Defined in
 
-[src/format.js:28](https://github.com/snowyu/util-ex.js/blob/6dff38f/src/format.js#L28)
+[src/format.js:28](https://github.com/snowyu/util-ex.js/blob/c071696/src/format.js#L28)

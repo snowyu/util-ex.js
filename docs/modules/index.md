@@ -15,6 +15,7 @@
 - [defineProperty](index.md#defineproperty)
 - [extend](index.md#extend)
 - [format](index.md#format)
+- [getAllNames](index.md#getallnames)
 - [getNonEnumerableNames](index.md#getnonenumerablenames)
 - [inject](index.md#inject)
 - [injectMethod](index.md#injectmethod)
@@ -107,6 +108,12 @@ ___
 ### format
 
 Re-exports [format](format.md#format)
+
+___
+
+### getAllNames
+
+Re-exports [getAllNames](object_get_all_names.md#getallnames)
 
 ___
 
