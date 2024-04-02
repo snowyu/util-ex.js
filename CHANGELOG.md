@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [2.0.0-alpha.12](https://github.com/snowyu/util-ex.js/compare/v2.0.0-alpha.11...v2.0.0-alpha.12) (2024-04-02)
+
+
+### Features
+
+* add getAllNames func for object ([95a47d5](https://github.com/snowyu/util-ex.js/commit/95a47d581f9903f0e0bf53255a26b3f7e3b4f2c3))
+
 ## [2.0.0-alpha.11](https://github.com/snowyu/util-ex.js/compare/v2.0.0-alpha.10...v2.0.0-alpha.11) (2024-03-29)
 
 
