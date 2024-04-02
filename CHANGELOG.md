@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [2.0.0-alpha.13](https://github.com/snowyu/util-ex.js/compare/v2.0.0-alpha.12...v2.0.0-alpha.13) (2024-04-02)
+
+
+### Bug Fixes
+
+* **ts:** getAllNames inherited param should be optional ([d94968d](https://github.com/snowyu/util-ex.js/commit/d94968df5393f126e8314057f0f3d1301f8db9f7))
+
 ## [2.0.0-alpha.12](https://github.com/snowyu/util-ex.js/compare/v2.0.0-alpha.11...v2.0.0-alpha.12) (2024-04-02)
 
 
