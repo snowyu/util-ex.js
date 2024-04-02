@@ -2,7 +2,7 @@ const getKeys = Object.keys;
 const getOwnPropertyNames = Object.getOwnPropertyNames;
 
 /**
- * Returns an array of non-enumerable property names of an object.
+ * Returns an array of non-enumerable owner property names of an object.
  *
  * @param {Object} aObject - The object to retrieve non-enumerable property names from.
  * @returns {Array.<string>} - An array of non-enumerable property names of the object.
