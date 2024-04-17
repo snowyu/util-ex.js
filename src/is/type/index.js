@@ -14,3 +14,5 @@ export * from './primitive.js';
 export * from './regexp.js';
 export * from './string.js';
 export * from './undefined.js';
+export * from './iterable.js';
+export * from './async-iterable.js';
