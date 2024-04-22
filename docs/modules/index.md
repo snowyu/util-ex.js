@@ -13,7 +13,9 @@
 - [clonePropertiesTo](index.md#clonepropertiesto)
 - [createFunction](index.md#createfunction)
 - [defineProperty](index.md#defineproperty)
+- [escapeStringRegexp](index.md#escapestringregexp)
 - [extend](index.md#extend)
+- [filterNullUndefined](index.md#filternullundefined)
 - [format](index.md#format)
 - [getAllNames](index.md#getallnames)
 - [getNonEnumerableNames](index.md#getnonenumerablenames)
@@ -23,6 +25,7 @@
 - [inspect](index.md#inspect)
 - [isArguments](index.md#isarguments)
 - [isArray](index.md#isarray)
+- [isAsyncIterable](index.md#isasynciterable)
 - [isBool](index.md#isbool)
 - [isBuffer](index.md#isbuffer)
 - [isDate](index.md#isdate)
@@ -35,6 +38,7 @@
 - [isInList](index.md#isinlist)
 - [isInt](index.md#isint)
 - [isIntStr](index.md#isintstr)
+- [isIterable](index.md#isiterable)
 - [isJson](index.md#isjson)
 - [isNull](index.md#isnull)
 - [isNullOrUndefined](index.md#isnullorundefined)
@@ -99,9 +103,21 @@ Re-exports [defineProperty](defineProperty.md#defineproperty)
 
 ___
 
+### escapeStringRegexp
+
+Re-exports [escapeStringRegexp](escapeStringRegexp.md#escapestringregexp)
+
+___
+
 ### extend
 
 Re-exports [extend](extend.md#extend)
+
+___
+
+### filterNullUndefined
+
+Re-exports [filterNullUndefined](object_filter_null_undefined.md#filternullundefined)
 
 ___
 
@@ -156,6 +172,12 @@ ___
 ### isArray
 
 Re-exports [isArray](is_type_array.md#isarray)
+
+___
+
+### isAsyncIterable
+
+Re-exports [isAsyncIterable](is_type_async_iterable.md#isasynciterable)
 
 ___
 
@@ -228,6 +250,12 @@ ___
 ### isIntStr
 
 Re-exports [isIntStr](is_string_int.md#isintstr)
+
+___
+
+### isIterable
+
+Re-exports [isIterable](is_type_iterable.md#isiterable)
 
 ___
 

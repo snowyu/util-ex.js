@@ -8,12 +8,14 @@
 
 - [isArguments](is_type.md#isarguments)
 - [isArray](is_type.md#isarray)
+- [isAsyncIterable](is_type.md#isasynciterable)
 - [isBool](is_type.md#isbool)
 - [isBuffer](is_type.md#isbuffer)
 - [isDate](is_type.md#isdate)
 - [isError](is_type.md#iserror)
 - [isFunction](is_type.md#isfunction)
 - [isInt](is_type.md#isint)
+- [isIterable](is_type.md#isiterable)
 - [isNull](is_type.md#isnull)
 - [isNullOrUndefined](is_type.md#isnullorundefined)
 - [isNumber](is_type.md#isnumber)
@@ -34,6 +36,12 @@ ___
 ### isArray
 
 Re-exports [isArray](is_type_array.md#isarray)
+
+___
+
+### isAsyncIterable
+
+Re-exports [isAsyncIterable](is_type_async_iterable.md#isasynciterable)
 
 ___
 
@@ -70,6 +78,12 @@ ___
 ### isInt
 
 Re-exports [isInt](is_type_integer.md#isint)
+
+___
+
+### isIterable
+
+Re-exports [isIterable](is_type_iterable.md#isiterable)
 
 ___
 
