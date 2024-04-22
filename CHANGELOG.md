@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [2.0.0-alpha.14](https://github.com/snowyu/util-ex.js/compare/v2.0.0-alpha.13...v2.0.0-alpha.14) (2024-04-22)
+
+
+### Features
+
+* add escapeStringRegexp ([efca373](https://github.com/snowyu/util-ex.js/commit/efca3734afb914dbb10b20a990a0ea5a1365d062))
+* add filterNullUndefined func ([44ababa](https://github.com/snowyu/util-ex.js/commit/44ababa956018bc5d89c04ce190e93507bf1c776))
+* add isAsyncIterable, isIterable functions ([d66c94e](https://github.com/snowyu/util-ex.js/commit/d66c94e0118eda7440f0a8c68f175dbeacdd6359))
+
 ## [2.0.0-alpha.13](https://github.com/snowyu/util-ex.js/compare/v2.0.0-alpha.12...v2.0.0-alpha.13) (2024-04-02)
 
 
