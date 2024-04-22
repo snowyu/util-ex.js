@@ -17,3 +17,4 @@ export * from './object-to-string.js';
 export * from './is/index.js';
 export * from './object/index.js';
 export * from './to-regexp.js';
+export * from './escapeStringRegexp.js';
