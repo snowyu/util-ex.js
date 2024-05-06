@@ -24,12 +24,13 @@ import isString from './is/type/string.js';
  * * If multiple arguments are provided, creates a new function with the given name, arguments and body.
  *
  * @param {string|Function} name The name of the function or the function itself.
- * @param {string[]} aArgs An array of argument names for the function.
- * @param {string} body The body of the function.
- * @param {object} scope The scope for the function.
- * @param {object} values The values to apply to the scope.
+ * @param {string[]} [aArgs] An array of argument names for the function.
+ * @param {string} [body] The body of the function.
+ * @param {object} [scope] The scope for the function.
+ * @param {object} [values] The values to apply to the scope.
  * @returns {Function} A new function with the given name, arguments, body, scope and values.
  * @example
+ * var add1 = newFunction(`function add(a,b) {return a+b}`);
  * var add = newFunction('add', ['a', 'b'], 'return a + b;');
  * var result = add(1, 2); // result is 3
  * var greet = newFunction('greet', ['name'], 'console.log("Hello, " + name + "!");');
