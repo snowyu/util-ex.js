@@ -45,4 +45,4 @@ The formatted string representing the object.
 
 #### Defined in
 
-[src/inspect.js:31](https://github.com/snowyu/util-ex.js/blob/efca373/src/inspect.js#L31)
+[src/inspect.js:31](https://github.com/snowyu/util-ex.js/blob/8694781/src/inspect.js#L31)

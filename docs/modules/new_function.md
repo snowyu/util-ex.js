@@ -22,7 +22,7 @@ Renames and re-exports [newFunction](new_function.md#newfunction)
 
 ### newFunction
 
-▸ **newFunction**(`name`, `aArgs`, `body`, `scope`, `values`, `...args`): `Function`
+▸ **newFunction**(`name`, `aArgs?`, `body?`, `scope?`, `values?`, `...args`): `Function`
 
 Creates a new function with the given name, arguments, body, scope and values.
 
@@ -35,10 +35,10 @@ Creates a new function with the given name, arguments, body, scope and values.
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `name` | `string` \| `Function` | The name of the function or the function itself. |
-| `aArgs` | `string`[] | An array of argument names for the function. |
-| `body` | `string` | The body of the function. |
-| `scope` | `any` | The scope for the function. |
-| `values` | `any` | The values to apply to the scope. |
+| `aArgs?` | `string`[] | An array of argument names for the function. |
+| `body?` | `string` | The body of the function. |
+| `scope?` | `any` | The scope for the function. |
+| `values?` | `any` | The values to apply to the scope. |
 | `...args` | `any` | - |
 
 #### Returns
@@ -50,6 +50,7 @@ A new function with the given name, arguments, body, scope and values.
 **`Example`**
 
 ```ts
+var add1 = newFunction(`function add(a,b) {return a+b}`);
 var add = newFunction('add', ['a', 'b'], 'return a + b;');
 var result = add(1, 2); // result is 3
 var greet = newFunction('greet', ['name'], 'console.log("Hello, " + name + "!");');
@@ -65,4 +66,4 @@ subWithLog(5,2); // print 3
 
 #### Defined in
 
-[src/new-function.js:45](https://github.com/snowyu/util-ex.js/blob/efca373/src/new-function.js#L45)
+[src/new-function.js:46](https://github.com/snowyu/util-ex.js/blob/8694781/src/new-function.js#L46)

@@ -36,4 +36,4 @@ Renames and re-exports [isNumber](is_type_number.md#isnumber)
 
 #### Defined in
 
-[src/is/type/number.js:1](https://github.com/snowyu/util-ex.js/blob/efca373/src/is/type/number.js#L1)
+[src/is/type/number.js:1](https://github.com/snowyu/util-ex.js/blob/8694781/src/is/type/number.js#L1)

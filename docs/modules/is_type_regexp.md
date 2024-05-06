@@ -36,4 +36,4 @@ Renames and re-exports [isRegExp](is_type_regexp.md#isregexp)
 
 #### Defined in
 
-[src/is/type/regexp.js:5](https://github.com/snowyu/util-ex.js/blob/efca373/src/is/type/regexp.js#L5)
+[src/is/type/regexp.js:5](https://github.com/snowyu/util-ex.js/blob/8694781/src/is/type/regexp.js#L5)
