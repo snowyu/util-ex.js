@@ -7,7 +7,7 @@
  * isFunctionStr('const x = 5;') // false
  */
 export function isFunctionStr(aFuncString) {
-  const result = /^[;\s]*function(\s+\S*)?\s*\(.*\)\s*{.*}[;\s]*$/.test(aFuncString);
+  const result = /^[;\s]*function(\s+\S*)?\s*\(.*\)\s*{.*?}[;\s]*$/s.test(aFuncString);
   return result;
 };
 export default isFunctionStr;

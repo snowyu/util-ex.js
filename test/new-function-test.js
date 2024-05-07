@@ -22,6 +22,13 @@ describe("newFunction", function () {
     fn.should.have.property('name', 'myFn');
     fn.should.have.length(3);
   });
+  it("should create a function via string with args and body new line", function () {
+    var fn;
+    fn = createFunction("function myFn (arg1, arg2, arg3) \n {\nreturn a\n}\n");
+    should.exist(fn, "fn");
+    fn.should.have.property('name', 'myFn');
+    fn.should.have.length(3);
+  });
   it("should create a function via string with specified scope", function () {
     var b, fn;
     b = 123;
