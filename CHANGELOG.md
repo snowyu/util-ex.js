@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [2.0.0-alpha.16](https://github.com/snowyu/util-ex.js/compare/v2.0.0-alpha.15...v2.0.0-alpha.16) (2024-05-07)
+
+
+### Bug Fixes
+
+* **newFunction:** can not convert to function if new line in body ([5250ebf](https://github.com/snowyu/util-ex.js/commit/5250ebf7e667c4e4a8e14b2a61bdca5f026a7551))
+
 ## [2.0.0-alpha.15](https://github.com/snowyu/util-ex.js/compare/v2.0.0-alpha.14...v2.0.0-alpha.15) (2024-05-06)
 
 
