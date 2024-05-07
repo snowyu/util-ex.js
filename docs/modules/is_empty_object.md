@@ -40,4 +40,4 @@ Check if an object is empty.
 
 #### Defined in
 
-[src/is/empty-object.js:6](https://github.com/snowyu/util-ex.js/blob/5250ebf/src/is/empty-object.js#L6)
+[src/is/empty-object.js:6](https://github.com/snowyu/util-ex.js/blob/bfdf9ef/src/is/empty-object.js#L6)

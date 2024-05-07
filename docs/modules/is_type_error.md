@@ -36,4 +36,4 @@ Renames and re-exports [isError](is_type_error.md#iserror)
 
 #### Defined in
 
-[src/is/type/error.js:4](https://github.com/snowyu/util-ex.js/blob/5250ebf/src/is/type/error.js#L4)
+[src/is/type/error.js:4](https://github.com/snowyu/util-ex.js/blob/bfdf9ef/src/is/type/error.js#L4)

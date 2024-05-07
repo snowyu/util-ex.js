@@ -67,4 +67,4 @@ obj.method1(); // Output: Hello\nWorld
 
 #### Defined in
 
-[src/injectMethod.js:31](https://github.com/snowyu/util-ex.js/blob/5250ebf/src/injectMethod.js#L31)
+[src/injectMethod.js:31](https://github.com/snowyu/util-ex.js/blob/bfdf9ef/src/injectMethod.js#L31)
