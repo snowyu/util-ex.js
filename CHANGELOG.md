@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [2.0.0-alpha.17](https://github.com/snowyu/util-ex.js/compare/v2.0.0-alpha.16...v2.0.0-alpha.17) (2024-05-07)
+
+
+### Features
+
+* **isFunctionStr:** add async function detect ([bfdf9ef](https://github.com/snowyu/util-ex.js/commit/bfdf9ef16d7f74bf12bca17e6da8bdb7c4ddc368))
+
 ## [2.0.0-alpha.16](https://github.com/snowyu/util-ex.js/compare/v2.0.0-alpha.15...v2.0.0-alpha.16) (2024-05-07)
 
 
