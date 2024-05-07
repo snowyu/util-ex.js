@@ -6,18 +6,18 @@
 
 ### Namespaces
 
-- [export&#x3D;](defineProperty.export_.md)
+- [export=](defineProperty.export_.md)
 
 ### Variables
 
-- [export&#x3D;](defineProperty.md#export&#x3D;)
+- [export=](defineProperty.md#export=)
 
 ## Variables
 
 ### export&#x3D;
 
-• **export=**: `any`
+• **export=**: `__module`
 
 #### Defined in
 
-[src/defineProperty.js:1](https://github.com/snowyu/util-ex.js/blob/0666556/src/defineProperty.js#L1)
+[src/defineProperty.js:1](https://github.com/snowyu/util-ex.js/blob/cfd4615/src/defineProperty.js#L1)

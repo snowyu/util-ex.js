@@ -6,11 +6,11 @@
 
 ### Namespaces
 
-- [export&#x3D;](is_type_object.export_.md)
+- [export=](is_type_object.export_.md)
 
 ### Functions
 
-- [export&#x3D;](is_type_object.md#export&#x3D;)
+- [export=](is_type_object.md#export=)
 
 ## Functions
 
@@ -30,4 +30,4 @@
 
 #### Defined in
 
-[src/is/type/object.js:1](https://github.com/snowyu/util-ex.js/blob/0666556/src/is/type/object.js#L1)
+[src/is/type/object.js:1](https://github.com/snowyu/util-ex.js/blob/cfd4615/src/is/type/object.js#L1)

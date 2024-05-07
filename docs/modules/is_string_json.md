@@ -6,11 +6,11 @@
 
 ### Namespaces
 
-- [export&#x3D;](is_string_json.export_.md)
+- [export=](is_string_json.export_.md)
 
 ### Functions
 
-- [export&#x3D;](is_string_json.md#export&#x3D;)
+- [export=](is_string_json.md#export=)
 
 ## Functions
 
@@ -19,15 +19,6 @@
 ▸ **export=**(`v`, `almost`): `boolean`
 
 Checks if a string is a valid JSON string.
-
-**`Example`**
-
-```ts
-isJson('{"name": "John", "age": 30}'); // true
-isJson('[1, 2, 3]'); // true
-isJson('{"name": "John", "age": 30'); // false
-isJson('This is not a JSON string.'); // false
-```
 
 #### Parameters
 
@@ -42,6 +33,15 @@ isJson('This is not a JSON string.'); // false
 
 - Returns true if the string is valid JSON, false otherwise.
 
+**`Example`**
+
+```ts
+isJson('{"name": "John", "age": 30}'); // true
+isJson('[1, 2, 3]'); // true
+isJson('{"name": "John", "age": 30'); // false
+isJson('This is not a JSON string.'); // false
+```
+
 #### Defined in
 
-[src/is/string/json.js:17](https://github.com/snowyu/util-ex.js/blob/0666556/src/is/string/json.js#L17)
+[src/is/string/json.js:17](https://github.com/snowyu/util-ex.js/blob/cfd4615/src/is/string/json.js#L17)

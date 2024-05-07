@@ -6,11 +6,11 @@
 
 ### Namespaces
 
-- [export&#x3D;](is_type_number.export_.md)
+- [export=](is_type_number.export_.md)
 
 ### Functions
 
-- [export&#x3D;](is_type_number.md#export&#x3D;)
+- [export=](is_type_number.md#export=)
 
 ## Functions
 
@@ -30,4 +30,4 @@
 
 #### Defined in
 
-[src/is/type/number.js:1](https://github.com/snowyu/util-ex.js/blob/0666556/src/is/type/number.js#L1)
+[src/is/type/number.js:1](https://github.com/snowyu/util-ex.js/blob/cfd4615/src/is/type/number.js#L1)

@@ -6,11 +6,11 @@
 
 ### Namespaces
 
-- [export&#x3D;](is_in.export_.md)
+- [export=](is_in.export_.md)
 
 ### Functions
 
-- [export&#x3D;](is_in.md#export&#x3D;)
+- [export=](is_in.md#export=)
 
 ## Functions
 
@@ -19,15 +19,6 @@
 ▸ **export=**(`str`, `list`, `caseSensitive`): `boolean`
 
 Checks if a string matches any item in a list of strings or regular expressions.
-
-**`Example`**
-
-```ts
-const list = ['apple', 'banana', 'orange'];
-const str = 'Banana';
-console.log(isInList(str, list)); // true (no caseSensitive)
-console.log(isInList(str, list, true)); // false (caseSensitive)
-```
 
 #### Parameters
 
@@ -43,6 +34,15 @@ console.log(isInList(str, list, true)); // false (caseSensitive)
 
 - True if there is a match, false otherwise.
 
+**`Example`**
+
+```ts
+const list = ['apple', 'banana', 'orange'];
+const str = 'Banana';
+console.log(isInList(str, list)); // true (no caseSensitive)
+console.log(isInList(str, list, true)); // false (caseSensitive)
+```
+
 #### Defined in
 
-[src/is/in.js:16](https://github.com/snowyu/util-ex.js/blob/0666556/src/is/in.js#L16)
+[src/is/in.js:16](https://github.com/snowyu/util-ex.js/blob/cfd4615/src/is/in.js#L16)

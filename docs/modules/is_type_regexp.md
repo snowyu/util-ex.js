@@ -6,11 +6,11 @@
 
 ### Namespaces
 
-- [export&#x3D;](is_type_regexp.export_.md)
+- [export=](is_type_regexp.export_.md)
 
 ### Functions
 
-- [export&#x3D;](is_type_regexp.md#export&#x3D;)
+- [export=](is_type_regexp.md#export=)
 
 ## Functions
 
@@ -30,4 +30,4 @@
 
 #### Defined in
 
-[src/is/type/regexp.js:5](https://github.com/snowyu/util-ex.js/blob/0666556/src/is/type/regexp.js#L5)
+[src/is/type/regexp.js:5](https://github.com/snowyu/util-ex.js/blob/cfd4615/src/is/type/regexp.js#L5)

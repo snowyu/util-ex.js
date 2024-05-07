@@ -6,11 +6,11 @@
 
 ### Namespaces
 
-- [export&#x3D;](is_type_buffer.export_.md)
+- [export=](is_type_buffer.export_.md)
 
 ### Variables
 
-- [export&#x3D;](is_type_buffer.md#export&#x3D;)
+- [export=](is_type_buffer.md#export=)
 
 ## Variables
 
@@ -18,6 +18,12 @@
 
 • **export=**: `any`
 
+Check if a value is a Buffer object.
+
+**`Param`**
+
+The value to check.
+
 #### Defined in
 
-[src/is/type/buffer.js:6](https://github.com/snowyu/util-ex.js/blob/0666556/src/is/type/buffer.js#L6)
+[src/is/type/buffer.js:6](https://github.com/snowyu/util-ex.js/blob/cfd4615/src/is/type/buffer.js#L6)

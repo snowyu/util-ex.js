@@ -6,7 +6,7 @@
 
 ### Functions
 
-- [export&#x3D;](injectMethodEx.md#export&#x3D;)
+- [export=](injectMethodEx.md#export=)
 
 ## Functions
 
@@ -17,6 +17,18 @@
 Inject method to an object.
 
 **Note**: The original method will be passed into the new method as first argument
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `aObject` | `any` | the target object to inject |
+| `aMethodName` | `string` | the target method to inject |
+| `aNewMethod` | `Function` | the new method to be injected into the aObject. |
+
+#### Returns
+
+`any`
 
 **`Example`**
 
@@ -35,18 +47,6 @@ a.x = 1
 a.method(12, 3)
 ```
 
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `aObject` | `any` | the target object to inject |
-| `aMethodName` | `string` | the target method to inject |
-| `aNewMethod` | `Function` | the new method to be injected into the aObject. |
-
-#### Returns
-
-`any`
-
 #### Defined in
 
-[src/injectMethodEx.js:25](https://github.com/snowyu/util-ex.js/blob/0666556/src/injectMethodEx.js#L25)
+[src/injectMethodEx.js:25](https://github.com/snowyu/util-ex.js/blob/cfd4615/src/injectMethodEx.js#L25)

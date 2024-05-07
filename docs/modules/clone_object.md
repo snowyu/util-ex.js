@@ -6,7 +6,7 @@
 
 ### Functions
 
-- [export&#x3D;](clone_object.md#export&#x3D;)
+- [export=](clone_object.md#export=)
 
 ## Functions
 
@@ -15,6 +15,19 @@
 ▸ **export=**(`aObject`, `tryCloneFn?`): `any`
 
 Clones an object.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `aObject` | `any` | The object to be cloned. |
+| `tryCloneFn?` | `boolean` \| `Function` | A boolean indicating whether or not to try to clone the object using a '`clone`' function, or a function that can be used to clone the object. If set to `false`, the object will not be cloned using the '`clone`' function, even if it exists. |
+
+#### Returns
+
+`any`
+
+The cloned object.
 
 **`Example`**
 
@@ -40,19 +53,6 @@ var myObject = { foo: 'bar', clone: function() { return { foo: this.foo }; } };
 var clonedObject = cloneObject(myObject, false);
 ```
 
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `aObject` | `any` | The object to be cloned. |
-| `tryCloneFn?` | `boolean` \| `Function` | A boolean indicating whether or not to try to clone the object using a '`clone`' function, or a function that can be used to clone the object. If set to `false`, the object will not be cloned using the '`clone`' function, even if it exists. |
-
-#### Returns
-
-`any`
-
-The cloned object.
-
 #### Defined in
 
-[src/clone-object.js:29](https://github.com/snowyu/util-ex.js/blob/0666556/src/clone-object.js#L29)
+[src/clone-object.js:29](https://github.com/snowyu/util-ex.js/blob/cfd4615/src/clone-object.js#L29)

@@ -6,11 +6,11 @@
 
 ### Namespaces
 
-- [export&#x3D;](is_type_array.export_.md)
+- [export=](is_type_array.export_.md)
 
 ### Functions
 
-- [export&#x3D;](is_type_array.md#export&#x3D;)
+- [export=](is_type_array.md#export=)
 
 ## Functions
 
@@ -30,4 +30,4 @@
 
 #### Defined in
 
-[src/is/type/array.js:9](https://github.com/snowyu/util-ex.js/blob/0666556/src/is/type/array.js#L9)
+[src/is/type/array.js:9](https://github.com/snowyu/util-ex.js/blob/cfd4615/src/is/type/array.js#L9)

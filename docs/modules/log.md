@@ -6,11 +6,11 @@
 
 ### Namespaces
 
-- [export&#x3D;](log.export_.md)
+- [export=](log.export_.md)
 
 ### Functions
 
-- [export&#x3D;](log.md#export&#x3D;)
+- [export=](log.md#export=)
 
 ## Functions
 
@@ -32,4 +32,4 @@ Logs a message to the console with a timestamp prefix.
 
 #### Defined in
 
-[src/log.js:26](https://github.com/snowyu/util-ex.js/blob/0666556/src/log.js#L26)
+[src/log.js:26](https://github.com/snowyu/util-ex.js/blob/cfd4615/src/log.js#L26)

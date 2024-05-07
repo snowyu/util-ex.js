@@ -6,11 +6,11 @@
 
 ### Namespaces
 
-- [export&#x3D;](injectMethods.export_.md)
+- [export=](injectMethods.export_.md)
 
 ### Functions
 
-- [export&#x3D;](injectMethods.md#export&#x3D;)
+- [export=](injectMethods.md#export=)
 
 ## Functions
 
@@ -25,6 +25,20 @@ Injects multiple methods into an object, optionally preserving access to the ori
 * In the new replaced method, you can use `this.super()` to call the original method, `this.super()` is already bind with original instance.
 * The `this[aMethodName]` is the original method, but not bind yet.
 * `this.self` is the original instance!
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `aObject` | `any` | The target object to inject methods into. |
+| `aMethods` | `any` | The methods to inject into the aObject. |
+| `aOptions?` | `any` | The optional parameters. |
+
+#### Returns
+
+`boolean`
+
+Whether the injections are successful.
 
 **`Example`**
 
@@ -55,20 +69,6 @@ obj.method2(); // Output: World
 obj.method3(); // Output: New World
 ```
 
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `aObject` | `any` | The target object to inject methods into. |
-| `aMethods` | `any` | The methods to inject into the aObject. |
-| `aOptions?` | `any` | The optional parameters. |
-
-#### Returns
-
-`boolean`
-
-Whether the injections are successful.
-
 #### Defined in
 
-[src/injectMethods.js:55](https://github.com/snowyu/util-ex.js/blob/0666556/src/injectMethods.js#L55)
+[src/injectMethods.js:55](https://github.com/snowyu/util-ex.js/blob/cfd4615/src/injectMethods.js#L55)

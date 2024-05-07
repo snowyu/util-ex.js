@@ -29,7 +29,7 @@
 
 #### Defined in
 
-[src/_shims.js:16](https://github.com/snowyu/util-ex.js/blob/0666556/src/_shims.js#L16)
+[src/_shims.js:16](https://github.com/snowyu/util-ex.js/blob/cfd4615/src/_shims.js#L16)
 
 ___
 
@@ -72,7 +72,7 @@ ___
 
 #### Defined in
 
-[src/_shims.js:13](https://github.com/snowyu/util-ex.js/blob/0666556/src/_shims.js#L13)
+[src/_shims.js:13](https://github.com/snowyu/util-ex.js/blob/cfd4615/src/_shims.js#L13)
 
 ___
 
@@ -95,3 +95,21 @@ Returns the names of the enumerable string properties and methods of an object.
 #### Defined in
 
 node_modules/typescript/lib/lib.es5.d.ts:264
+
+▸ **keys**(`o`): `string`[]
+
+Returns the names of the enumerable string properties and methods of an object.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `o` | `Object` | Object that contains the properties and methods. This can be an object that you created or an existing Document Object Model (DOM) object. |
+
+#### Returns
+
+`string`[]
+
+#### Defined in
+
+node_modules/typescript/lib/lib.es2015.core.d.ts:323

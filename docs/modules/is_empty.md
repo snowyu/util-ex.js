@@ -6,11 +6,11 @@
 
 ### Namespaces
 
-- [export&#x3D;](is_empty.export_.md)
+- [export=](is_empty.export_.md)
 
 ### Functions
 
-- [export&#x3D;](is_empty.md#export&#x3D;)
+- [export=](is_empty.md#export=)
 
 ## Functions
 
@@ -34,4 +34,4 @@ Checks if a given value is empty.
 
 #### Defined in
 
-[src/is/empty.js:42](https://github.com/snowyu/util-ex.js/blob/0666556/src/is/empty.js#L42)
+[src/is/empty.js:42](https://github.com/snowyu/util-ex.js/blob/cfd4615/src/is/empty.js#L42)

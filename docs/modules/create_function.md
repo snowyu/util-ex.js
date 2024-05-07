@@ -6,11 +6,11 @@
 
 ### Namespaces
 
-- [export&#x3D;](create_function.export_.md)
+- [export=](create_function.export_.md)
 
 ### Functions
 
-- [export&#x3D;](create_function.md#export&#x3D;)
+- [export=](create_function.md#export=)
 
 ## Functions
 
@@ -19,13 +19,6 @@
 ▸ **export=**(`body`, `scope?`, `values`, `...args`): `Function`
 
 Create a function using the given body and scope.
-
-**`Example`**
-
-```ts
-var fn = _createFunction('function yourFuncName(arg1, arg2){log(arg1+arg2);}', {log:console.log});
-  fn(2,3); //print 5
-```
 
 #### Parameters
 
@@ -42,6 +35,13 @@ var fn = _createFunction('function yourFuncName(arg1, arg2){log(arg1+arg2);}', {
 
 - The created function.
 
+**`Example`**
+
+```ts
+var fn = _createFunction('function yourFuncName(arg1, arg2){log(arg1+arg2);}', {log:console.log});
+  fn(2,3); //print 5
+```
+
 #### Defined in
 
-[src/_create-function.js:30](https://github.com/snowyu/util-ex.js/blob/0666556/src/_create-function.js#L30)
+[src/_create-function.js:30](https://github.com/snowyu/util-ex.js/blob/cfd4615/src/_create-function.js#L30)

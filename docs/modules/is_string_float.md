@@ -6,11 +6,11 @@
 
 ### Namespaces
 
-- [export&#x3D;](is_string_float.export_.md)
+- [export=](is_string_float.export_.md)
 
 ### Functions
 
-- [export&#x3D;](is_string_float.md#export&#x3D;)
+- [export=](is_string_float.md#export=)
 
 ## Functions
 
@@ -19,16 +19,6 @@
 ▸ **export=**(`str`): `boolean`
 
 Checks if a string represents a valid floating point number.
-
-**`Example`**
-
-```ts
-isFloatStr('3.14'); // returns true
-isFloatStr('-0.5'); // returns true
-isFloatStr('2.718e0'); // returns true
-isFloatStr('2.718e-2'); // returns true
-isFloatStr('abc'); // returns false
-```
 
 #### Parameters
 
@@ -42,6 +32,16 @@ isFloatStr('abc'); // returns false
 
 `true` if the string represents a valid floating point number, `false` otherwise.
 
+**`Example`**
+
+```ts
+isFloatStr('3.14'); // returns true
+isFloatStr('-0.5'); // returns true
+isFloatStr('2.718e0'); // returns true
+isFloatStr('2.718e-2'); // returns true
+isFloatStr('abc'); // returns false
+```
+
 #### Defined in
 
-[src/is/string/float.js:14](https://github.com/snowyu/util-ex.js/blob/0666556/src/is/string/float.js#L14)
+[src/is/string/float.js:14](https://github.com/snowyu/util-ex.js/blob/cfd4615/src/is/string/float.js#L14)

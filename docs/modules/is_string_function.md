@@ -4,28 +4,27 @@
 
 ## Table of contents
 
-### Namespaces
+### References
 
-- [export&#x3D;](is_string_function.export_.md)
+- [default](is_string_function.md#default)
 
 ### Functions
 
-- [export&#x3D;](is_string_function.md#export&#x3D;)
+- [isFunctionStr](is_string_function.md#isfunctionstr)
+
+## References
+
+### default
+
+Renames and re-exports [isFunctionStr](is_string_function.md#isfunctionstr)
 
 ## Functions
 
-### export&#x3D;
+### isFunctionStr
 
-▸ **export=**(`aFuncString`): `boolean`
+▸ **isFunctionStr**(`aFuncString`): `boolean`
 
 Determines if a string represents a valid JavaScript function.
-
-**`Example`**
-
-```ts
-isFunctionStr('function add(x, y) { return x + y; }') // true
-isFunctionStr('const x = 5;') // false
-```
 
 #### Parameters
 
@@ -39,6 +38,13 @@ isFunctionStr('const x = 5;') // false
 
 - True if the string represents a valid function, false otherwise.
 
+**`Example`**
+
+```ts
+isFunctionStr('function add(x, y) { return x + y; }') // true
+isFunctionStr('const x = 5;') // false
+```
+
 #### Defined in
 
-[src/is/string/function.js:9](https://github.com/snowyu/util-ex.js/blob/0666556/src/is/string/function.js#L9)
+[src/is/string/function.js:9](https://github.com/snowyu/util-ex.js/blob/cfd4615/src/is/string/function.js#L9)

@@ -6,7 +6,7 @@
 
 ### References
 
-- [export&#x3D;](injectMethod.md#export&#x3D;)
+- [export=](injectMethod.md#export=)
 
 ## References
 

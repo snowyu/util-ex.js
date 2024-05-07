@@ -6,18 +6,28 @@
 
 ### Namespaces
 
-- [export&#x3D;](is_type_integer.export_.md)
+- [export=](is_type_integer.export_.md)
 
-### Variables
+### Functions
 
-- [export&#x3D;](is_type_integer.md#export&#x3D;)
+- [export=](is_type_integer.md#export=)
 
-## Variables
+## Functions
 
 ### export&#x3D;
 
-• **export=**: `any`
+▸ **export=**(`value`): `boolean`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `unknown` |
+
+#### Returns
+
+`boolean`
 
 #### Defined in
 
-[src/is/type/integer.js:1](https://github.com/snowyu/util-ex.js/blob/0666556/src/is/type/integer.js#L1)
+[src/is/type/integer.js:1](https://github.com/snowyu/util-ex.js/blob/cfd4615/src/is/type/integer.js#L1)

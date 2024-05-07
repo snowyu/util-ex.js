@@ -6,11 +6,11 @@
 
 ### Namespaces
 
-- [export&#x3D;](createFunction.export_.md)
+- [export=](createFunction.export_.md)
 
 ### Functions
 
-- [export&#x3D;](createFunction.md#export&#x3D;)
+- [export=](createFunction.md#export=)
 
 ## Functions
 
@@ -19,18 +19,6 @@
 ▸ **export=**(`name`, `aArgs?`, `body?`, `scope?`, `values?`, `...args`): `Function`
 
 Creates a new function with the given name, arguments, and body, and optionally with the given scope and values.
-
-**`Example`**
-
-```ts
-// Create a function with no arguments, with scope 'Math' and values [Math]:
-var f = createFunction('myFunc', 'return Math.PI', ['Math'], [Math]);
-var f = createFunction('myFunc', 'return Math.PI', {Math: Math});
-
-// Create a function with two arguments, with scope 'Math' and values [Math], and scope 'console' and values [console]:
-var g = createFunction('myFunc', ['a', 'b'], 'console.log(a + b);', ['Math', 'console'], [Math, console]);
-var g = createFunction('myFunc', ['a', 'b'], 'console.log(a + b);', {Math, console});
-```
 
 #### Parameters
 
@@ -49,6 +37,18 @@ var g = createFunction('myFunc', ['a', 'b'], 'console.log(a + b);', {Math, conso
 
 - The newly created function.
 
+**`Example`**
+
+```ts
+// Create a function with no arguments, with scope 'Math' and values [Math]:
+var f = createFunction('myFunc', 'return Math.PI', ['Math'], [Math]);
+var f = createFunction('myFunc', 'return Math.PI', {Math: Math});
+
+// Create a function with two arguments, with scope 'Math' and values [Math], and scope 'console' and values [console]:
+var g = createFunction('myFunc', ['a', 'b'], 'console.log(a + b);', ['Math', 'console'], [Math, console]);
+var g = createFunction('myFunc', ['a', 'b'], 'console.log(a + b);', {Math, console});
+```
+
 #### Defined in
 
-[src/createFunction.js:35](https://github.com/snowyu/util-ex.js/blob/0666556/src/createFunction.js#L35)
+[src/createFunction.js:35](https://github.com/snowyu/util-ex.js/blob/cfd4615/src/createFunction.js#L35)

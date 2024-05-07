@@ -6,11 +6,11 @@
 
 ### Namespaces
 
-- [export&#x3D;](object_map.export_.md)
+- [export=](object_map.export_.md)
 
 ### Functions
 
-- [export&#x3D;](object_map.md#export&#x3D;)
+- [export=](object_map.md#export=)
 
 ## Functions
 
@@ -19,6 +19,21 @@
 ▸ **export=**(`aObject`, `aOptions?`): `any`[]
 
 Returns an array containing the values of all enumerable or non-enumerable properties of an object.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `aObject` | `any` | The object to map properties from. |
+| `aOptions?` | `Object` | Optional parameter to specify options for mapping. |
+| `aOptions.enumerable` | `boolean` | If true, enumerable properties are included in the mapping. |
+| `aOptions.nonEnumerable` | `boolean` | If true, non-enumerable properties are included in the mapping. |
+
+#### Returns
+
+`any`[]
+
+An array containing the mapped property values.
 
 **`Example`**
 
@@ -36,21 +51,6 @@ const result1 = map(myObj);
 const result2 = map(myObj, {enumerable: false, nonEnumerable: true});
 ```
 
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `aObject` | `any` | The object to map properties from. |
-| `aOptions?` | `Object` | Optional parameter to specify options for mapping. |
-| `aOptions.enumerable` | `boolean` | If true, enumerable properties are included in the mapping. |
-| `aOptions.nonEnumerable` | `boolean` | If true, non-enumerable properties are included in the mapping. |
-
-#### Returns
-
-`any`[]
-
-An array containing the mapped property values.
-
 #### Defined in
 
-[src/object/map.js:30](https://github.com/snowyu/util-ex.js/blob/0666556/src/object/map.js#L30)
+[src/object/map.js:30](https://github.com/snowyu/util-ex.js/blob/cfd4615/src/object/map.js#L30)

@@ -6,11 +6,11 @@
 
 ### Namespaces
 
-- [export&#x3D;](is_type_date.export_.md)
+- [export=](is_type_date.export_.md)
 
 ### Functions
 
-- [export&#x3D;](is_type_date.md#export&#x3D;)
+- [export=](is_type_date.md#export=)
 
 ## Functions
 
@@ -34,4 +34,4 @@ Determines whether a value is a date object.
 
 #### Defined in
 
-[src/is/type/date.js:10](https://github.com/snowyu/util-ex.js/blob/0666556/src/is/type/date.js#L10)
+[src/is/type/date.js:10](https://github.com/snowyu/util-ex.js/blob/cfd4615/src/is/type/date.js#L10)

@@ -2,4 +2,4 @@
 
 # Namespace: export=
 
-[_create-function](create_function.md).export=
+[\_create-function](create_function.md).export=

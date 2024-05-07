@@ -6,18 +6,18 @@
 
 ### Namespaces
 
-- [export&#x3D;](is_empty_function.export_.md)
+- [export=](is_empty_function.export_.md)
 
 ### Variables
 
-- [export&#x3D;](is_empty_function.md#export&#x3D;)
+- [export=](is_empty_function.md#export=)
 
 ## Variables
 
 ### export&#x3D;
 
-• **export=**: `any`
+• **export=**: `__module`
 
 #### Defined in
 
-[src/is/empty-function.js:1](https://github.com/snowyu/util-ex.js/blob/0666556/src/is/empty-function.js#L1)
+[src/is/empty-function.js:1](https://github.com/snowyu/util-ex.js/blob/cfd4615/src/is/empty-function.js#L1)

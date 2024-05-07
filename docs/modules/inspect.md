@@ -4,13 +4,9 @@
 
 ## Table of contents
 
-### Namespaces
-
-- [export&#x3D;](inspect.export_.md)
-
 ### Functions
 
-- [export&#x3D;](inspect.md#export&#x3D;)
+- [export=](inspect.md#export=)
 
 ## Functions
 
@@ -39,4 +35,4 @@ The formatted string representing the object.
 
 #### Defined in
 
-[src/inspect.js:32](https://github.com/snowyu/util-ex.js/blob/0666556/src/inspect.js#L32)
+[src/inspect.js:32](https://github.com/snowyu/util-ex.js/blob/cfd4615/src/inspect.js#L32)

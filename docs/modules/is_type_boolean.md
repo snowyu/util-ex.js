@@ -6,11 +6,11 @@
 
 ### Namespaces
 
-- [export&#x3D;](is_type_boolean.export_.md)
+- [export=](is_type_boolean.export_.md)
 
 ### Functions
 
-- [export&#x3D;](is_type_boolean.md#export&#x3D;)
+- [export=](is_type_boolean.md#export=)
 
 ## Functions
 
@@ -34,4 +34,4 @@ Whether the argument is a boolean.
 
 #### Defined in
 
-[src/is/type/boolean.js:7](https://github.com/snowyu/util-ex.js/blob/0666556/src/is/type/boolean.js#L7)
+[src/is/type/boolean.js:7](https://github.com/snowyu/util-ex.js/blob/cfd4615/src/is/type/boolean.js#L7)

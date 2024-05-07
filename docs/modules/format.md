@@ -6,7 +6,7 @@
 
 ### Functions
 
-- [export&#x3D;](format.md#export&#x3D;)
+- [export=](format.md#export=)
 
 ## Functions
 
@@ -24,15 +24,6 @@ specified using '%s' for string, '%d' for number, and '%j' for JSON.
 If the first argument is not a string, all arguments will be inspected and
 concatenated into a space-separated string.
 
-**`Example`**
-
-```ts
-format('%s %s', 'hello', 'world'); // 'hello world'
-format('%d %s', 42, 'answer'); // '42 answer'
-format('%j', { foo: 'bar' }); // '{"foo":"bar"}'
-format('no placeholders', 'needed'); // 'no placeholders needed'
-```
-
 #### Parameters
 
 | Name | Type | Description |
@@ -46,6 +37,15 @@ format('no placeholders', 'needed'); // 'no placeholders needed'
 
 The formatted string.
 
+**`Example`**
+
+```ts
+format('%s %s', 'hello', 'world'); // 'hello world'
+format('%d %s', 42, 'answer'); // '42 answer'
+format('%j', { foo: 'bar' }); // '{"foo":"bar"}'
+format('no placeholders', 'needed'); // 'no placeholders needed'
+```
+
 #### Defined in
 
-[src/format.js:29](https://github.com/snowyu/util-ex.js/blob/0666556/src/format.js#L29)
+[src/format.js:29](https://github.com/snowyu/util-ex.js/blob/cfd4615/src/format.js#L29)

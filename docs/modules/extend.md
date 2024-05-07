@@ -6,7 +6,7 @@
 
 ### Namespaces
 
-- [export&#x3D;](extend.export_.md)
+- [export=](extend.export_.md)
 
 ### Type Aliases
 
@@ -14,17 +14,17 @@
 
 ### Functions
 
-- [export&#x3D;](extend.md#export&#x3D;-1)
+- [export=](extend.md#export=-1)
 
 ## Type Aliases
 
 ### FilterFn
 
-Ƭ **FilterFn**<\>: <\>(`key`: `any`, `value`: `any`) => `boolean`
+Ƭ **FilterFn**\<\>: (`key`: `any`, `value`: `any`) => `boolean`
 
 #### Type declaration
 
-▸ <\>(`key`, `value`): `boolean`
+▸ (`key`, `value`): `boolean`
 
 ##### Parameters
 
@@ -39,7 +39,7 @@
 
 #### Defined in
 
-[src/extend.js:6](https://github.com/snowyu/util-ex.js/blob/0666556/src/extend.js#L6)
+[src/extend.js:6](https://github.com/snowyu/util-ex.js/blob/cfd4615/src/extend.js#L6)
 
 ## Functions
 
@@ -48,6 +48,20 @@
 ▸ **export=**(`dest`, `sources`, `filter`): `any`
 
 Extends an object with properties from one or more source objects.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `dest` | `any` | The object to be extended. |
+| `sources` | `any` | The source object(s) from which to extend the `dest` object. |
+| `filter` | `Function` | An optional function to filter which properties to extend. It should take two arguments (`key` and `value`) and return `true` if the property should be extended, `false` otherwise. |
+
+#### Returns
+
+`any`
+
+- The extended `dest` object.
 
 **`Example`**
 
@@ -72,20 +86,6 @@ extend(dest, [src1, src2], filter);
 // dest => { a: 1, c: 3 }
 ```
 
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `dest` | `any` | The object to be extended. |
-| `sources` | `any` | The source object(s) from which to extend the `dest` object. |
-| `filter` | `Function` | An optional function to filter which properties to extend. It should take two arguments (`key` and `value`) and return `true` if the property should be extended, `false` otherwise. |
-
-#### Returns
-
-`any`
-
-- The extended `dest` object.
-
 #### Defined in
 
-[src/extend.js:35](https://github.com/snowyu/util-ex.js/blob/0666556/src/extend.js#L35)
+[src/extend.js:35](https://github.com/snowyu/util-ex.js/blob/cfd4615/src/extend.js#L35)
