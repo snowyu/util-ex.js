@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.4](https://github.com/snowyu/util-ex.js/compare/v1.0.3...v1.0.4) (2024-05-07)
+
+
+### Bug Fixes
+
+* **newFunction:** can not convert to function if new line in body ([cfd4615](https://github.com/snowyu/util-ex.js/commit/cfd461534caf5b989328e34c061d1dc68c949e27))
+
 ### [1.0.3](https://github.com/snowyu/util-ex.js/compare/v1.0.2...v1.0.3) (2023-04-12)
 
 
