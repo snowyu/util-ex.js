@@ -59,4 +59,4 @@ const result2 = map(myObj, {enumerable: false, nonEnumerable: true});
 
 #### Defined in
 
-[src/object/map.js:30](https://github.com/snowyu/util-ex.js/blob/8694781/src/object/map.js#L30)
+[src/object/map.js:30](https://github.com/snowyu/util-ex.js/blob/5250ebf/src/object/map.js#L30)

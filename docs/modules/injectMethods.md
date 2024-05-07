@@ -77,4 +77,4 @@ obj.method3(); // Output: New World
 
 #### Defined in
 
-[src/injectMethods.js:54](https://github.com/snowyu/util-ex.js/blob/8694781/src/injectMethods.js#L54)
+[src/injectMethods.js:54](https://github.com/snowyu/util-ex.js/blob/5250ebf/src/injectMethods.js#L54)

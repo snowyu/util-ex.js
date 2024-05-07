@@ -47,4 +47,4 @@ toRegExp(/[a-z]/g)  // new RegExp(/[a-z]/g)
 
 #### Defined in
 
-[src/to-regexp.js:11](https://github.com/snowyu/util-ex.js/blob/8694781/src/to-regexp.js#L11)
+[src/to-regexp.js:11](https://github.com/snowyu/util-ex.js/blob/5250ebf/src/to-regexp.js#L11)

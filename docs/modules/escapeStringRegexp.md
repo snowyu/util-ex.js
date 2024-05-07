@@ -48,4 +48,4 @@ console.log(escaped); // Outputs: "Hello, world! \(It's me\.\)"
 
 #### Defined in
 
-[src/escapeStringRegexp.js:12](https://github.com/snowyu/util-ex.js/blob/8694781/src/escapeStringRegexp.js#L12)
+[src/escapeStringRegexp.js:12](https://github.com/snowyu/util-ex.js/blob/5250ebf/src/escapeStringRegexp.js#L12)
