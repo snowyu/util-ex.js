@@ -6,7 +6,8 @@
  * isFunctionStr('function add(x, y) { return x + y; }') // true
  * isFunctionStr('const x = 5;') // false
  */
-module.exports = function isFunctionStr(aFuncString) {
-  var result = /^[;\s]*function(\s+\S*)?\s*\(.*\)\s*{.*}[;\s]*$/.test(aFuncString);
+export function isFunctionStr(aFuncString) {
+  const result = /^[;\s]*function(\s+\S*)?\s*\(.*\)\s*{.*?}[;\s]*$/s.test(aFuncString);
   return result;
 };
+export default isFunctionStr;
