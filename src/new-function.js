@@ -35,6 +35,9 @@ import isString from './is/type/string.js';
  * var result = add(1, 2); // result is 3
  * var greet = newFunction('greet', ['name'], 'console.log("Hello, " + name + "!");');
  * greet('John'); // Output: Hello, John!
+ * const sleep = newFunction('sleep', ['ms'], 'return new Promise(resolve => setTimeout(resolve, ms));');
+ * const wait1Second = newFunction('async wait1Second', [], `await sleep(1000);`, {sleep});
+ * await wait1Second()
  * var fn = newFunction('yourFuncName', ['arg1', 'arg2'], 'return log(arg1+arg2);', {log:console.log});
  * function sub(a,b) {
  *   log(a-b);
@@ -46,7 +49,12 @@ import isString from './is/type/string.js';
 export function newFunction(name, aArgs, body, scope, values) {
   if (arguments.length === 1) {
     if (!isFunctionStr(name)) {
-      name = `function ${  name  }(){}`;
+      let async = ''
+      if (name.startsWith('async ')) {
+        name = name.substring(6);
+        async = 'async '
+      }
+      name = `${async}function ${name}(){}`;
     }
     return createFunc(name);
   }
@@ -62,7 +70,12 @@ export function newFunction(name, aArgs, body, scope, values) {
     } else if (aArgs == null) {
       aArgs = [];
     }
-    name = `function ${  name  }(${  aArgs.join(', ')  }) {\n${  body  }\n}`;
+    let async = ''
+    if (name.startsWith('async ')) {
+      name = name.substring(6);
+      async = 'async '
+    }
+    name = `${async}function ${name}(${aArgs.join(', ')}) {\n${body}\n}`;
   }
   return createFunc(name, scope, values);
 };

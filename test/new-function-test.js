@@ -99,7 +99,7 @@ describe("newFunction", function () {
     fn.should.have.length(2);
     fn(10, 2).should.be.equal(135);
   });
-  it("should create a async function via string with args and body new line", function () {
+  it("should create an async function via string with args and body new line", function () {
     var fn;
     fn = createFunction("async function myFn (arg1, arg2, arg3) \n {\nreturn a\n}\n");
     should.exist(fn, "fn");
@@ -107,5 +107,21 @@ describe("newFunction", function () {
     assert.isTrue(fn.constructor.name === 'AsyncFunction');
     fn.should.have.property('name', 'myFn');
     fn.should.have.length(3);
+  });
+
+  it("should create an async function via name", function () {
+    var fn;
+    fn = createFunction("async sleep", ['ms'], "return new Promise(resolve => setTimeout(resolve, ms))");
+    should.exist(fn, "fn");
+    assert.isFunction(fn);
+    assert.isTrue(fn.constructor.name === 'AsyncFunction');
+    fn.should.have.property('name', 'sleep');
+    fn.should.have.length(1);
+    fn = createFunction("async empty");
+    should.exist(fn, "fn");
+    assert.isFunction(fn);
+    assert.isTrue(fn.constructor.name === 'AsyncFunction');
+    fn.should.have.property('name', 'empty');
+    fn.should.have.length(0);
   });
 });
