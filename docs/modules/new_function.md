@@ -55,6 +55,9 @@ var add = newFunction('add', ['a', 'b'], 'return a + b;');
 var result = add(1, 2); // result is 3
 var greet = newFunction('greet', ['name'], 'console.log("Hello, " + name + "!");');
 greet('John'); // Output: Hello, John!
+const sleep = newFunction('sleep', ['ms'], 'return new Promise(resolve => setTimeout(resolve, ms));');
+const wait1Second = newFunction('async wait1Second', [], `await sleep(1000);`, {sleep});
+await wait1Second()
 var fn = newFunction('yourFuncName', ['arg1', 'arg2'], 'return log(arg1+arg2);', {log:console.log});
 function sub(a,b) {
   log(a-b);
@@ -66,4 +69,4 @@ subWithLog(5,2); // print 3
 
 #### Defined in
 
-[src/new-function.js:46](https://github.com/snowyu/util-ex.js/blob/bfdf9ef/src/new-function.js#L46)
+[src/new-function.js:49](https://github.com/snowyu/util-ex.js/blob/fac65b1/src/new-function.js#L49)
