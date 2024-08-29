@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [2.0.0](https://github.com/snowyu/util-ex.js/compare/v2.0.0-alpha.18...v2.0.0) (2024-08-29)
+
 ## [2.0.0-alpha.18](https://github.com/snowyu/util-ex.js/compare/v2.0.0-alpha.17...v2.0.0-alpha.18) (2024-05-09)
 
 
