@@ -69,4 +69,4 @@ subWithLog(5,2); // print 3
 
 #### Defined in
 
-[src/new-function.js:49](https://github.com/snowyu/util-ex.js/blob/fac65b1/src/new-function.js#L49)
+[src/new-function.js:49](https://github.com/snowyu/util-ex.js/blob/2abf752/src/new-function.js#L49)
