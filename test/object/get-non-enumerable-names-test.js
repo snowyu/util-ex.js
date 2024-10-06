@@ -40,7 +40,6 @@ describe("get-non-enumerable-names", function () {
     defineProperty(Test.prototype, 'non1', 1);
     var test = new Test();
     const result = getNames(test);
-    console.log('TCL:: ~ result:', result, test);
     result.should.be.deep.equal(['non2']);
   });
 });
