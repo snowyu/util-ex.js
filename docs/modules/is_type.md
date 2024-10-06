@@ -20,6 +20,7 @@
 - [isNullOrUndefined](is_type.md#isnullorundefined)
 - [isNumber](is_type.md#isnumber)
 - [isObject](is_type.md#isobject)
+- [isPlainObject](is_type.md#isplainobject)
 - [isPrimitive](is_type.md#isprimitive)
 - [isRegExp](is_type.md#isregexp)
 - [isString](is_type.md#isstring)
@@ -108,6 +109,12 @@ ___
 ### isObject
 
 Re-exports [isObject](is_type_object.md#isobject)
+
+___
+
+### isPlainObject
+
+Re-exports [isPlainObject](is_type_plain_object.md#isplainobject)
 
 ___
 

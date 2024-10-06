@@ -48,6 +48,7 @@
 - [is/type/null-or-undefined](modules/is_type_null_or_undefined.md)
 - [is/type/number](modules/is_type_number.md)
 - [is/type/object](modules/is_type_object.md)
+- [is/type/plain-object](modules/is_type_plain_object.md)
 - [is/type/primitive](modules/is_type_primitive.md)
 - [is/type/regexp](modules/is_type_regexp.md)
 - [is/type/string](modules/is_type_string.md)
