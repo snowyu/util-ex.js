@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [2.1.0](https://github.com/snowyu/util-ex.js/compare/v2.0.0...v2.1.0) (2024-10-06)
+
+
+### Features
+
+* add isPlainObject func ([8e12bd8](https://github.com/snowyu/util-ex.js/commit/8e12bd800acc854fff34f81094a963d7419ff921))
+
 ## [2.0.0](https://github.com/snowyu/util-ex.js/compare/v2.0.0-alpha.18...v2.0.0) (2024-08-29)
 
 ## [2.0.0-alpha.18](https://github.com/snowyu/util-ex.js/compare/v2.0.0-alpha.17...v2.0.0-alpha.18) (2024-05-09)
