@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [2.2.1](https://github.com/snowyu/util-ex.js/compare/v2.2.0...v2.2.1) (2025-03-09)
+
+
+### Bug Fixes
+
+* should check async generator func ([7dafc9d](https://github.com/snowyu/util-ex.js/commit/7dafc9dc030fd95925b6f507c6de862fd56e79cb))
+
 ## [2.2.0](https://github.com/snowyu/util-ex.js/compare/v2.1.0...v2.2.0) (2025-03-09)
 
 
