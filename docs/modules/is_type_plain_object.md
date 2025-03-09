@@ -36,4 +36,4 @@ Renames and re-exports [isPlainObject](is_type_plain_object.md#isplainobject)
 
 #### Defined in
 
-[src/is/type/plain-object.js:2](https://github.com/snowyu/util-ex.js/blob/8842daf/src/is/type/plain-object.js#L2)
+[src/is/type/plain-object.js:2](https://github.com/snowyu/util-ex.js/blob/7dafc9d/src/is/type/plain-object.js#L2)
