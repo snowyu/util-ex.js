@@ -18,6 +18,11 @@ describe('isAsync', () => {
     expect(isAsync(asyncFunc)).to.be.true;
   });
 
+  it('should return true for an async generator', () => {
+    const asyncGen = async function* () {};
+    expect(isAsync(asyncGen)).to.be.true;
+  });
+
   it('should return false for a regular function', () => {
     const regularFunc = () => {};
     expect(isAsync(regularFunc)).to.be.false;

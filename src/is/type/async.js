@@ -7,8 +7,11 @@
 export function isAsync(value) {
   if (!value) return false
   let result = value instanceof Promise
-  if (!result) {
-    result = typeof value === 'function' && value.constructor.name === 'AsyncFunction'
+  if (!result && typeof value === 'function') {
+    result = value.constructor.name === 'AsyncFunction'
+    if (!result) {
+      result = value.constructor.name === 'AsyncGeneratorFunction'
+    }
   }
   return result
 }
