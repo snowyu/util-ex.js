@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [2.2.0](https://github.com/snowyu/util-ex.js/compare/v2.1.0...v2.2.0) (2025-03-09)
+
+
+### Features
+
+* add isAsync func ([8842daf](https://github.com/snowyu/util-ex.js/commit/8842daf2632df2ad2cd95e85c6cf9f4de7ac499c))
+
 ## [2.1.0](https://github.com/snowyu/util-ex.js/compare/v2.0.0...v2.1.0) (2024-10-06)
 
 
