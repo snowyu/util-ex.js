@@ -30,4 +30,4 @@ Returns true if the object is async iterable; otherwise, returns false.
 
 #### Defined in
 
-[src/is/type/async-iterable.js:6](https://github.com/snowyu/util-ex.js/blob/8e12bd8/src/is/type/async-iterable.js#L6)
+[src/is/type/async-iterable.js:6](https://github.com/snowyu/util-ex.js/blob/8842daf/src/is/type/async-iterable.js#L6)

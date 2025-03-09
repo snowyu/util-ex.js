@@ -65,4 +65,4 @@ const clonedObject = cloneObject(myObject, false);
 
 #### Defined in
 
-[src/clone-object.js:28](https://github.com/snowyu/util-ex.js/blob/8e12bd8/src/clone-object.js#L28)
+[src/clone-object.js:28](https://github.com/snowyu/util-ex.js/blob/8842daf/src/clone-object.js#L28)

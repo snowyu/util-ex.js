@@ -36,4 +36,4 @@ Renames and re-exports [isPrimitive](is_type_primitive.md#isprimitive)
 
 #### Defined in
 
-[src/is/type/primitive.js:1](https://github.com/snowyu/util-ex.js/blob/8e12bd8/src/is/type/primitive.js#L1)
+[src/is/type/primitive.js:1](https://github.com/snowyu/util-ex.js/blob/8842daf/src/is/type/primitive.js#L1)

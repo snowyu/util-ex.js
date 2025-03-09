@@ -50,4 +50,4 @@ isIntStr('42'); // true
 
 #### Defined in
 
-[src/is/string/int.js:14](https://github.com/snowyu/util-ex.js/blob/8e12bd8/src/is/string/int.js#L14)
+[src/is/string/int.js:14](https://github.com/snowyu/util-ex.js/blob/8842daf/src/is/string/int.js#L14)

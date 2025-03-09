@@ -36,6 +36,7 @@
 - [is/type](modules/is_type.md)
 - [is/type/arguments](modules/is_type_arguments.md)
 - [is/type/array](modules/is_type_array.md)
+- [is/type/async](modules/is_type_async.md)
 - [is/type/async-iterable](modules/is_type_async_iterable.md)
 - [is/type/boolean](modules/is_type_boolean.md)
 - [is/type/buffer](modules/is_type_buffer.md)

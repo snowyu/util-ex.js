@@ -122,4 +122,4 @@ wrappedFunc(); // Logs "Before execution", "After execution: result = [Error: Or
 
 #### Defined in
 
-[src/inject.js:128](https://github.com/snowyu/util-ex.js/blob/8e12bd8/src/inject.js#L128)
+[src/inject.js:128](https://github.com/snowyu/util-ex.js/blob/8842daf/src/inject.js#L128)

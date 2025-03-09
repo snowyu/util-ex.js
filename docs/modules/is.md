@@ -8,6 +8,7 @@
 
 - [isArguments](is.md#isarguments)
 - [isArray](is.md#isarray)
+- [isAsync](is.md#isasync)
 - [isAsyncIterable](is.md#isasynciterable)
 - [isBool](is.md#isbool)
 - [isBuffer](is.md#isbuffer)
@@ -46,6 +47,12 @@ ___
 ### isArray
 
 Re-exports [isArray](is_type_array.md#isarray)
+
+___
+
+### isAsync
+
+Re-exports [isAsync](is_type_async.md#isasync)
 
 ___
 

@@ -25,6 +25,7 @@
 - [inspect](index.md#inspect)
 - [isArguments](index.md#isarguments)
 - [isArray](index.md#isarray)
+- [isAsync](index.md#isasync)
 - [isAsyncIterable](index.md#isasynciterable)
 - [isBool](index.md#isbool)
 - [isBuffer](index.md#isbuffer)
@@ -173,6 +174,12 @@ ___
 ### isArray
 
 Re-exports [isArray](is_type_array.md#isarray)
+
+___
+
+### isAsync
+
+Re-exports [isAsync](is_type_async.md#isasync)
 
 ___
 
