@@ -17,3 +17,4 @@ export * from './undefined.js';
 export * from './iterable.js';
 export * from './async-iterable.js';
 export * from './plain-object.js';
+export * from './async.js';
