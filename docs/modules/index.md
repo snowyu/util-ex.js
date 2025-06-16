@@ -54,6 +54,7 @@
 - [log](index.md#log)
 - [map](index.md#map)
 - [newFunction](index.md#newfunction)
+- [newScopedFunction](index.md#newscopedfunction)
 - [objectToString](index.md#objecttostring)
 - [toRegExp](index.md#toregexp)
 
@@ -348,6 +349,12 @@ ___
 ### newFunction
 
 Re-exports [newFunction](new_function.md#newfunction)
+
+___
+
+### newScopedFunction
+
+Re-exports [newScopedFunction](new_scoped_function.md#newscopedfunction)
 
 ___
 

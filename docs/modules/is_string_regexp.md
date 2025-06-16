@@ -47,4 +47,4 @@ isRegExpStr('/not a regexp') // false
 
 #### Defined in
 
-[src/is/string/regexp.js:9](https://github.com/snowyu/util-ex.js/blob/7dafc9d/src/is/string/regexp.js#L9)
+[src/is/string/regexp.js:9](https://github.com/snowyu/util-ex.js/blob/bc167cb/src/is/string/regexp.js#L9)

@@ -30,4 +30,4 @@ Checks if a given value is an asynchronous function or a Promise.
 
 #### Defined in
 
-[src/is/type/async.js:7](https://github.com/snowyu/util-ex.js/blob/7dafc9d/src/is/type/async.js#L7)
+[src/is/type/async.js:7](https://github.com/snowyu/util-ex.js/blob/bc167cb/src/is/type/async.js#L7)

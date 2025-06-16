@@ -56,6 +56,7 @@
 - [is/type/undefined](modules/is_type_undefined.md)
 - [log](modules/log.md)
 - [new-function](modules/new_function.md)
+- [new-scoped-function](modules/new_scoped_function.md)
 - [object](modules/object.md)
 - [object-to-string](modules/object_to_string.md)
 - [object/filter-null-undefined](modules/object_filter_null_undefined.md)
