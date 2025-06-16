@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [2.3.0](https://github.com/snowyu/util-ex.js/compare/v2.2.1...v2.3.0) (2025-06-16)
+
+
+### Features
+
+* add newScopedFunction func ([bc167cb](https://github.com/snowyu/util-ex.js/commit/bc167cb12c4459b180e360709198fbf894702aa5))
+
 ## [2.2.1](https://github.com/snowyu/util-ex.js/compare/v2.2.0...v2.2.1) (2025-03-09)
 
 
