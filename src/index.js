@@ -12,6 +12,7 @@ export * from './injectMethod.js';
 export * from './injectMethods.js';
 export * from './inspect.js';
 export * from './log.js';
+export * from './new-scoped-function.js';
 export * from './new-function.js';
 export * from './object-to-string.js';
 export * from './is/index.js';
