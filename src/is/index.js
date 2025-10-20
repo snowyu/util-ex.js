@@ -5,3 +5,4 @@ export * from './empty.js';
 export * from './in.js';
 export * from './string/index.js';
 export * from './type/index.js';
+export * from './matched.js';
