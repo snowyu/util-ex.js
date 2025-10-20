@@ -30,4 +30,4 @@ obj is Iterable\<any\>
 
 #### Defined in
 
-[src/is/type/iterable.js:6](https://github.com/snowyu/util-ex.js/blob/bc167cb/src/is/type/iterable.js#L6)
+[src/is/type/iterable.js:6](https://github.com/snowyu/util-ex.js/blob/49dd796/src/is/type/iterable.js#L6)

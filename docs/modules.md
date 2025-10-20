@@ -27,6 +27,7 @@
 - [is/empty-function](modules/is_empty_function.md)
 - [is/empty-object](modules/is_empty_object.md)
 - [is/in](modules/is_in.md)
+- [is/matched](modules/is_matched.md)
 - [is/string](modules/is_string.md)
 - [is/string/float](modules/is_string_float.md)
 - [is/string/function](modules/is_string_function.md)

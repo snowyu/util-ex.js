@@ -29,6 +29,7 @@
 - [isNullOrUndefined](is.md#isnullorundefined)
 - [isNumber](is.md#isnumber)
 - [isObject](is.md#isobject)
+- [isPatternMatched](is.md#ispatternmatched)
 - [isPlainObject](is.md#isplainobject)
 - [isPrimitive](is.md#isprimitive)
 - [isRegExp](is.md#isregexp)
@@ -173,6 +174,12 @@ ___
 ### isObject
 
 Re-exports [isObject](is_type_object.md#isobject)
+
+___
+
+### isPatternMatched
+
+Re-exports [isPatternMatched](is_matched.md#ispatternmatched)
 
 ___
 
