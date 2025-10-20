@@ -106,7 +106,6 @@ describe('newScopedFunction', () => {
       {}
     );
 
-    console.log('🚀 ~ file: new-scoped-function-test.js:110 ~ namedFunc:', namedFunc)
     expect(namedFunc.name).to.equal('customName');
   });
 });
