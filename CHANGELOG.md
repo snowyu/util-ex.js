@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [2.4.0](https://github.com/snowyu/util-ex.js/compare/v2.3.0...v2.4.0) (2025-10-20)
+
+
+### Features
+
+* add isPatternMatched func ([49dd796](https://github.com/snowyu/util-ex.js/commit/49dd7966c07e1891680f253f191c69689d0fb02b))
+
 ## [2.3.0](https://github.com/snowyu/util-ex.js/compare/v2.2.1...v2.3.0) (2025-06-16)
 
 
