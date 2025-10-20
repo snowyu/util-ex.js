@@ -26,4 +26,4 @@
 
 #### Defined in
 
-[src/object/filter-null-undefined.js:2](https://github.com/snowyu/util-ex.js/blob/49dd796/src/object/filter-null-undefined.js#L2)
+[src/object/filter-null-undefined.js:2](https://github.com/snowyu/util-ex.js/blob/77072eb/src/object/filter-null-undefined.js#L2)

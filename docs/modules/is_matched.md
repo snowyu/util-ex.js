@@ -54,4 +54,4 @@ isPatternMatched("123", "/\\d+/"); // true
 
 #### Defined in
 
-[src/is/matched.js:36](https://github.com/snowyu/util-ex.js/blob/49dd796/src/is/matched.js#L36)
+[src/is/matched.js:36](https://github.com/snowyu/util-ex.js/blob/77072eb/src/is/matched.js#L36)

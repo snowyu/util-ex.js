@@ -40,4 +40,4 @@ Whether the argument is a boolean.
 
 #### Defined in
 
-[src/is/type/boolean.js:7](https://github.com/snowyu/util-ex.js/blob/49dd796/src/is/type/boolean.js#L7)
+[src/is/type/boolean.js:7](https://github.com/snowyu/util-ex.js/blob/77072eb/src/is/type/boolean.js#L7)

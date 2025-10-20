@@ -41,4 +41,4 @@ An array of all names of the object
 
 #### Defined in
 
-[src/object/get-all-names.js:8](https://github.com/snowyu/util-ex.js/blob/49dd796/src/object/get-all-names.js#L8)
+[src/object/get-all-names.js:8](https://github.com/snowyu/util-ex.js/blob/77072eb/src/object/get-all-names.js#L8)

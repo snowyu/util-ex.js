@@ -77,4 +77,4 @@ Scope dynamism: Always uses latest `scope` reference (pass-by-reference)
 
 #### Defined in
 
-[src/new-scoped-function.js:47](https://github.com/snowyu/util-ex.js/blob/49dd796/src/new-scoped-function.js#L47)
+[src/new-scoped-function.js:47](https://github.com/snowyu/util-ex.js/blob/77072eb/src/new-scoped-function.js#L47)
