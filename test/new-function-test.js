@@ -124,4 +124,15 @@ describe("newFunction", function () {
     fn.should.have.property('name', 'empty');
     fn.should.have.length(0);
   });
+
+  it("should remain flexible for normal functions bind this via scope", function () {
+    const context = { x: 42 };
+    let fn = createFunction("function getX() { return this.x }", { this: context });
+    fn().should.equal(42);
+
+    fn = createFunction("function getX() { return this.x }");
+    // Explicit apply should work
+    const otherContext = { x: 100 };
+    fn.apply(otherContext).should.equal(100);
+  });
 });

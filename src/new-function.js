@@ -1,5 +1,6 @@
 import createFunc from './_create-function.js';
 import isFunctionStr from './is/string/function.js';
+import isArrowFunctionStr from './is/string/arrow-function.js';
 import isString from './is/type/string.js';
 
 /*
@@ -19,8 +20,8 @@ import isString from './is/type/string.js';
 /**
  * Creates a new function with the given name, arguments, body, scope and values.
  *
- * * If only one argument is provided and it is a function, returns a new function with the same code.
- * * If only one argument is provided and it is not a function, returns a new empty function with the given name.
+ * * If only one argument is provided and it is a function string, returns a new function with the same code.
+ * * If only one argument is provided and it is not a function string, returns a new empty function with the given name.
  * * If multiple arguments are provided, creates a new function with the given name, arguments and body.
  *
  * @param {string|Function} name The name of the function or the function itself.
@@ -48,17 +49,19 @@ import isString from './is/type/string.js';
  */
 export function newFunction(name, aArgs, body, scope, values) {
   if (arguments.length === 1) {
-    if (!isFunctionStr(name)) {
-      let async = ''
-      if (name.startsWith('async ')) {
-        name = name.substring(6);
-        async = 'async '
-      }
-      name = `${async}function ${name}(){}`;
+    if (isFunctionStr(name) || isArrowFunctionStr(name)) {
+      return createFunc(name);
     }
+    let async = ''
+    const asyncMatch = name.match(/^(async\s+)(.*)$/);
+    if (asyncMatch) {
+      async = 'async ';
+      name = asyncMatch[2];
+    }
+    name = `${async}function ${name}(){}`;
     return createFunc(name);
   }
-  if (isFunctionStr(name)) {
+  if (isFunctionStr(name) || isArrowFunctionStr(name)) {
     scope = aArgs;
     values = body;
   } else {
@@ -71,9 +74,10 @@ export function newFunction(name, aArgs, body, scope, values) {
       aArgs = [];
     }
     let async = ''
-    if (name.startsWith('async ')) {
-      name = name.substring(6);
-      async = 'async '
+    const asyncMatch = name.match(/^(async\s+)(.*)$/);
+    if (asyncMatch) {
+      async = 'async ';
+      name = asyncMatch[2];
     }
     name = `${async}function ${name}(${aArgs.join(', ')}) {\n${body}\n}`;
   }

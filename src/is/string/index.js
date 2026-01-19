@@ -1,3 +1,4 @@
+export * from './arrow-function.js'
 export * from './float.js'
 export * from './function.js'
 export * from './int.js'

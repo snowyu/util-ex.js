@@ -32,20 +32,30 @@ export function _createFunction(body, scope, values) {
     // eslint-disable-next-line no-new-func
     return Function(`return ${  body}`)();
   } else {
+    let thisArg;
     if (!isArray(scope) || !isArray(values)) {
       if (isObject(scope)) {
         const keys = Object.keys(scope);
-        values = keys.map((k) => {
-          return scope[k];
+        values = [];
+        const newScope = [];
+        keys.forEach((k) => {
+          if (k === 'this') {
+            thisArg = scope[k];
+          } else {
+            newScope.push(k);
+            values.push(scope[k]);
+          }
         });
-        scope = keys;
+        scope = newScope;
       } else {
         values = [];
         scope = [];
       }
     }
     // eslint-disable-next-line no-new-func
-    return Function(scope, `return ${  body}`).apply(null, values);
+    let result = Function(scope, `return ${  body}`).apply(thisArg, values);
+    if (thisArg && typeof result === 'function') {result = result.bind(thisArg);}
+    return result;
   }
 }
 
