@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [2.5.0](https://github.com/snowyu/util-ex.js/compare/v2.4.0...v2.5.0) (2026-01-19)
+
+
+### Features
+
+* **newFunction:** add arrow function and 'this' scope support ([b0ff0b8](https://github.com/snowyu/util-ex.js/commit/b0ff0b88bd39737e3782439dd7d886978569db88))
+* **newFunction:** add expression support and improve documentation ([73676e3](https://github.com/snowyu/util-ex.js/commit/73676e37e910f2f7119d7eb6da3db13b52e81878))
+
 ## [2.4.0](https://github.com/snowyu/util-ex.js/compare/v2.3.0...v2.4.0) (2025-10-20)
 
 
