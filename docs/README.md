@@ -1,4 +1,6 @@
-util-ex / [Exports](modules.md)
+**util-ex**
+
+***
 
 ### util-ex [![npm](https://img.shields.io/npm/v/util-ex.svg)](https://npmjs.org/package/util-ex) [![downloads](https://img.shields.io/npm/dm/util-ex.svg)](https://npmjs.org/package/util-ex) [![license](https://img.shields.io/npm/l/util-ex.svg)](https://npmjs.org/package/util-ex)
 
@@ -205,29 +207,58 @@ whether the injection is successful.
 
 ## newFunction
 
-    newFunction(name, arguments, body[, scope[, values]])
-    newFunction(functionString[, scope[, values]])
+```js
+newFunction(expression[, name][, scope[, values]])
+newFunction(name, arguments, body[, scope[, values]])
+newFunction(functionString[, scope[, values]])
+```
 
 Creates a new function with the given name, arguments, body, scope and values.
 
-* If only one argument is provided and it is a function, returns a new function with the same code.
-* If only one argument is provided and it is not a function, returns a new empty function with the given name.
-* If multiple arguments are provided, creates a new function with the given name, arguments and body.
+* **Expression Support (New!)**: If the first argument is an expression (e.g., `'a + b'`), it creates a function that returns that expression.
+  - `newFunction('a + b', {a: 1, b: 2})`
+  - `newFunction('a + b', 'add', {a: 1, b: 2})`
+* **Traditional Way**:
+  - `newFunction('add', ['a', 'b'], 'return a + b')`
+* **Function/Arrow String**:
+  - `newFunction('function add(a, b) { return a + b }')`
+  - `newFunction('(a, b) => a + b')`
+* **Context Binding**: You can bind `this` by including it in the scope object.
 
 ```js
 import { newFunction } from 'util-ex'
 
-var fn = newFunction('yourFuncName', ['arg1', 'arg2'], 'return log(arg1+arg2);', {log:console.log})
+// Expression support
+const add = newFunction('a + b', {a: 1, b: 2})
+console.log(add()) // 3
+
+// Arrow function string
+const arrowAdd = newFunction('(a, b) => a + b')
+console.log(arrowAdd(2, 3)) // 5
+
+// Expression with name
+const namedAdd = newFunction('a + b', 'add', {a: 1, b: 2})
+console.log(namedAdd.name) // 'add'
+
+// Traditional usage
+const fn = newFunction('yourFuncName', ['arg1', 'arg2'], 'return log(arg1+arg2);', {log:console.log})
+
+// Async expression
+const asyncAdd = newFunction('await Promise.resolve(a + b)', {a: 1, b: 2})
+await asyncAdd() // 3
+
+// Binding 'this' (Works for both normal and arrow functions!)
+const context = { x: 42 }
+const getX = newFunction('this.x', { this: context })
+console.log(getX()) // 42
+
+const arrowGetX = newFunction('() => this.x', { this: context })
+console.log(arrowGetX()) // 42
+
+// More examples
 newFunction('function yourFuncName(){}')
 newFunction('function yourFuncName(arg1, arg2){return log(arg1+arg2);}', {log:console.log})
 newFunction('function yourFuncName(arg1, arg2){return log(arg1+arg2);}', ['log'], [console.log])
-
-//fn.toString() is :
-/*
- "function yourFuncName(arg1, arg2) {
-    return log(arg1+arg2);
- }"
-*/
 ```
 
 ## newScopedFunction
@@ -336,7 +367,9 @@ True if the value matches the pattern according to the specified rules, otherwis
 
 ## defineProperty
 
-    defineProperty(object, key, value[, aOptions])
+```js
+defineProperty(object, key, value[, aOptions])
+```
 
 Define a property on the object. move to [inherits-ex](https://github.com/snowyu/inherits-ex.js) package.
 
