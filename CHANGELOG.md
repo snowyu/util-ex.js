@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [2.5.1](https://github.com/snowyu/util-ex.js/compare/v2.5.0...v2.5.1) (2026-01-29)
+
+
+### Bug Fixes
+
+* **isRegExpStr:** correct false positive for file paths and improve validation ([237c1aa](https://github.com/snowyu/util-ex.js/commit/237c1aa529462fe6cbeaa8d09129766e345f5819))
+
 ## [2.5.0](https://github.com/snowyu/util-ex.js/compare/v2.4.0...v2.5.0) (2026-01-19)
 
 
