@@ -7,7 +7,21 @@
 * isRegExpStr('/not a regexp') // false
 */
 export function isRegExpStr(value) {
-  const result = typeof value === 'string' && value.length > 2 && value[0] === '/' && value.lastIndexOf('/') > 0
+  let result = typeof value === 'string' && value.length > 2 && value[0] === '/'
+  if (result) {
+    const i = value.lastIndexOf('/')
+    if (i <= 0) {
+      result = false
+    } else {
+      const source = value.slice(1, i)
+      const flags = value.slice(i + 1)
+      try {
+        new RegExp(source, flags)
+      } catch (e) {
+        result = false
+      }
+    }
+  }
   return result
-};
+}
 export default isRegExpStr;
