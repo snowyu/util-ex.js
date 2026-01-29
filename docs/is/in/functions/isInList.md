@@ -8,7 +8,7 @@
 
 > **isInList**(`str`, `list`, `caseSensitive`): `boolean`
 
-Defined in: [src/is/in.js:16](https://github.com/snowyu/util-ex.js/blob/73676e37e910f2f7119d7eb6da3db13b52e81878/src/is/in.js#L16)
+Defined in: [src/is/in.js:16](https://github.com/snowyu/util-ex.js/blob/237c1aa529462fe6cbeaa8d09129766e345f5819/src/is/in.js#L16)
 
 Checks if a string matches any item in a list of strings or regular expressions.
 

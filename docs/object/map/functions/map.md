@@ -8,7 +8,7 @@
 
 > **map**(`aObject`, `aOptions?`): `any`[]
 
-Defined in: [src/object/map.js:30](https://github.com/snowyu/util-ex.js/blob/73676e37e910f2f7119d7eb6da3db13b52e81878/src/object/map.js#L30)
+Defined in: [src/object/map.js:30](https://github.com/snowyu/util-ex.js/blob/237c1aa529462fe6cbeaa8d09129766e345f5819/src/object/map.js#L30)
 
 Returns an array containing the values of all enumerable or non-enumerable properties of an object.
 

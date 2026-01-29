@@ -8,7 +8,7 @@
 
 > **extend**(`dest`, `sources`, `filter`): `any`
 
-Defined in: [src/extend.js:35](https://github.com/snowyu/util-ex.js/blob/73676e37e910f2f7119d7eb6da3db13b52e81878/src/extend.js#L35)
+Defined in: [src/extend.js:35](https://github.com/snowyu/util-ex.js/blob/237c1aa529462fe6cbeaa8d09129766e345f5819/src/extend.js#L35)
 
 Extends an object with properties from one or more source objects.
 

@@ -8,7 +8,7 @@
 
 > **isPatternMatched**(`value`, `pattern`, `included?`): `boolean`
 
-Defined in: [src/is/matched.js:36](https://github.com/snowyu/util-ex.js/blob/73676e37e910f2f7119d7eb6da3db13b52e81878/src/is/matched.js#L36)
+Defined in: [src/is/matched.js:36](https://github.com/snowyu/util-ex.js/blob/237c1aa529462fe6cbeaa8d09129766e345f5819/src/is/matched.js#L36)
 
 Checks if a string value matches a specified pattern.
 

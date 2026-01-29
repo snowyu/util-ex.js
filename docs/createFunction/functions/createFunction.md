@@ -8,7 +8,7 @@
 
 > **createFunction**(`name`, `aArgs?`, `body?`, `scope?`, `values?`, ...`args?`): `Function`
 
-Defined in: [src/createFunction.js:33](https://github.com/snowyu/util-ex.js/blob/73676e37e910f2f7119d7eb6da3db13b52e81878/src/createFunction.js#L33)
+Defined in: [src/createFunction.js:33](https://github.com/snowyu/util-ex.js/blob/237c1aa529462fe6cbeaa8d09129766e345f5819/src/createFunction.js#L33)
 
 Creates a new function with the given name, arguments, and body, and optionally with the given scope and values.
 
