@@ -8,7 +8,7 @@
 
 > **isIdentifier**(`str`, `options?`): `boolean`
 
-Defined in: [src/is/string/identifier.js:9](https://github.com/snowyu/util-ex.js/blob/237c1aa529462fe6cbeaa8d09129766e345f5819/src/is/string/identifier.js#L9)
+Defined in: [src/is/string/identifier.js:9](https://github.com/snowyu/util-ex.js/blob/a9faceb38a53274e47611c83bca6100fd96ce644/src/is/string/identifier.js#L9)
 
 Determines if a string is a valid JavaScript identifier.
 

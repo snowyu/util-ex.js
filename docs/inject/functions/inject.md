@@ -8,7 +8,7 @@
 
 > **inject**(`aOrgFunc`, `aBeforeExec`, `aAfterExec`): `Function`
 
-Defined in: [src/inject.js:128](https://github.com/snowyu/util-ex.js/blob/237c1aa529462fe6cbeaa8d09129766e345f5819/src/inject.js#L128)
+Defined in: [src/inject.js:128](https://github.com/snowyu/util-ex.js/blob/a9faceb38a53274e47611c83bca6100fd96ce644/src/inject.js#L128)
 
 Wraps a function and executes code before and/or after the wrapped function.
 

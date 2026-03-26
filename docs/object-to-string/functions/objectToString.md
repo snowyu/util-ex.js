@@ -8,7 +8,7 @@
 
 > **objectToString**(`o`): `string`
 
-Defined in: [src/object-to-string.js:17](https://github.com/snowyu/util-ex.js/blob/237c1aa529462fe6cbeaa8d09129766e345f5819/src/object-to-string.js#L17)
+Defined in: [src/object-to-string.js:17](https://github.com/snowyu/util-ex.js/blob/a9faceb38a53274e47611c83bca6100fd96ce644/src/object-to-string.js#L17)
 
 The objectToString function returns a string representation of an object's type using the built-in Object.prototype.toString method.
 

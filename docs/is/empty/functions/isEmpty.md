@@ -8,7 +8,7 @@
 
 > **isEmpty**(`value`): `boolean`
 
-Defined in: [src/is/empty.js:53](https://github.com/snowyu/util-ex.js/blob/237c1aa529462fe6cbeaa8d09129766e345f5819/src/is/empty.js#L53)
+Defined in: [src/is/empty.js:53](https://github.com/snowyu/util-ex.js/blob/a9faceb38a53274e47611c83bca6100fd96ce644/src/is/empty.js#L53)
 
 Checks if a given value is empty.
 

@@ -8,7 +8,7 @@
 
 > **toRegExp**(`value`): `RegExp`
 
-Defined in: [src/to-regexp.js:11](https://github.com/snowyu/util-ex.js/blob/237c1aa529462fe6cbeaa8d09129766e345f5819/src/to-regexp.js#L11)
+Defined in: [src/to-regexp.js:11](https://github.com/snowyu/util-ex.js/blob/a9faceb38a53274e47611c83bca6100fd96ce644/src/to-regexp.js#L11)
 
 create or clone RegExp
 

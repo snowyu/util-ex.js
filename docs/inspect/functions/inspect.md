@@ -8,7 +8,7 @@
 
 > **inspect**(`obj`, `opts`, ...`args`): `string`
 
-Defined in: [src/inspect.js:31](https://github.com/snowyu/util-ex.js/blob/237c1aa529462fe6cbeaa8d09129766e345f5819/src/inspect.js#L31)
+Defined in: [src/inspect.js:31](https://github.com/snowyu/util-ex.js/blob/a9faceb38a53274e47611c83bca6100fd96ce644/src/inspect.js#L31)
 
 Return a string representation of an object, including its properties and nested objects, with customizable options.
 
