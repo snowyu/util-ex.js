@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [2.5.2](https://github.com/snowyu/util-ex.js/compare/v2.5.1...v2.5.2) (2026-03-26)
+
+
+### Bug Fixes
+
+* **newFunction:** should treat identifier in scope as expression ([a9faceb](https://github.com/snowyu/util-ex.js/commit/a9faceb38a53274e47611c83bca6100fd96ce644))
+
 ## [2.5.1](https://github.com/snowyu/util-ex.js/compare/v2.5.0...v2.5.1) (2026-01-29)
 
 
