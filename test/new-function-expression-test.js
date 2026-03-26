@@ -94,4 +94,8 @@ describe("newFunction expression support", function () {
     const fn = newFunction("return a", { a: 42 });
     fn().should.equal(42);
   });
+  it("should treat a simple variable as expression if it contains return", function () {
+    const fn = newFunction("a", { a: 42 });
+    fn().should.equal(42);
+  });
 });

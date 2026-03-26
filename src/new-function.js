@@ -3,6 +3,7 @@ import isFunctionStr from './is/string/function.js';
 import isArrowFunctionStr from './is/string/arrow-function.js';
 import isIdentifier from './is/string/identifier.js';
 import isString from './is/type/string.js';
+import isArray from './is/type/array.js';
 
 /*
  * Usage:
@@ -81,8 +82,27 @@ function _parseExpression(expression, name, scope, values) {
  * await wait1Second()
  */
 export function newFunction(name, aArgs, body, scope, values) {
-  if (isString(name) && !isFunctionStr(name) && !isArrowFunctionStr(name) && !isIdentifier(name, { allowAsync: true })) {
-    return _parseExpression(name, aArgs, body, scope, values);
+  const asyncMatch = name.match(/^(async\s+)(.*)$/);
+  if (isString(name) && !isFunctionStr(name) && !isArrowFunctionStr(name) && !isString(body)) {
+    const expression = name;
+    let exprName = aArgs;
+    let exprScope = body;
+    let exprValues = scope;
+    if (!(isString(exprName) && isIdentifier(exprName, { allowAsync: true }))) {
+      exprValues = exprScope;
+      exprScope = exprName;
+      exprName = 'anonymous';
+    }
+
+    const exprIsIdentifier = isIdentifier(expression, { allowAsync: true });
+    let maybeIdentifierExpr = exprScope && exprIsIdentifier;
+    if (maybeIdentifierExpr) {
+      const identifier = asyncMatch ? asyncMatch[2] : expression;
+      maybeIdentifierExpr = isArray(exprScope) ? exprScope.indexOf(identifier) >= 0 : exprScope.hasOwnProperty(identifier);
+    }
+
+    if (maybeIdentifierExpr || !exprIsIdentifier)
+      return _parseExpression(expression, exprName, exprScope, exprValues);
   }
 
   if (arguments.length === 1) {
@@ -90,7 +110,6 @@ export function newFunction(name, aArgs, body, scope, values) {
       return createFunc(name);
     }
     let async = ''
-    const asyncMatch = name.match(/^(async\s+)(.*)$/);
     if (asyncMatch) {
       async = 'async ';
       name = asyncMatch[2];
