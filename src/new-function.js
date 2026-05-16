@@ -82,6 +82,9 @@ function _parseExpression(expression, name, scope, values) {
  * await wait1Second()
  */
 export function newFunction(name, aArgs, body, scope, values) {
+  if (typeof name === 'function') {
+    name = name.toString()
+  }
   const asyncMatch = name.match(/^(async\s+)(.*)$/);
   if (isString(name) && !isFunctionStr(name) && !isArrowFunctionStr(name) && !isString(body)) {
     const expression = name;

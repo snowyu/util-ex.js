@@ -135,4 +135,71 @@ describe("newFunction", function () {
     const otherContext = { x: 100 };
     fn.apply(otherContext).should.equal(100);
   });
+
+  describe("when name is a Function object", function () {
+    it("should convert function object to string and create function", function () {
+      const originalFn = function add(a, b) { return a + b; };
+      const fn = createFunction(originalFn);
+      should.exist(fn);
+      fn.should.have.length(2);
+      fn(1, 2).should.equal(3);
+    });
+
+    it("should convert arrow function object to string and create function", function () {
+      const originalFn = (a, b) => a * b;
+      const fn = createFunction(originalFn);
+      should.exist(fn);
+      fn.should.have.length(2);
+      fn(3, 4).should.equal(12);
+    });
+
+    it("should create named function from function object with scope", function () {
+      const originalFn = function multiply(a, b) { return a * b * factor; };
+      const factor = 10;
+      const fn = createFunction(originalFn, { factor: factor });
+      should.exist(fn);
+      fn.should.have.length(2);
+      fn(2, 3).should.equal(60);
+    });
+
+    it("should create function from arrow function with scope", function () {
+      const originalFn = (a, b) => a + b + extra;
+      const extra = 100;
+      const fn = createFunction(originalFn, { extra: extra });
+      should.exist(fn);
+      fn.should.have.length(2);
+      fn(1, 2).should.equal(103);
+    });
+
+    it("should support function object with this binding", function () {
+      const obj = {
+        value: 42,
+        getValue: function() { return this.value; }
+      };
+      const fn = createFunction(obj.getValue, { this: obj });
+      fn().should.equal(42);
+    });
+
+    it("should support function object with args and scope", function () {
+      const originalFn = function greet(name, suffix) {
+        return `Hello, ${name}! ${greeting}${suffix}`;
+      };
+      const scope = {
+        greeting: 'Welcome'
+      };
+      const fn = createFunction(originalFn, ['greeting'], [scope.greeting]);
+      should.exist(fn);
+      fn('World', '.').should.equal('Hello, World! Welcome.');
+    });
+
+    it("should handle async function object", function () {
+      const originalFn = async function fetchData(id) {
+        return Promise.resolve(id * 2);
+      };
+      const fn = createFunction(originalFn);
+      should.exist(fn);
+      assert.isFunction(fn);
+      assert.isTrue(fn.constructor.name === 'AsyncFunction');
+    });
+  });
 });

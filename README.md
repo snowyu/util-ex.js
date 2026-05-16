@@ -219,6 +219,9 @@ Creates a new function with the given name, arguments, body, scope and values.
 * **Function/Arrow String**:
   - `newFunction('function add(a, b) { return a + b }')`
   - `newFunction('(a, b) => a + b')`
+* **Function Object**: If the first argument is a Function object, it will be converted to a string and processed.
+  - `newFunction(function(a, b) { return a + b })`
+  - `newFunction(myFunc, { factor: 10 })`
 * **Context Binding**: You can bind `this` by including it in the scope object.
 
 ```js
@@ -255,6 +258,17 @@ console.log(arrowGetX()) // 42
 newFunction('function yourFuncName(){}')
 newFunction('function yourFuncName(arg1, arg2){return log(arg1+arg2);}', {log:console.log})
 newFunction('function yourFuncName(arg1, arg2){return log(arg1+arg2);}', ['log'], [console.log])
+
+// Function object support
+const originalFunc = function(a, b) { return a + b * factor; }
+const factor = 10
+const fn = newFunction(originalFunc, { factor: factor })
+console.log(fn(2, 3)) // 32
+
+// Arrow function object with scope
+const arrowFn = (a, b) => a + b + extra
+const fn2 = newFunction(arrowFn, { extra: 100 })
+console.log(fn2(1, 2)) // 103
 ```
 
 ## newScopedFunction
