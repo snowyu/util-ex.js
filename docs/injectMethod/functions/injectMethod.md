@@ -8,7 +8,7 @@
 
 > **injectMethod**(`aObject`, `aMethodName`, `aNewMethod`): `boolean`
 
-Defined in: [src/injectMethod.js:31](https://github.com/snowyu/util-ex.js/blob/a9faceb38a53274e47611c83bca6100fd96ce644/src/injectMethod.js#L31)
+Defined in: [src/injectMethod.js:31](https://github.com/snowyu/util-ex.js/blob/cebdb0aecefb30776842a60debb17bdfed5c4f88/src/injectMethod.js#L31)
 
 Injects method into an object. optionally preserving access to the original method via "`super`" and original instance via "`self`".
 

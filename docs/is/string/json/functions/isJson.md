@@ -8,7 +8,7 @@
 
 > **isJson**(`v`, `almost`): `boolean`
 
-Defined in: [src/is/string/json.js:17](https://github.com/snowyu/util-ex.js/blob/a9faceb38a53274e47611c83bca6100fd96ce644/src/is/string/json.js#L17)
+Defined in: [src/is/string/json.js:17](https://github.com/snowyu/util-ex.js/blob/cebdb0aecefb30776842a60debb17bdfed5c4f88/src/is/string/json.js#L17)
 
 Checks if a string is a valid JSON string.
 

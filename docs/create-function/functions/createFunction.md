@@ -8,7 +8,7 @@
 
 > **\_createFunction**(`body`, `scope?`, `values?`, ...`args?`): `Function`
 
-Defined in: [src/\_create-function.js:30](https://github.com/snowyu/util-ex.js/blob/a9faceb38a53274e47611c83bca6100fd96ce644/src/_create-function.js#L30)
+Defined in: [src/\_create-function.js:30](https://github.com/snowyu/util-ex.js/blob/cebdb0aecefb30776842a60debb17bdfed5c4f88/src/_create-function.js#L30)
 
 Create a function using the given body and scope.
 

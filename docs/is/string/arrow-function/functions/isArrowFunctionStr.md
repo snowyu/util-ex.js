@@ -8,7 +8,7 @@
 
 > **isArrowFunctionStr**(`aFuncString`): `boolean`
 
-Defined in: [src/is/string/arrow-function.js:10](https://github.com/snowyu/util-ex.js/blob/a9faceb38a53274e47611c83bca6100fd96ce644/src/is/string/arrow-function.js#L10)
+Defined in: [src/is/string/arrow-function.js:10](https://github.com/snowyu/util-ex.js/blob/cebdb0aecefb30776842a60debb17bdfed5c4f88/src/is/string/arrow-function.js#L10)
 
 Determines if a string represents a valid JavaScript arrow function.
 

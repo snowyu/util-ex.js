@@ -8,7 +8,7 @@
 
 > **getAllNames**(`obj`, `inherited?`): `string`[]
 
-Defined in: [src/object/get-all-names.js:8](https://github.com/snowyu/util-ex.js/blob/a9faceb38a53274e47611c83bca6100fd96ce644/src/object/get-all-names.js#L8)
+Defined in: [src/object/get-all-names.js:8](https://github.com/snowyu/util-ex.js/blob/cebdb0aecefb30776842a60debb17bdfed5c4f88/src/object/get-all-names.js#L8)
 
 Get all names of an object, include non-enumerable properties.
 
