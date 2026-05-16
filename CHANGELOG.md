@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [2.6.0](https://github.com/snowyu/util-ex.js/compare/v2.5.2...v2.6.0) (2026-05-16)
+
+
+### Features
+
+* **newFunction:** support Function object as first argument ([cebdb0a](https://github.com/snowyu/util-ex.js/commit/cebdb0aecefb30776842a60debb17bdfed5c4f88))
+
 ## [2.5.2](https://github.com/snowyu/util-ex.js/compare/v2.5.1...v2.5.2) (2026-03-26)
 
 
