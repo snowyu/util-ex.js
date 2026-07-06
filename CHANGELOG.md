@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [2.7.0](https://github.com/snowyu/util-ex.js/compare/v2.6.0...v2.7.0) (2026-07-06)
+
+
+### Features
+
+* add ESM support via exports map and esm-copy build script ([ae41cf4](https://github.com/snowyu/util-ex.js/commit/ae41cf45e1b9231d259b48f1478727065f181dc1))
+
 ## [2.6.0](https://github.com/snowyu/util-ex.js/compare/v2.5.2...v2.6.0) (2026-05-16)
 
 
