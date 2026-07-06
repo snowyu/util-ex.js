@@ -8,7 +8,7 @@
 
 > **isEmptyFunction**(`aFunc`): `boolean`
 
-Defined in: node\_modules/inherits-ex/lib/isEmptyFunction.d.ts:10
+Defined in: inherits-ex.js/lib/isEmptyFunction.d.ts:10
 
 Checks whether a given function is empty or not.
 

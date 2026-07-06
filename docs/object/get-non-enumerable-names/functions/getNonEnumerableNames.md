@@ -8,7 +8,7 @@
 
 > **getNonEnumerableNames**(`aObject`): `string`[]
 
-Defined in: [src/object/get-non-enumerable-names.js:19](https://github.com/snowyu/util-ex.js/blob/cebdb0aecefb30776842a60debb17bdfed5c4f88/src/object/get-non-enumerable-names.js#L19)
+Defined in: [util-ex.js/src/object/get-non-enumerable-names.js:19](https://github.com/snowyu/util-ex.js/blob/05c14deed4d51d2368c8894096c4ebbc3fa6b17c/src/object/get-non-enumerable-names.js#L19)
 
 Returns an array of non-enumerable owner property names of an object.
 

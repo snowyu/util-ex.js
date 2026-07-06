@@ -8,7 +8,7 @@
 
 > **\_extend**(`target`, ...`args`): `any`
 
-Defined in: node\_modules/inherits-ex/lib/\_extend.d.ts:14
+Defined in: inherits-ex.js/lib/\_extend.d.ts:14
 
 Copies properties from one or more source objects to a target object.
 

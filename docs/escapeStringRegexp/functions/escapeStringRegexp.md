@@ -8,7 +8,7 @@
 
 > **escapeStringRegexp**(`string`): `string`
 
-Defined in: [src/escapeStringRegexp.js:12](https://github.com/snowyu/util-ex.js/blob/cebdb0aecefb30776842a60debb17bdfed5c4f88/src/escapeStringRegexp.js#L12)
+Defined in: [util-ex.js/src/escapeStringRegexp.js:12](https://github.com/snowyu/util-ex.js/blob/05c14deed4d51d2368c8894096c4ebbc3fa6b17c/src/escapeStringRegexp.js#L12)
 
 Escapes a string for use in a regular expression pattern.
 

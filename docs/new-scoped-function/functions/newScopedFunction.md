@@ -8,7 +8,7 @@
 
 > **newScopedFunction**(`name`, `argNames`, `body`, `scope`): `Function`
 
-Defined in: [src/new-scoped-function.js:47](https://github.com/snowyu/util-ex.js/blob/cebdb0aecefb30776842a60debb17bdfed5c4f88/src/new-scoped-function.js#L47)
+Defined in: [util-ex.js/src/new-scoped-function.js:47](https://github.com/snowyu/util-ex.js/blob/05c14deed4d51d2368c8894096c4ebbc3fa6b17c/src/new-scoped-function.js#L47)
 
 Creates an executable function with dynamic scope binding
 

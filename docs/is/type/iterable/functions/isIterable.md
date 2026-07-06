@@ -8,7 +8,7 @@
 
 > **isIterable**(`obj`): `obj is Iterable<any, any, any>`
 
-Defined in: [src/is/type/iterable.js:6](https://github.com/snowyu/util-ex.js/blob/cebdb0aecefb30776842a60debb17bdfed5c4f88/src/is/type/iterable.js#L6)
+Defined in: [util-ex.js/src/is/type/iterable.js:6](https://github.com/snowyu/util-ex.js/blob/05c14deed4d51d2368c8894096c4ebbc3fa6b17c/src/is/type/iterable.js#L6)
 
 Determines whether the given object is iterable.
 

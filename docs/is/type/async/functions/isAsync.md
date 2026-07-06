@@ -8,7 +8,7 @@
 
 > **isAsync**(`value`): `boolean`
 
-Defined in: [src/is/type/async.js:7](https://github.com/snowyu/util-ex.js/blob/cebdb0aecefb30776842a60debb17bdfed5c4f88/src/is/type/async.js#L7)
+Defined in: [util-ex.js/src/is/type/async.js:7](https://github.com/snowyu/util-ex.js/blob/05c14deed4d51d2368c8894096c4ebbc3fa6b17c/src/is/type/async.js#L7)
 
 Checks if a given value is an asynchronous function or a Promise.
 

@@ -8,7 +8,7 @@
 
 > **cloneObject**(`aObject`, `tryCloneFn?`): `any`
 
-Defined in: [src/clone-object.js:28](https://github.com/snowyu/util-ex.js/blob/cebdb0aecefb30776842a60debb17bdfed5c4f88/src/clone-object.js#L28)
+Defined in: [util-ex.js/src/clone-object.js:28](https://github.com/snowyu/util-ex.js/blob/05c14deed4d51d2368c8894096c4ebbc3fa6b17c/src/clone-object.js#L28)
 
 Clones an object.
 
