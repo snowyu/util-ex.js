@@ -13,7 +13,6 @@
     "*.js",
     "*.coffee",
     "test",
-    "src",
     "types",
     "lib"
   ],
@@ -25,7 +24,14 @@
     "browserify"
   ],
   "main": "./lib/index.js",
-  "module": "./src/index.js",
+  "module": "./lib/index.mjs",
+  "exports": {
+    ".": {
+      "types": "./lib/index.d.ts",
+      "import": "./lib/index.mjs",
+      "require": "./lib/index.js"
+    }
+  },
   "repository": "git://github.com/snowyu/util-ex.js",
   "bugs": {
     "url": "https://github.com/snowyu/util-ex.js/issues"
@@ -56,7 +62,7 @@
     "test"
   ],
   "scripts": {
-    "build": "npm run build.cjs && npm run build.ts && npm run doc.md",
+    "build": "npm run build.cjs && node scripts/esm-copy.js && npm run build.ts && npm run doc.md",
     "build.cjs": "babel src --out-dir lib --config-file ./.babelrc",
     "build.ts": "tsc --declaration --emitDeclarationOnly --outDir lib",
     "clean": "rm -fr web docs lib",
@@ -72,6 +78,6 @@
     "test": "mocha"
   },
   "dependencies": {
-    "inherits-ex": "^2.1.0"
+    "inherits-ex": "^2.2.0"
   }
 }
