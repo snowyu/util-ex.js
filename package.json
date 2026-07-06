@@ -78,6 +78,6 @@
     "test": "mocha"
   },
   "dependencies": {
-    "inherits-ex": "^2.2.0"
+    "inherits-ex": "^2.2.1"
   }
 }
