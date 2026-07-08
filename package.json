@@ -40,6 +40,9 @@
   "engines": {
     "node": ">=8"
   },
+  "dependencies": {
+    "inherits-ex": "^2.2.2"
+  },
   "devDependencies": {
     "@antfu/eslint-config": "^6.0.0",
     "@babel/cli": "^7.28.3",
@@ -76,8 +79,5 @@
     "release": "npm run clean && npm run build && git add docs && git ci -m 'docs: update API docs' && npx commit-and-tag-version -s",
     "release.alpha": "npm run release -- --prerelease alpha",
     "test": "mocha"
-  },
-  "dependencies": {
-    "inherits-ex": "^2.2.1"
   }
 }
