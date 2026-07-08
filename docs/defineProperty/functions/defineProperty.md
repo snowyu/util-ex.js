@@ -8,7 +8,7 @@
 
 > **defineProperty**(`object`, `key`, `value`, `aOptions?`): `any`
 
-Defined in: inherits-ex.js/lib/defineProperty.d.ts:45
+Defined in: node\_modules/inherits-ex/lib/defineProperty.d.ts:45
 
 Define the object's property and value. The property is not enumerable
 by default.

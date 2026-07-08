@@ -8,7 +8,7 @@
 
 > **isRegExp**(`v`): `boolean`
 
-Defined in: [util-ex.js/src/is/type/regexp.js:32](https://github.com/snowyu/util-ex.js/blob/05c14deed4d51d2368c8894096c4ebbc3fa6b17c/src/is/type/regexp.js#L32)
+Defined in: [src/is/type/regexp.js:32](https://github.com/snowyu/util-ex.js/blob/e1b6f7e16ba0797d5deab91e7eed06c0bba0db01/src/is/type/regexp.js#L32)
 
 Checks if the given value is a RegExp instance
 This function specifically determines whether the provided value is an actual RegExp object instance,

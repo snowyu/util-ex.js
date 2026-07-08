@@ -8,7 +8,7 @@
 
 > **injectMethods**(`aObject`, `aMethods`, `aOptions?`): `boolean`
 
-Defined in: [util-ex.js/src/injectMethods.js:54](https://github.com/snowyu/util-ex.js/blob/05c14deed4d51d2368c8894096c4ebbc3fa6b17c/src/injectMethods.js#L54)
+Defined in: [src/injectMethods.js:54](https://github.com/snowyu/util-ex.js/blob/e1b6f7e16ba0797d5deab91e7eed06c0bba0db01/src/injectMethods.js#L54)
 
 Injects multiple methods into an object, optionally preserving access to the original methods via "`super`" and original instance via "`self`".
 

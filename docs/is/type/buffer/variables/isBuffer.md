@@ -8,7 +8,7 @@
 
 > `const` **isBuffer**: `any`
 
-Defined in: [util-ex.js/src/is/type/buffer.js:6](https://github.com/snowyu/util-ex.js/blob/05c14deed4d51d2368c8894096c4ebbc3fa6b17c/src/is/type/buffer.js#L6)
+Defined in: [src/is/type/buffer.js:6](https://github.com/snowyu/util-ex.js/blob/e1b6f7e16ba0797d5deab91e7eed06c0bba0db01/src/is/type/buffer.js#L6)
 
 Check if a value is a Buffer object.
 

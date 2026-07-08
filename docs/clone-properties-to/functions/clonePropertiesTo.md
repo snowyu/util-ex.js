@@ -8,7 +8,7 @@
 
 > **clonePropertiesTo**(`dest`, `src`): `any`
 
-Defined in: [util-ex.js/src/clone-properties-to.js:25](https://github.com/snowyu/util-ex.js/blob/05c14deed4d51d2368c8894096c4ebbc3fa6b17c/src/clone-properties-to.js#L25)
+Defined in: [src/clone-properties-to.js:25](https://github.com/snowyu/util-ex.js/blob/e1b6f7e16ba0797d5deab91e7eed06c0bba0db01/src/clone-properties-to.js#L25)
 
 Clone all own properties of a source object to a destination object.
 
