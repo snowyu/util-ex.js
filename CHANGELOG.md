@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [2.7.1](https://github.com/snowyu/util-ex.js/compare/v2.7.0...v2.7.1) (2026-07-08)
+
+
+### Refactor
+
+* use root entry from inherits-ex ([10e1ad4](https://github.com/snowyu/util-ex.js/commit/10e1ad49caf53ac1c47e522f812819eb55319c00))
+
 ## [2.7.0](https://github.com/snowyu/util-ex.js/compare/v2.6.0...v2.7.0) (2026-07-06)
 
 
