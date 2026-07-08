@@ -1,4 +1,4 @@
-import defineProperty from "inherits-ex/lib/defineProperty";
+import {defineProperty} from "inherits-ex";
 import isOldArguments from "./is/type/arguments.js";
 
 const arraySlice = Array.prototype.slice;

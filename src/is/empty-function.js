@@ -1,5 +1,5 @@
-import {isEmptyFunction} from "inherits-ex/lib/isEmptyFunction";
+import {isEmptyFunction} from "inherits-ex";
 
-export * from "inherits-ex/lib/isEmptyFunction";
+export {isEmptyFunction};
 export default isEmptyFunction;
 

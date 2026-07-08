@@ -1,5 +1,4 @@
-import getPrototypeOf from 'inherits-ex/lib/getPrototypeOf';
-import createObject from 'inherits-ex/lib/createObject';
+import { createObject, getPrototypeOf } from 'inherits-ex';
 import clonePropertiesTo from './clone-properties-to.js';
 import isFunction from './is/type/function.js';
 
